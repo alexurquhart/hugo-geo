@@ -1,0 +1,11 @@
+name = "HTML 5"
+license = "MIT"
+source_repo = "https://github.com/simonmika/hugo-theme-html5"
+description = "Base for HTML5 theme for the static site generator Hugo"
+tags = ["blog", "company"]
+features = ["manual"]
+
+[author]
+    name = "Simon Mika"
+    email = "simon@mika.se"
+    url = "http://simonmika.com"

@@ -1,0 +1,11 @@
+<ul>
+	{{ range . }}
+	<li>
+		<a href="{{.Url}}">{{ .Name }} MENU</a>
+		{{ if .HasChildren }}
+		{{ partial "menu.html" .Children }}
+		{{ end }}
+	</li>
+	{{end}}
+</ul>
+
