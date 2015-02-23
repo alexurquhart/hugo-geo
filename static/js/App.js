@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 	var Start = Date.now();
 
@@ -10,7 +8,8 @@ $(document).ready(function() {
 
 	var projection = d3.geo.orthographic()
 		.scale(1000)
-		.translate([0, height])
+		.translate([250, height])
+		.rotate([-80])
 		.clipAngle(90)
 		.precision(.1);
 

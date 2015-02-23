@@ -1,18 +1,29 @@
 <div id="menu" class="hidden-xs col-sm-4 col-md-3">
 	<div id="menu-content" class="vertical-align">
-		<h1 class="text-center">ALEX URQUHART</h1>
-		<small class="text-center center-block">GEOMATICS PROFESSIONAL</small>
-		<img id="profile-pic" src="{{ .Site.BaseUrl }}/img/smugmug.jpg" alt="My Picture" class="img-circle center-block">
+		{{ if isset .Site.Params "title" }}
+			<h1 class="text-center"><a href="{{ .Site.BaseUrl }}">{{ .Site.Params.title }}</a></h1>
+		{{ else }}
+			<h1 class="text-center"><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a></h1>
+		{{ end }}
+		
+		{{ if isset .Site.Params "subtitle" }}
+			<small class="text-center center-block">{{ .Site.Params.subtitle }}</small>
+		{{ end }}
+		
+		{{ if isset .Site.Params "profilepic" }}
+			<img id="profile-pic" src="{{ .Site.BaseUrl }}/{{ .Site.Params.profilepic }}" alt="My Picture" class="img-circle center-block">
+		{{ end }}
 		<div id="social" class="text-center">
-			<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-			<a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
-			<a href="#"><i class="fa fa-github fa-2x"></i></a>
-			<a href="#"><i class="fa fa-envelope-o fa-2x"></i></a>
+			{{ if isset .Site.Params "twitter" }}<a href="{{.Site.Params.twitter}}"><i class="fa fa-twitter fa-2x"></i></a>{{ end }}
+			{{ if isset .Site.Params "linkedin" }}<a href="{{.Site.Params.linkedin}}"><i class="fa fa-linkedin fa-2x"></i></a>{{ end }}
+			{{ if isset .Site.Params "github" }}<a href="{{.Site.Params.github}}"><i class="fa fa-github fa-2x"></i></a>{{ end }}
+			{{ if isset .Site.Params "email" }}<a href="mailto:{{.Site.Params.email}}"><i class="fa fa-envelope-o fa-2x"></i></a>{{ end }}
 		</div>
 		<div id="links" class="text-center">
-			<span class="active">About</span>
-			<a href="#">Projects</a>
-			<a href="#">Blog</a>
+			{{ $url := .Site.BaseUrl }}
+			{{ range .Site.Params.navlinks }}
+				<a href="{{ $url }}/{{ .url }}">{{ .name }}</a>
+			{{ end }}
 		</div>
 	</div>
 </div>

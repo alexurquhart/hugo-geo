@@ -1,34 +1,29 @@
-<!DOCTYPE html>
-<html>
-	{{ partial "head.html" . }}
-	<body>
-		{{ partial "navbar.html" . }}
-		<div class="container-fluid">
-			<div class="row">
-				{{ partial "sidebar.html" . }}
-				<div id="content" class="col-xs-12 col-sm-8 col-md-9">
-					<div class="row">
-						<div class="col-sm-1"></div>
-							<div id="post" class="col-sm-10 col-md-9 col-lg-7">
-								<main>
-									<header>
-										<h1>{{ .Title }}</h1>
-									</header>
-									{{ .TableOfContents }}
-									<article>
-										{{ .Content }}
-									</article>
-									<footer>
-										<p><span id="footer-copyright">{{ .Params.copyright }}</span><span id="footer-license">{{ .Params.license }}</span></p>
-									</footer>
-								</main>
-							</div>
-							<div class="col-sm-1 col-md-2 col-lg-4"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		{{ partial "footer.html" . }}
-	</body>
-</html>
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+<main>
+	<header>
+		<h1>{{ .Title }}</h1>
+	</header>
+	<article>
+		{{ .Content }}
+	</article>
+</main>
+
+<div id="bottom-nav" class="text-center center-block">
+	{{ if isset . "PrevInSection" }}
+		<a href="{{.PrevInSection.Permalink}}" class="btn btn-default pull-left"><i class="fa fa-arrow-left"></i> Prev</a>
+	{{ else }}
+		<div class="btn btn-default pull-left disabled"><i class="fa fa-arrow-left"></i> Prev</div>
+	{{ end }}
+	
+	{{ if isset . "NextInSection" }}
+		<a href="{{.NextInSection.Permalink}}" class="btn btn-default pull-right"><i class="fa fa-arrow-right"></i> Next</div>
+	{{ else }}
+		<div class="btn btn-default pull-right disabled"><i class="fa fa-arrow-right"></i> Next</div>
+	{{ end }}
+	<a href=" {{ .Site.BaseUrl }}" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+</div>
+
+{{ template "_internal/disqus.html" . }}
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,13 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+
+<header>
+	<h1>Latest Blog Posts</h1>
+</header>
+
+{{ range first 5 (where .Data.Pages.ByDate "Section" "post") }}
+	{{ .Render "summary"}}
+{{ end }}
+
+
+{{ partial "footer.html" . }}
