@@ -1,11 +1,10 @@
-name = "HTML 5"
+name = "hugo-geo"
 license = "MIT"
-source_repo = "https://github.com/simonmika/hugo-theme-html5"
-description = "Base for HTML5 theme for the static site generator Hugo"
+source_repo = "https://github.com/alexurquhart/hugo-geo"
+description = "Personal blog theme for Hugo"
 tags = ["blog", "company"]
-features = ["manual"]
 
 [author]
-    name = "Simon Mika"
-    email = "simon@mika.se"
-    url = "http://simonmika.com"
+    name = "Alex Urquhart"
+    email = "alexurquhart@gmail.com"
+    url = "https://alexurquhart.com"
