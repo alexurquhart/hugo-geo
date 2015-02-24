@@ -1,5 +1,9 @@
 # hugo-geo
-Theme I use for my github personal page. The two sections that I designed this for are `post`'s and `project`'s 
+Theme I use for my github personal page. The two sections that I designed this for are `post`'s and `project`'s.
+
+## Dependencies
+- Hugo v0.13 or better
+- LESS to compile custom CSS
 
 ## Site Config
 These are my `config.toml` settings to customize the sidebar:
@@ -7,7 +11,7 @@ These are my `config.toml` settings to customize the sidebar:
 ```toml
 [params]
   # Render the rotating globe in the sidebar
-  showglobe = true
+ 	showglobe = true
 
   # Social buttons for sidebar
 	github = "https://github.com/alexurquhart"

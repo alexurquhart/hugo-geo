@@ -4,10 +4,13 @@
 <header>
 	<h1>Latest Blog Posts</h1>
 </header>
-
-{{ range first 5 (where .Data.Pages.ByDate "Section" "post") }}
+{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Section" "post") }}
+{{ range $paginator.Pages }}
 	{{ .Render "summary"}}
 {{ end }}
 
+<div class="text-center center-block">
+	{{ template "_internal/pagination.html" . }}
+</div>
 
 {{ partial "footer.html" . }}

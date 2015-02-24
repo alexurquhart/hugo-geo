@@ -1,5 +1,6 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
+
 <main>
 	<header>
 		<h1>{{ .Title }}</h1>
@@ -10,17 +11,6 @@
 </main>
 
 <div id="bottom-nav" class="text-center center-block">
-	{{ if isset . "PrevInSection" }}
-		<a href="{{.PrevInSection.Permalink}}" class="btn btn-default pull-left"><i class="fa fa-arrow-left"></i> Prev</a>
-	{{ else }}
-		<div class="btn btn-default pull-left disabled"><i class="fa fa-arrow-left"></i> Prev</div>
-	{{ end }}
-	
-	{{ if isset . "NextInSection" }}
-		<a href="{{.NextInSection.Permalink}}" class="btn btn-default pull-right"><i class="fa fa-arrow-right"></i> Next</div>
-	{{ else }}
-		<div class="btn btn-default pull-right disabled"><i class="fa fa-arrow-right"></i> Next</div>
-	{{ end }}
 	<a href=" {{ .Site.BaseUrl }}" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
 </div>
 
