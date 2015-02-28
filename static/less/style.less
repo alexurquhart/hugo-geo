@@ -1,0 +1,109 @@
+@import "bootstrap/bootstrap.less";
+@import "bootstrap.less";
+@import "geo.less";
+
+html, body, #content, #menu, .container-fluid, .row {
+	height: 100%;
+}
+
+html, body {
+	overflow-y: hidden;
+}
+
+@media (max-width: @screen-xs-max) {
+	body {
+		margin-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+/*
+	SIDEBAR MENU
+*/
+
+#menu {
+	#gradient.radial(darken(@sidebar-base, 10%); darken(@sidebar-base, 20%));
+	border-top: 5px solid @brand-danger;
+}
+
+#menu-content h1 a {
+	color: @light-primary;
+}
+
+#menu-content small {
+	font-family: @headings-font-family;
+	color: @light-primary;
+	margin-bottom: 15PX;
+}
+
+#profile-pic {
+	width: 70%;
+	border: 5px solid darken(@sidebar-base, 35%);
+}
+
+#social, #links {
+	margin-top: 10px;
+}
+
+#social i {
+	margin-left: 10px;
+}
+
+#links a, #links .active {
+	font-family: @headings-font-family;
+	color: @light-primary;
+	letter-spacing: 2px;
+	margin-left: 10px;
+}
+
+#links a:hover, #social a:hover, #menu-content h1 a:hover {
+	text-decoration: none;
+	color: lighten(@sidebar-base, 25%);
+}
+
+#links .active {
+	color: #FFF;
+}
+
+/*
+	MAIN POST CONTENT
+*/
+
+#content {
+	border-top: 5px solid lighten(@brand-success, 10%);
+	overflow-y: auto;
+}
+
+.vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.navbar {
+	font-family: @headings-font-family;
+	letter-spacing: 2px;
+}
+
+#bottom-nav {
+	padding-bottom: 15px;
+}
+
+/*
+	Panels for summaries
+*/
+
+
+.panel-footer {
+	border-top: none;
+}
+
+.panel-header a {
+	color: lighten(@headings-color, 10%);
+	text-decoration: none;
+}
+
+.panel-header a:hover {
+	color: lighten(@headings-color, 25%);
+}

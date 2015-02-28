@@ -22,7 +22,7 @@
 		<div id="links" class="text-center">
 			{{ $url := .Site.BaseUrl }}
 			{{ range .Site.Params.navlinks }}
-				<a href="{{ $url }}/{{ .url }}">{{ .name }}</a>
+				<a href="{{ $url }}{{ .url }}">{{ .name }}</a>
 			{{ end }}
 		</div>
 	</div>
