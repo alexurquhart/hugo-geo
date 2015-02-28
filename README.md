@@ -1,9 +1,12 @@
 # hugo-geo
 Theme I use for my github personal page. The two sections that I designed this for are `post`'s and `project`'s.
 
+## Demo
+I use this theme on my personal site: https://alexurquhart.com
+
 ## Dependencies
 - Hugo v0.13 or better
-- LESS to compile custom CSS
+- LESS if you wish to compile custom CSS
 
 ## Site Config
 These are my `config.toml` settings to customize the sidebar:
