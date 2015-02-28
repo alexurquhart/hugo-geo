@@ -10,10 +10,13 @@ These are my `config.toml` settings to customize the sidebar:
 
 ```toml
 [params]
-  # Render the rotating globe in the sidebar
- 	showglobe = true
+	# Render the rotating globe in the sidebar
+	showglobe = true
+ 	
+	# Google Analytics
+	analytics = "SHORT-CODE-HERE"
 
-  # Social buttons for sidebar
+	# Social buttons for sidebar
 	github = "https://github.com/alexurquhart"
 	twitter = "https://twitter.com/alexanderurq"
 	linkedin = "https://linkedin.com"
