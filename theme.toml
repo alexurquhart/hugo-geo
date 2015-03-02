@@ -1,8 +1,11 @@
 name = "hugo-geo"
 license = "MIT"
-source_repo = "https://github.com/alexurquhart/hugo-geo"
-description = "Personal blog theme for Hugo"
-tags = ["blog", "company"]
+licenselink = "https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/LICENSE"
+description = "A responsive blog theme made using Bootstrap 3, jQuery, and D3.js"
+homepage = "https://alexurquhart.com"
+tags = ["blog"]
+features = ["blog", "responsive", "bootstrap"]
+min_version= 0.13
 
 [author]
     name = "Alex Urquhart"
