@@ -17,8 +17,9 @@
 		{{ if isset .Params "tags" }}
 		<small class="pull-right text-muted">
 			Tags:
-			{{ range .Params.tags }}
-				<a href="tags/{{ . | urlize }}">{{ . }}</a> 
+			{{ $base := .Site.BaseUrl }}
+			{{ range $tag := .Params.tags }}
+				<a href="{{ $base }}tags/{{ $tag | urlize }}">{{ . }}</a> 
 			{{ end }}
 		</small>
 		{{ end }}
