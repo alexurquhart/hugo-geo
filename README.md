@@ -1,7 +1,7 @@
 # hugo-geo
 Theme I use for my personal website. Suitable for desktop and mobile. The two sections that I designed this for are `post`'s and `project`'s.
 
-![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.jpg)
 
 ## Demo
 I use this theme on my personal site: https://alexurquhart.com
