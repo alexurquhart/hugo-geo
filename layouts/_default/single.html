@@ -14,6 +14,10 @@
 	<a href=" {{ .Site.BaseUrl }}" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
 </div>
 
-{{ template "_internal/disqus.html" . }}
+
+{{ if and (isset .Params "comments") (.Params.comments) }}
+	{{ template "_internal/disqus.html" . }}
+{{ end }}
+
 
 {{ partial "footer.html" . }}

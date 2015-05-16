@@ -1,10 +1,14 @@
+if (!window.location.origin) {
+	window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+}
+
 $(document).ready(function() {
 	var Start = Date.now();
 
 	var width = $('#menu').outerWidth(true);
    	var height = $('#menu').outerHeight(true);
 	var rotate = [10];
-    var velocity = [.0002];
+    var velocity = [0.001];
 
 	var projection = d3.geo.orthographic()
 		.scale(1000)
@@ -38,6 +42,9 @@ $(document).ready(function() {
 		.attr("d", path);
 
 	d3.json(window.location.origin + "/js/world.json", function(error, world) {
+		if (error) {
+			return;
+		}
 		svg.insert("path", ".graticule")
 			.datum(topojson.feature(world, world.objects.land))
 			.attr("class", "land")

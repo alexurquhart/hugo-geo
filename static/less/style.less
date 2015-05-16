@@ -21,6 +21,7 @@ html, body {
 */
 
 #menu {
+	background-color: darken(@sidebar-base, 15%);
 	#gradient.radial(darken(@sidebar-base, 10%); darken(@sidebar-base, 20%));
 	border-top: 5px solid @brand-danger;
 }
@@ -88,6 +89,15 @@ html, body {
 
 #bottom-nav {
 	padding-bottom: 15px;
+}
+
+.thumbnail {
+	.img-thumbnail();
+	margin: 10px;
+}
+
+.img-label {
+	font-family: @font-family-sans-serif;
 }
 
 /*
