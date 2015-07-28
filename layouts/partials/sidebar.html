@@ -1,9 +1,9 @@
 <div id="menu" class="hidden-xs col-sm-4 col-md-3">
 	<div id="menu-content" class="vertical-align">
 		{{ if isset .Site.Params "title" }}
-			<h1 class="text-center"><a href="{{ .Site.BaseUrl }}">{{ .Site.Params.title }}</a></h1>
+			<h1 class="text-center"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a></h1>
 		{{ else }}
-			<h1 class="text-center"><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a></h1>
+			<h1 class="text-center"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
 		{{ end }}
 		
 		{{ if isset .Site.Params "subtitle" }}
@@ -11,7 +11,7 @@
 		{{ end }}
 		
 		{{ if isset .Site.Params "profilepic" }}
-			<img id="profile-pic" src="{{ .Site.BaseUrl }}/{{ .Site.Params.profilepic }}" alt="My Picture" class="img-circle center-block">
+			<img id="profile-pic" src="{{ .Site.BaseURL }}/{{ .Site.Params.profilepic }}" alt="My Picture" class="img-circle center-block">
 		{{ end }}
 		<div id="social" class="text-center">
 			{{ if isset .Site.Params "twitter" }}<a href="{{.Site.Params.twitter}}"><i class="fa fa-twitter fa-2x"></i></a>{{ end }}
@@ -20,7 +20,7 @@
 			{{ if isset .Site.Params "email" }}<a href="mailto:{{.Site.Params.email}}"><i class="fa fa-envelope-o fa-2x"></i></a>{{ end }}
 		</div>
 		<div id="links" class="text-center">
-			{{ $url := .Site.BaseUrl }}
+			{{ $url := .Site.BaseURL }}
 			{{ range .Site.Params.navlinks }}
 				<a href="{{ $url }}{{ .url }}">{{ .name }}</a>
 			{{ end }}

@@ -11,13 +11,11 @@
 </main>
 
 <div id="bottom-nav" class="text-center center-block">
-	<a href=" {{ .Site.BaseUrl }}" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+	<a href=" {{ .Site.BaseURL }}" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
 </div>
 
-
-{{ if and (isset .Params "comments") (.Params.comments) }}
-	{{ template "_internal/disqus.html" . }}
+{{ if .Site.DisqusShortname }}
+  {{ template "_internal/disqus.html" . }}
 {{ end }}
-
 
 {{ partial "footer.html" . }}

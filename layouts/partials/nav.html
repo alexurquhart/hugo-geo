@@ -8,14 +8,14 @@
 				<span class="icon-bar"></span>
 			</button>
 			{{ if isset .Site.Params "title" }}
-				<a class="navbar-brand" href="{{ .Site.BaseUrl }}">{{ .Site.Params.title }}</a>
+				<a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a>
 			{{ else }}
-				<a class="navbar-brand" href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a>
+				<a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 			{{ end }}
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				{{ $url := .Site.BaseUrl }}
+				{{ $url := .Site.BaseURL }}
 				{{ range .Site.Params.navlinks }}
 					<li><a href="{{ $url }}{{ .url }}">{{ .name }}</a></li>
 				{{ end }}
