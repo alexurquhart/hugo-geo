@@ -5,7 +5,7 @@ description = "A responsive blog theme made using Bootstrap 3, jQuery, and D3.js
 homepage = "https://alexurquhart.com"
 tags = ["blog"]
 features = ["blog", "responsive", "bootstrap"]
-min_version= 0.13
+min_version= 0.14
 
 [author]
     name = "Alex Urquhart"

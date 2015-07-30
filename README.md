@@ -7,7 +7,7 @@ Theme I use for my personal website. Suitable for desktop and mobile. The two se
 I use this theme on my personal site: https://alexurquhart.com
 
 ## Dependencies
-- Hugo v0.13 or better
+- Hugo v0.14 or better
 - LESS if you wish to compile the custom CSS
 
 ## Site Config
