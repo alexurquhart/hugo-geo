@@ -10,11 +10,19 @@ html, body {
 	overflow-y: hidden;
 }
 
+body {
+  font-weight: 300;
+}
+
 @media (max-width: @screen-xs-max) {
 	body {
 		margin-top: 50px;
 		padding-bottom: 50px;
 	}
+}
+
+a:hover, a:active {
+  text-decoration: none;
 }
 /*
 	SIDEBAR MENU
@@ -43,6 +51,7 @@ html, body {
 #profile-pic {
 	width: 70%;
 	border: 5px solid darken(@sidebar-base, 35%);
+  box-shadow: 0px 0px 10px black;
 }
 
 #social, #links {
@@ -129,4 +138,12 @@ html, body {
 
 .panel-footer small a:hover {
   text-decoration: none;
+}
+
+/*
+  Syntax Highlighting
+  
+*/
+.hljs {
+  background-color: transparent;
 }
