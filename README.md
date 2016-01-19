@@ -1,7 +1,7 @@
 # hugo-geo
-Theme I use for my personal website. Suitable for desktop and mobile. The two sections that I designed this for are `post`'s and `project`'s.
+Theme I use for my personal website. Suitable for desktop and mobile. For now, designed for a list of `post` articles.
 
-![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.jpg)
+![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.png)
 
 ## Demo
 I use this theme on my personal site: https://alexurquhart.com

@@ -11,10 +11,18 @@ if (!window.location.origin) {
 }
 
 $(document).ready(function() {
-
 	
 	// Change all href links that go out of the origin to open in a new window
-	$("a").not("[href*='" + window.location.origin + "']").attr("target", "new")
+	$("a").not("[href*='" + window.location.origin + "']").attr("target", "new");
+	
+	// Highlight all on load if highlighting
+	if (typeof hljs !== "undefined") {
+		hljs.initHighlightingOnLoad();
+	}
+	
+	if ($.browser.mobile) {
+		return;	
+	}
 	
 	var Start = Date.now();
 	var width = $('#menu').outerWidth(true);
@@ -53,6 +61,7 @@ $(document).ready(function() {
 		.attr("class", "graticule")
 		.attr("d", path);
 
+	// If not in a mobile browser
 	d3.json(window.location.origin + "/js/world.json", function(error, world) {
 		if (error) {
 			return;
@@ -69,14 +78,12 @@ $(document).ready(function() {
 		
 		var feature = svg.selectAll("path");
 
-		// If not in a mobile browser
-		if (!$.browser.mobile) {
-			d3.timer(function() {
-				var dt = Date.now() - Start;
-				projection.rotate([rotate[0] + velocity[0] * dt]);
-				feature.attr("d", path);
-			});
-		}
+
+		d3.timer(function() {
+			var dt = Date.now() - Start;
+			projection.rotate([rotate[0] + velocity[0] * dt]);
+			feature.attr("d", path);
+		});
 	});
 	
 	function updateWindow(){

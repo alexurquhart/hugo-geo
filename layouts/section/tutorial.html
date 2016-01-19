@@ -1,0 +1,43 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+
+<article>
+	<header>
+		<h1>{{ .Title }}</a></h1>
+	</header>
+	
+	{{ range .Data.Pages }}
+	{{ if .Params.index }}
+        <div class="panel panel-default">
+        	<div class="panel-header">
+        		<h3>
+        			<a href="{{ .Permalink }}">{{ .Title }}</a>
+        			<br>
+        			<small>
+        				First Published: {{ .Date.Format "2 January 2006" }}
+        			</small>
+        		</h3>
+        	</div>
+        	<div class="panel-body">
+        		{{.Summary}}
+        		{{ if .Truncated }}
+        			... <a href="{{ .Permalink }}">Read More</a>
+        		{{ end }}
+        	</div>
+        	<div class="panel-footer">
+        		{{ if isset .Params "tags" }}
+        		<small class="text-muted">
+        			{{ $base := .Site.BaseURL }}
+        			{{ range $tag := .Params.tags }}
+        				<a href="{{ $base }}tags/{{ $tag | urlize }}"><span class="label label-success">{{ . }}</span></a>
+        			{{ end }}
+        		</small>
+        		{{ end }}
+        	</div>
+        </div>
+	{{ end }}
+	{{ end }}
+	
+</article>
+
+{{ partial "footer.html" . }}
