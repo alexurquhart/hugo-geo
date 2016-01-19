@@ -3,7 +3,10 @@ Theme I use for my personal website. Suitable for desktop and mobile. Designed f
 
 ![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.png)
 
-#[Demo](https://alexurquhart.com)
+#[Example Site Demo](http://alexurquhart.github.io/hugo-geo/)
+
+I also use it on my [personal website](https://alexurquhart.com)
+
 
 ## Dependencies
 - Hugo v0.14 or better
