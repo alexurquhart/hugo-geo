@@ -3,11 +3,11 @@ RelativeURLs = true
 languageCode = "en-us"
 title = "My New Hugo Site"
 disqusShortname = "shortcode-here"
-paginate = 10
+paginate = 5
 
 [taxonomies]
 	tag = "tags"
-	project = "projects"
+	tutorial = "tutorials"
 
 [params]
 	showglobe = true
@@ -19,15 +19,19 @@ paginate = 10
 	linkedin = "https://www.linkedin.com/profile/view?id=339355941"
 	email = "alexurquhart@gmail.com"
 	
-	profilepic = "img/me.jpg"
+	profilepic = "img/profile.png"
 	
 	title = "YOUR TITLE"
 	subtitle = "YOUR SUBTITLE"
 	
 	[[params.navlinks]]
-	name = "Blog"
-	url = "post/"
+	name = "About"
+	url = "#"
 	
 	[[params.navlinks]]
-	name = "About"
-	url = "about/"
+	name = "Blog"
+	url = ""
+	
+	[[params.navlinks]]
+	name = "Tutorials"
+	url = "tutorial/"

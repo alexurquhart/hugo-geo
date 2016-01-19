@@ -9,6 +9,7 @@
 if (!window.location.origin) {
 	window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
 }
+alert(window.location.origin)
 
 $(document).ready(function() {
 	
@@ -20,52 +21,54 @@ $(document).ready(function() {
 		hljs.initHighlightingOnLoad();
 	}
 	
+	// Peace out if in a mobile browser
 	if ($.browser.mobile) {
 		return;	
 	}
 	
-	var Start = Date.now();
-	var width = $('#menu').outerWidth(true);
-   	var height = $('#menu').outerHeight(true);
-	var rotate = [10];
-    var velocity = [0.001];
-
-	var projection = d3.geo.orthographic()
-		.scale(1000)
-		.translate([250, height])
-		.rotate([-80])
-		.clipAngle(90)
-		.precision(.1);
-
-	var path = d3.geo.path()
-		.projection(projection);
-
-	var graticule = d3.geo.graticule();
-
-	var svg = d3.select("#menu").insert("svg", "#menu-content")
-		.attr("id", "menu-globe")
-		.attr("width", width)
-		.attr("height", height);
-
-	svg.append("defs").append("path")
-		.datum({type: "Sphere"})
-		.attr("id", "sphere")
-		.attr("d", path);
-
-	svg.append("use")
-		.attr("class", "stroke")
-		.attr("xlink:href", "#sphere");
-
-	svg.append("path")
-		.datum(graticule)
-		.attr("class", "graticule")
-		.attr("d", path);
-
-	// If not in a mobile browser
+	// Load world json file
 	d3.json(window.location.origin + "/js/world.json", function(error, world) {
 		if (error) {
 			return;
 		}
+		
+		var Start = Date.now();
+		var width = $('#menu').outerWidth(true);
+	   	var height = $('#menu').outerHeight(true);
+		var rotate = [10];
+	    var velocity = [0.001];
+	
+		var projection = d3.geo.orthographic()
+			.scale(1000)
+			.translate([250, height])
+			.rotate([-80])
+			.clipAngle(90)
+			.precision(.1);
+	
+		var path = d3.geo.path()
+			.projection(projection);
+	
+		var graticule = d3.geo.graticule();
+	
+		var svg = d3.select("#menu").insert("svg", "#menu-content")
+			.attr("id", "menu-globe")
+			.attr("width", width)
+			.attr("height", height);
+	
+		svg.append("defs").append("path")
+			.datum({type: "Sphere"})
+			.attr("id", "sphere")
+			.attr("d", path);
+	
+		svg.append("use")
+			.attr("class", "stroke")
+			.attr("xlink:href", "#sphere");
+	
+		svg.append("path")
+			.datum(graticule)
+			.attr("class", "graticule")
+			.attr("d", path);
+		
 		svg.insert("path", ".graticule")
 			.datum(topojson.feature(world, world.objects.land))
 			.attr("class", "land")
