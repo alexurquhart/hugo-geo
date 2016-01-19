@@ -38,15 +38,6 @@
     </item>
     
     <item>
-      <title>about</title>
-      <link>http://alexurquhart.github.io/hugo-geo/about/</link>
-      <pubDate>Tue, 28 Jul 2015 09:51:51 -0400</pubDate>
-      
-      <guid>http://alexurquhart.github.io/hugo-geo/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Test Post</title>
       <link>http://alexurquhart.github.io/hugo-geo/post/testPost/</link>
       <pubDate>Tue, 28 Jul 2015 09:32:45 -0400</pubDate>
