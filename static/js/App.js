@@ -25,8 +25,18 @@ $(document).ready(function() {
 		return;	
 	}
 	
+	// If you are hosting your site on say GitHub pages at the URL
+	// "person.github.com/repo-name", loading the world.json file will
+	// fail unless the script knows the base url it's calling from
+	// In this example you can set window.baseURL in your template footer
+	// and it will know the correct file path to load.
+	// There's probably a better way but ¯\_(ツ)_/¯
+	if (typeof window.baseURL === "undefined") {
+		window.baseURL = window.location.origin;
+	}
+	
 	// Load world json file
-	d3.json(window.location.origin + "/js/world.json", function(error, world) {
+	d3.json(window.baseURL + "/js/world.json", function(error, world) {
 		if (error) {
 			return;
 		}
@@ -86,13 +96,13 @@ $(document).ready(function() {
 			projection.rotate([rotate[0] + velocity[0] * dt]);
 			feature.attr("d", path);
 		});
-	});
+		
+		function updateWindow(){
+			var w = $('#menu').outerWidth(true);
+			var h = $('#menu').outerHeight(true);
 	
-	function updateWindow(){
-		var w = $('#menu').outerWidth(true);
-		var h = $('#menu').outerHeight(true);
-
-		svg.attr("width", w).attr("height", h);
-	}
-	window.onresize = updateWindow;
+			svg.attr("width", w).attr("height", h);
+		}
+		window.onresize = updateWindow;
+	});
 });
