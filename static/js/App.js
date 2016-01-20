@@ -52,7 +52,7 @@ $(document).ready(function() {
 			.translate([250, height])
 			.rotate([-80])
 			.clipAngle(90)
-			.precision(.1);
+			.precision(0.1);
 	
 		var path = d3.geo.path()
 			.projection(projection);
