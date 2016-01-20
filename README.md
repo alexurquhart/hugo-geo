@@ -1,5 +1,5 @@
 # hugo-geo
-Theme I use for my personal website. Suitable for desktop and mobile. Designed for `tutorial` and `post` types.
+A responsive blog theme I've developed for use on my personal website. Suitable for desktop and mobile. Designed for `tutorial` and `post` sections.
 
 ![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.png)
 
