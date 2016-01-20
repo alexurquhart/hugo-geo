@@ -43,6 +43,7 @@ These are my `config.toml` settings:
 	linkedin = "https://linkedin.com"
 	email = "alexurquhart@gmail.com"
 	
+	# Sidebar profile picture
 	profilepic = "img/smugmug.jpg"
 	
 	# Title/subtitle for the sidebar
@@ -51,16 +52,16 @@ These are my `config.toml` settings:
 	
 	# Nav links below the profile picture
 	[[params.navlinks]]
-	name = "Blog"
-	url = "blog/"
-	
-	[[params.navlinks]]
-	name = "Projects"
-	url = "projects/"
-	
-	[[params.navlinks]]
 	name = "About"
 	url = "about/"
+	
+	[[params.navlinks]]
+	name = "Blog"
+	url = "posts/"
+	
+	[[params.navlinks]]
+	name = "Tutorials"
+	url = "tutorial/"
 ```
 
 ## TODO
