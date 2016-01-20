@@ -30,6 +30,17 @@ css = [
 These are my `config.toml` settings:
 
 ```toml
+BaseURL = "https://base-url-here/"
+RelativeURLs = true
+languageCode = "en-us"
+title = "SiteTitle.Com"
+disqusShortname = "*****"
+paginate = 5
+
+[taxonomies]
+	tag = "tags"
+	tutorial = "tutorials"
+
 [params]
 	# Render the rotating globe in the sidebar
 	showglobe = true
