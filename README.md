@@ -1,14 +1,30 @@
 # hugo-geo
-Theme I use for my personal website. Suitable for desktop and mobile. For now, designed for a list of `post` articles.
+Theme I use for my personal website. Suitable for desktop and mobile. Designed for `tutorial` and `post` types.
 
 ![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.png)
 
-## Demo
-I use this theme on my personal site: https://alexurquhart.com
+#[Example Site Demo](http://alexurquhart.github.io/hugo-geo/)
+
+I also use it on my [personal website](https://alexurquhart.com)
+
 
 ## Dependencies
 - Hugo v0.14 or better
 - LESS if you wish to compile the custom CSS
+
+## Features
+- Use `highlight = true` in the front matter to include [highlight js](https://highlightjs.org/) javascript and css files.
+- In the front matter, use `index = true` on the first post in a tutorial series to make that content the "index" page for the rest of the series
+- Include custom scripts and css on individual pages in front matter like so:
+```toml
+scripts = [
+"//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/languages/go.min.js",
+]
+
+css = [
+"//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"
+]
+```
 
 ## Site Config
 These are my `config.toml` settings:
