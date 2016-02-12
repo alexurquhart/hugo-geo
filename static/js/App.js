@@ -95,7 +95,6 @@ $(document).ready(function() {
 		
 		var feature = svg.selectAll("path");
 
-
 		d3.timer(function() {
 			var dt = Date.now() - Start;
 			projection.rotate([rotate[0] + velocity[0] * dt]);
