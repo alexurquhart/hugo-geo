@@ -1,4 +1,5 @@
-# hugo-geo
+![logo](https://github.com/alexurquhart/hugo-geo/blob/master/exampleSite/static/img/logo.png?raw=true)
+
 A responsive blog theme I've developed for use on my personal website. Suitable for desktop and mobile. Designed for `tutorial` and `post` sections.
 
 ![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.png)
