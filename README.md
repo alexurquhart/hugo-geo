@@ -84,3 +84,7 @@ paginate = 5
 - Add a sidebar on large screens with links to related posts
 - Add next/previous links at the end of posts/tutorials
 - Add breadcrumbs to top of page
+
+
+#### Credits
+World graphic in logo by <a href="http://www.greepit.com">Sarfraz Shoukat</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
