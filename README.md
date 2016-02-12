@@ -1,5 +1,5 @@
 # hugo-geo
-Theme I use for my personal website. Suitable for desktop and mobile. Designed for `tutorial` and `post` types.
+A responsive blog theme I've developed for use on my personal website. Suitable for desktop and mobile. Designed for `tutorial` and `post` sections.
 
 ![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.png)
 
@@ -75,8 +75,11 @@ paginate = 5
 	url = "tutorial/"
 ```
 
-## TODO
+## My TODO List
 - Clean up and simplify the CSS
 - Make Disqus comments optional on a per-page basis
 - Previous/next post buttons on each page
 - Improve list pages
+- Add a sidebar on large screens with links to related posts
+- Add next/previous links at the end of posts/tutorials
+- Add breadcrumbs to top of page
