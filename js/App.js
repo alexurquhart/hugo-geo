@@ -20,6 +20,11 @@ $(document).ready(function() {
 		hljs.initHighlightingOnLoad();
 	}
 	
+	// If d3 is not loaded do not show the globe
+	if (typeof d3 === "undefined") {
+		return;
+	}
+	
 	// Peace out if in a mobile browser
 	if ($.browser.mobile) {
 		return;	
@@ -89,7 +94,6 @@ $(document).ready(function() {
 			.attr("d", path);
 		
 		var feature = svg.selectAll("path");
-
 
 		d3.timer(function() {
 			var dt = Date.now() - Start;

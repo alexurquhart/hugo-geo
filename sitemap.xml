@@ -3,17 +3,22 @@
   
   <url>
     <loc>http://alexurquhart.github.io/hugo-geo/</loc>
-    <lastmod>2015-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://alexurquhart.github.io/hugo-geo/tutorial/test-tutorial/part-1/</loc>
-    <lastmod>2015-12-20T00:00:00+00:00</lastmod>
+    <loc>http://alexurquhart.github.io/hugo-geo/tutorial/getting-started/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alexurquhart.github.io/hugo-geo/post/testPost/</loc>
+    <loc>http://alexurquhart.github.io/hugo-geo/about/</loc>
+    <lastmod>2015-07-28T09:51:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://alexurquhart.github.io/hugo-geo/post/welcome/</loc>
     <lastmod>2015-07-28T09:32:45-04:00</lastmod>
   </url>
   

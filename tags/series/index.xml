@@ -6,34 +6,122 @@
     <description>Recent content in Series on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Mar 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://alexurquhart.github.io/hugo-geo/tags/series/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Test Tutorial Series</title>
-      <link>http://alexurquhart.github.io/hugo-geo/tutorial/test-tutorial/part-1/</link>
-      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
+      <title>Getting Started With hugo-geo</title>
+      <link>http://alexurquhart.github.io/hugo-geo/tutorial/getting-started/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://alexurquhart.github.io/hugo-geo/tutorial/test-tutorial/part-1/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet molestie mauris nec tempor. Sed non lacus massa. Aliquam ut convallis velit. Etiam dictum mollis mi, a vestibulum ex suscipit ut. Proin viverra lacinia urna at interdum. Sed eu quam sit amet metus fermentum pharetra id a sem. Pellentesque lorem dolor, venenatis sed felis non, fringilla ornare felis. Donec nisi lorem, dignissim id interdum vel, cursus malesuada quam. Integer tempus consectetur tellus, nec sagittis est mattis vel. Curabitur sit amet aliquet dolor, et placerat ipsum.&lt;/p&gt;
+      <guid>http://alexurquhart.github.io/hugo-geo/tutorial/getting-started/</guid>
+      <description>
 
-&lt;p&gt;Pellentesque iaculis porttitor lobortis. Ut condimentum cursus libero, dictum accumsan felis congue et. Proin tellus ligula, sodales ut rhoncus sed, scelerisque sit amet turpis. Donec aliquam purus ac enim laoreet, ac viverra erat feugiat. Etiam quis dictum massa, vel molestie sapien. Sed ut euismod magna. Sed at quam augue. Donec eu tincidunt quam, ut venenatis nulla. Donec feugiat ullamcorper massa. Phasellus augue lorem, tincidunt aliquam est at, finibus lacinia ex. Cras sed risus pharetra dolor viverra vulputate quis sed nisl.&lt;/p&gt;
+&lt;p&gt;Setting up and configuring hugo-geo is as simple as changing a few values in your site &lt;code&gt;config.toml&lt;/code&gt;. Lets look at this example site&amp;rsquo;s config and go over what
+each of hugo-geo&amp;rsquo;s site &lt;code&gt;[params]&lt;/code&gt; do.&lt;/p&gt;
 
-&lt;p&gt;Aliquam interdum sit amet ipsum ut dictum. Nunc semper ex a tellus iaculis lobortis. Mauris sed urna eu nulla ornare tempus. Aliquam porta dignissim commodo. Quisque sodales leo diam, eget viverra sem vestibulum lobortis. Fusce malesuada ex gravida, commodo risus non, ultrices ante. Pellentesque sed ex neque. Maecenas id ultricies ipsum, ut commodo nunc. Duis bibendum pellentesque ligula, at tincidunt sapien sodales vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae mollis tortor. Aenean ante nisi, porta eget hendrerit in, ullamcorper eget lorem. In eget viverra leo, et rutrum tellus.&lt;/p&gt;
+&lt;p&gt;If this guide doesn&amp;rsquo;t answer your question it may be covered in the &lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;Hugo documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Donec ultricies ligula ut lorem egestas dictum. Fusce malesuada tellus faucibus, finibus nisl nec, euismod dui. Cras venenatis tempor nibh sed rhoncus. Phasellus facilisis facilisis sodales. Nullam euismod blandit sollicitudin. Curabitur lobortis venenatis erat, sit amet fringilla dui ullamcorper sed. Proin euismod ornare quam, vitae tincidunt eros pulvinar eu. Suspendisse ac faucibus ex. Morbi ullamcorper varius risus vel dictum. Etiam nec magna sed enim condimentum interdum in et odio. Ut sit amet pretium sapien. Aliquam ornare libero sed volutpat commodo. Nullam ac quam at justo eleifend dignissim feugiat id eros. Vivamus at venenatis eros. Nam at magna non ante auctor vehicula in nec nulla. Duis scelerisque massa nec accumsan convallis.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;baseurl = &amp;quot;http://replace-this-with-your-hugo-site.com/&amp;quot;
+relativeURLs = false
+languageCode = &amp;quot;en-us&amp;quot;
+title = &amp;quot;My New Hugo Site&amp;quot;
+disqusShortname = &amp;quot;shortcode-here&amp;quot;
+paginate = 5
 
-&lt;p&gt;Vivamus in pharetra lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec in gravida eros, et finibus odio. Vivamus condimentum lorem in vestibulum condimentum. Mauris dapibus felis tellus, in sollicitudin arcu rhoncus in. Integer fringilla lorem enim, consectetur pulvinar lorem dapibus ac. Vivamus a urna nibh. In et dignissim est. Donec convallis, metus at convallis ullamcorper, magna sem finibus nulla, eget convallis leo ligula vel tortor. Duis diam justo, pharetra eget dapibus vitae, viverra et urna. Sed orci nisl, pellentesque dapibus varius a, ornare sit amet erat.&lt;/p&gt;
+[taxonomies]
+	tag = &amp;quot;tags&amp;quot;
+	tutorial = &amp;quot;tutorials&amp;quot;
 
-&lt;p&gt;Donec et lacinia nibh, ut euismod eros. Mauris facilisis tellus et metus consequat vulputate. In vel tempus risus. Vivamus a velit viverra, porttitor sapien sit amet, iaculis diam. Sed venenatis felis id tristique pretium. Proin auctor eu ligula nec gravida. In vestibulum diam sed tortor eleifend elementum. Proin metus turpis, sollicitudin commodo tincidunt pellentesque, vehicula eu est. Ut congue leo nec augue rhoncus, id fringilla sapien lobortis. Aliquam erat volutpat. Etiam non erat vel orci sagittis tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.&lt;/p&gt;
+[params]
+	showglobe = true
+	
+	analytics = &amp;quot;code-here&amp;quot;
 
-&lt;p&gt;Proin vitae erat ac tellus vulputate consectetur vitae eget neque. Aliquam faucibus ipsum volutpat orci mattis, non venenatis mi porttitor. In hac habitasse platea dictumst. Ut ornare mi et nisi elementum, at euismod elit interdum. In turpis turpis, consectetur id ligula vitae, accumsan finibus ex. Suspendisse at pulvinar elit. Nunc nec ligula in leo tincidunt varius.&lt;/p&gt;
+	github = &amp;quot;https://github.com/alexurquhart&amp;quot;
+	twitter = &amp;quot;https://twitter.com/alexanderurq&amp;quot;
+	linkedin = &amp;quot;https://www.linkedin.com/profile/view?id=339355941&amp;quot;
+	email = &amp;quot;alexurquhart@gmail.com&amp;quot;
+	
+	profilepic = &amp;quot;img/profile.png&amp;quot;
+	
+	title = &amp;quot;MY NAME&amp;quot;
+	subtitle = &amp;quot;MY HUGO BLOG&amp;quot;
+	
+	[[params.navlinks]]
+	name = &amp;quot;About&amp;quot;
+	url = &amp;quot;about&amp;quot;
+	
+	[[params.navlinks]]
+	name = &amp;quot;Blog&amp;quot;
+	url = &amp;quot;&amp;quot;
+	
+	[[params.navlinks]]
+	name = &amp;quot;Tutorials&amp;quot;
+	url = &amp;quot;tutorial/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Pellentesque at malesuada orci, at tristique quam. Nulla sit amet urna sed odio maximus interdum. Nulla faucibus sem lorem, id maximus est luctus vitae. Nullam efficitur purus sit amet semper hendrerit. Ut id dui quam. In dictum dui lectus, in dictum lacus iaculis in. Vestibulum enim odio, commodo nec purus et, pharetra tincidunt metus. Morbi tincidunt eu magna a aliquet. Quisque pellentesque rhoncus ante, vel venenatis sapien commodo sed. Maecenas faucibus tincidunt ex, vel tincidunt risus posuere at. Nulla id nulla id lorem convallis egestas non eget mi. Morbi a egestas neque. Mauris id eros sem.&lt;/p&gt;
+&lt;h5 id=&#34;the-spinning-globe:b6885e1f85551f51a4707c402f8200a3&#34;&gt;The Spinning Globe&lt;/h5&gt;
 
-&lt;p&gt;Sed erat risus, euismod vitae sagittis eu, aliquet sit amet felis. Maecenas vitae posuere ex. Quisque eu lorem eget purus facilisis ultricies. Ut sit amet metus eu lacus volutpat luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet nisl id neque placerat lobortis. Vestibulum quis sapien nunc.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;showglobe =  true&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Sed odio enim, hendrerit at sagittis vel, dignissim hendrerit nisl. Quisque vulputate lobortis urna sit amet commodo. Nullam auctor odio quis viverra ullamcorper. Aliquam sagittis pretium efficitur. Praesent at ligula consequat, feugiat erat quis, ornare leo. Suspendisse a viverra augue. Morbi suscipit sit amet mi ut aliquam. Quisque cursus tincidunt risus ac fermentum. Maecenas ac erat a tellus consequat auctor. Suspendisse vel ultrices ex. Pellentesque enim orci, luctus sit amet iaculis mollis, cursus sed erat. Sed nibh dui, vulputate ac congue faucibus, faucibus at turpis.&lt;/p&gt;
+&lt;p&gt;Set this to &lt;code&gt;false&lt;/code&gt; and the spinning globe in the sidebar will not be rendered.&lt;/p&gt;
+
+&lt;h5 id=&#34;analytics:b6885e1f85551f51a4707c402f8200a3&#34;&gt;Analytics&lt;/h5&gt;
+
+&lt;p&gt;In order to remain compatible with Hugo v0.14, the analytics shortcode is specified in the site params.&lt;/p&gt;
+
+&lt;h5 id=&#34;social-links:b6885e1f85551f51a4707c402f8200a3&#34;&gt;Social Links&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;github = &amp;quot;https://github.com/alexurquhart&amp;quot;
+twitter = &amp;quot;https://twitter.com/alexanderurq&amp;quot;
+linkedin = &amp;quot;https://www.linkedin.com/profile/view?id=339355941&amp;quot;
+email = &amp;quot;alexurquhart@gmail.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These social settings set the icon links in the sidebar. If you don&amp;rsquo;t want to have a certain icon or link show up, simply remove it.&lt;/p&gt;
+
+&lt;h5 id=&#34;sidebar-profile-picture:b6885e1f85551f51a4707c402f8200a3&#34;&gt;Sidebar Profile Picture&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;profilepic = &amp;quot;img/profile.png&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the path to the profile image shown in the sidebar, relative to the &lt;code&gt;baseurl&lt;/code&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;title-subtitle:b6885e1f85551f51a4707c402f8200a3&#34;&gt;Title &amp;amp; Subtitle&lt;/h5&gt;
+
+&lt;p&gt;Either of these can be removed. If the &lt;code&gt;title&lt;/code&gt; param is removed, then the site &lt;code&gt;title&lt;/code&gt; will be used instead.&lt;/p&gt;
+
+&lt;h5 id=&#34;nav-links:b6885e1f85551f51a4707c402f8200a3&#34;&gt;Nav Links&lt;/h5&gt;
+
+&lt;p&gt;A customizable array of links that will appear in the sidebar, or dropdown menu when viewed on mobile. The URL is relative to the &lt;code&gt;baseurl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;content-front-matter:b6885e1f85551f51a4707c402f8200a3&#34;&gt;Content Front Matter&lt;/h2&gt;
+
+&lt;p&gt;There are few custom settings you can specify in your content front matter that will effect how hugo generates your site.&lt;/p&gt;
+
+&lt;h5 id=&#34;syntax-highlighting-with-hljs:b6885e1f85551f51a4707c402f8200a3&#34;&gt;Syntax highlighting with hljs&lt;/h5&gt;
+
+&lt;p&gt;Set &lt;code&gt;highlight = true&lt;/code&gt; in your post front matter to include &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; javascript and css.&lt;/p&gt;
+
+&lt;h5 id=&#34;custom-js-css:b6885e1f85551f51a4707c402f8200a3&#34;&gt;Custom JS/CSS&lt;/h5&gt;
+
+&lt;p&gt;Include custom CSS and Javascript on an individual piece of content like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;scripts = [
+&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/languages/go.min.js&amp;quot;,
+]
+
+css = [
+&amp;quot;//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css&amp;quot;
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;posting-tutorials:b6885e1f85551f51a4707c402f8200a3&#34;&gt;Posting Tutorials&lt;/h5&gt;
+
+&lt;p&gt;In order for a &lt;code&gt;tutorial&lt;/code&gt; to show up on the &lt;code&gt;/tutorials/&lt;/code&gt; page list, it must have &lt;code&gt;index = true&lt;/code&gt; present in the front matter of the post.
+New &lt;code&gt;tutorial&lt;/code&gt;&amp;rsquo;s will not show up on the front page of the site, yet.&lt;/p&gt;
+
+&lt;p&gt;Multi-paged tutorial series can be accomplished by including links to each page of the tutorial on the page with &lt;code&gt;index = true&lt;/code&gt;.&lt;/p&gt;
 </description>
     </item>
     
