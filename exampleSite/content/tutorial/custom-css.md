@@ -1,9 +1,10 @@
 +++
-date = "2015-12-20"
-title = "Test Tutorial Series"
+date = "2016-03-05"
+title = "Compiling Custom CSS"
 tags = ["tutorial", "series", "hugo"]
-description = "This is a test tutorial!"
+description = "A tutorial on how to compile custom CSS"
 index = true
+draft = true
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet molestie mauris nec tempor. Sed non lacus massa. Aliquam ut convallis velit. Etiam dictum mollis mi, a vestibulum ex suscipit ut. Proin viverra lacinia urna at interdum. Sed eu quam sit amet metus fermentum pharetra id a sem. Pellentesque lorem dolor, venenatis sed felis non, fringilla ornare felis. Donec nisi lorem, dignissim id interdum vel, cursus malesuada quam. Integer tempus consectetur tellus, nec sagittis est mattis vel. Curabitur sit amet aliquet dolor, et placerat ipsum.
