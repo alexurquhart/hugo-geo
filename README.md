@@ -32,7 +32,7 @@ These are my `config.toml` settings:
 
 ```toml
 BaseURL = "https://base-url-here/"
-RelativeURLs = true
+relativeURLs = false
 languageCode = "en-us"
 title = "SiteTitle.Com"
 disqusShortname = "*****"
