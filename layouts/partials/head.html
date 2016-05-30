@@ -28,6 +28,9 @@
     {{ end }}
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ if isset .Site.Params "favicon" }}
+    <link rel="icon" href="{{ .Site.BaseURL }}/{{ .Site.Params.favicon }}" />
+    {{ end }}
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
