@@ -55,6 +55,9 @@ paginate = 5
 	linkedin = "https://linkedin.com"
 	email = "alexurquhart@gmail.com"
 	
+	# Header Title for the main page
+	header = "What I'm Thinking"
+	
 	# Sidebar profile picture
 	profilepic = "img/smugmug.jpg"
 	
