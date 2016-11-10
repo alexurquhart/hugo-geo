@@ -2,7 +2,7 @@
 {{ partial "nav.html" . }}
 
 <header>
-	<h1>What I'm Thinking</h1>
+	<h1>{{ .Site.Params.header }}</h1>
 </header>
 {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Section" "post") }}
 {{ range $paginator.Pages }}
