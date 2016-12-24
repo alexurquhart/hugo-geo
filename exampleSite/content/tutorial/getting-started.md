@@ -89,6 +89,12 @@ Either of these can be removed. If the `title` param is removed, then the site `
 
 A customizable array of links that will appear in the sidebar, or dropdown menu when viewed on mobile. The URL is relative to the `baseurl`.
 
+## Shortcodes
+
+##### Grid System
+
+hugo-geo includes a thin abstraction over the default Bpp
+
 ## Content Front Matter
 
 There are few custom settings you can specify in your content front matter that will effect how hugo generates your site.
@@ -117,3 +123,4 @@ In order for a `tutorial` to show up on the `/tutorials/` page list, it must hav
 New `tutorial`'s will not show up on the front page of the site, yet.
 
 Multi-paged tutorial series can be accomplished by including links to each page of the tutorial on the page with `index = true`.
+

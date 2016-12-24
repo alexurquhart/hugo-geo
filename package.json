@@ -1,0 +1,28 @@
+{
+  "name": "hugo-geo",
+  "version": "2.0.0",
+  "description": "Theme for my personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexurquhart/hugo-geo.git"
+  },
+  "author": "Alex Urquhart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexurquhart/hugo-geo/issues"
+  },
+  "homepage": "https://github.com/alexurquhart/hugo-geo#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.1.4",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0"
+  }
+}
