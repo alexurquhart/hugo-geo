@@ -1,16 +1,9 @@
 {{ partial "head.html" . }}
-{{ partial "nav.html" . }}
 
-<header>
-	<h1>What I'm Thinking</h1>
-</header>
-{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Section" "post") }}
-{{ range $paginator.Pages }}
-	{{ .Render "summary"}}
-{{ end }}
-
-<div class="text-center center-block">
-	{{ template "_internal/pagination.html" . }}
+<div class="pure-g mobile-nav">
+	<div class="pure-u-1 mobile-nav-container">
+		This is a tst
+	</div>
 </div>
 
-{{ partial "footer.html" . }}
+{{ partial "footer.html" . }} 

@@ -1,7 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro");
+body {
+  background-color: #FFFBED; }
+
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
-  font-family: "Roboto", "Arial", sans-serif; }
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #534b3a;
+  font-size: 1em; }
+
+.pure-g {
+  display: flex; }
+
+.pure-g > div {
+  box-sizing: border-box; }
+
+.mobile-nav {
+  background: #9C8E71;
+  color: white;
+  padding: 1em;
+  border-bottom: #bbb29e; }
+  @media screen and (min-width: 768px) {
+    .mobile-nav {
+      display: none !important; } }
 
 /*# sourceMappingURL=hugo-geo.css.map */

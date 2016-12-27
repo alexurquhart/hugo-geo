@@ -6,18 +6,16 @@ var uglify = require("gulp-uglify")
 var sourcemaps = require("gulp-sourcemaps")
 
 gulp.task("babel:debug", () => {
-    return gulp.src("static/js/src/**.js")
+    return gulp.src("static/js/src/hugo-geo.js")
         .pipe(sourcemaps.init())
         .pipe(babel())
-        .pipe(concat("hugo-geo.js"))
         .pipe(sourcemaps.write("."))
         .pipe(gulp.dest('static/js'))
 })
 
 gulp.task("babel:prod", () => {
-    return gulp.src("static/js/src/**.js")
+    return gulp.src("static/js/src/hugo-geo.js")
         .pipe(babel())
-        .pipe(concat("hugo-geo.js"))
         .pipe(uglify())
         .pipe(gulp.dest('static/js'))
 })
