@@ -23,5 +23,3 @@ html, button, input, select, textarea,
   @media screen and (min-width: 768px) {
     .mobile-nav {
       display: none !important; } }
-
-/*# sourceMappingURL=hugo-geo.css.map */

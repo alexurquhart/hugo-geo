@@ -1,6 +1,5 @@
 var gulp = require("gulp")
 var babel = require("gulp-babel")
-var concat = require("gulp-concat")
 var sass = require("gulp-sass")
 var uglify = require("gulp-uglify")
 var sourcemaps = require("gulp-sourcemaps")
@@ -31,9 +30,7 @@ gulp.task("sass:debug", () => {
 // TODO - change
 gulp.task("sass:prod", () => {
     return gulp.src("static/css/src/hugo-geo.scss")
-        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write("."))
         .pipe(gulp.dest("static/css"))
 })
 
@@ -42,4 +39,4 @@ gulp.task("watch", () => {
     gulp.watch("static/css/src/*.scss", ["sass:debug"])
 })
 
-gulp.task("default", ["babel:prod", "sass"])
+gulp.task("default", ["babel:prod", "sass:prod"])
