@@ -2,3 +2,6 @@ exampleSite/themes
 exampleSite/public
 node_modules
 .vscode
+
+*.map
+*.css.map

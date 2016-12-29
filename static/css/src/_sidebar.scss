@@ -1,0 +1,16 @@
+.hg-sidebar {
+    background: $sidebar-colour;
+    border-top: 5px solid $sidebar-top-border;
+    color: white !important;
+
+    @include mobile() {
+        
+    }
+
+    .hg-sidebar-content {
+        align-items: center;
+        height: 100%;
+    }
+}
+
+

@@ -1,29 +1,48 @@
-<div id="menu" class="hidden-xs col-sm-4 col-md-3">
-	<div id="menu-content" class="vertical-align">
-		{{ if isset .Site.Params "title" }}
-			<h1 class="text-center"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a></h1>
-		{{ else }}
-			<h1 class="text-center"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-		{{ end }}
-		
-		{{ if isset .Site.Params "subtitle" }}
-			<small class="text-center center-block">{{ .Site.Params.subtitle }}</small>
-		{{ end }}
-		
-		{{ if isset .Site.Params "profilepic" }}
-			<img id="profile-pic" src="{{ .Site.BaseURL }}/{{ .Site.Params.profilepic }}" alt="My Picture" class="img-circle center-block">
-		{{ end }}
-		<div id="social" class="text-center">
-			{{ if isset .Site.Params "twitter" }}<a href="{{.Site.Params.twitter}}"><i class="fa fa-twitter fa-2x"></i></a>{{ end }}
-			{{ if isset .Site.Params "linkedin" }}<a href="{{.Site.Params.linkedin}}"><i class="fa fa-linkedin fa-2x"></i></a>{{ end }}
-			{{ if isset .Site.Params "github" }}<a href="{{.Site.Params.github}}"><i class="fa fa-github fa-2x"></i></a>{{ end }}
-			{{ if isset .Site.Params "email" }}<a href="mailto:{{.Site.Params.email}}"><i class="fa fa-envelope-o fa-2x"></i></a>{{ end }}
-		</div>
-		<div id="links" class="text-center">
-			{{ $url := .Site.BaseURL }}
-			{{ range .Site.Params.navlinks }}
-				<a href="{{ $url }}{{ .url }}">{{ .name }}</a>
-			{{ end }}
-		</div>
-	</div>
+<div class="hg-sidebar-content">
+    <div class="hg-site-title">
+        {{ .Site }}
+        {{ if isset .Site.Params "title" }}
+        <a href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a>
+        {{ else }}
+        <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        {{ end }}
+    </div>
+    {{ if isset .Site.Params "subtitle" }}
+    <div class="hg-site-subtitle">
+        {{ .Site.Params.subtitle }}
+    </div>
+    {{ end }}
+
+    {{ if isset .Site.Params "profilepic" }}
+    <img class="hg-profile-pic" src="{{ .Site.BaseURL }}/{{ .Site.Params.profilepic }}" alt="My Picture" class="img-circle center-block">
+    {{ end }}
+    <div class="hg-social">
+        {{ if isset .Site.Params "twitter" }}
+        <a href="{{.Site.Params.twitter}}">
+            <i class="fa fa-twitter fa-2x"></i>
+        </a>
+        {{ end }}
+        {{ if isset .Site.Params "linkedin" }}
+        <a href="{{.Site.Params.linkedin}}">
+            <i class="fa fa-linkedin fa-2x"></i>
+        </a>
+        {{ end }}
+        {{ if isset .Site.Params "github" }}
+        <a href="{{.Site.Params.github}}">
+            <i class="fa fa-github fa-2x"></i>
+        </a>
+        {{ end }}
+        {{ if isset .Site.Params "email" }}
+        <a href="mailto:{{.Site.Params.email}}">
+            <i class="fa fa-envelope-o fa-2x"></i>
+        </a>
+        {{ end }}
+
+        <div class="hg-sidebar-links">
+            {{ $url := .Site.BaseURL }}
+            {{ range .Site.Params.navlinks }}
+                <a href="{{ $url }}{{ .url }}">{{ .name }}</a>
+            {{ end }}
+        </div>
+    </div>
 </div>

@@ -1,45 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro');
 
-$mobile-break: 768px;
+@import 'variables';
+@import 'mixins';
 
-$base-size: 1em;
-$font-sans: "Roboto", "Arial", sans-serif;
-$font-size: $base-size;
-
-$bg-color: #FFFBED;
-$nav-color: #9C8E71;
-$font-color: darken($nav-color, 25%);
-$link-color: #0074D9;
-$link-visited-color: darken($link-color, 15%);
-$red-color: #FF4136;
-$green-color: #2ECC40;
+@import 'pure-overrides';
+@import 'sidebar';
 
 body {
-    background-color: $bg-color;
+    background-color: $bg-colour;
 }
 
-html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
-    /* Set your content font stack here: */
-    font-family: $font-sans;
-    color: $font-color;
-    font-size: $font-size;
+html, body, .hg-container {
+    height: 100%;
 }
 
-.pure-g {
-    display: flex;
-}
-
-.pure-g > div {
-    box-sizing: border-box;
-}
-
-.mobile-nav {
-    @media screen and (min-width: $mobile-break) {
-        display: none !important;
-    }
-    background: $nav-color;
-    color: white;
-    padding: $base-size;
-    border-bottom: lighten($nav-color, 15%);
+.body {
+    height: 50px;
+    border-top: 5px solid $body-border;
 }

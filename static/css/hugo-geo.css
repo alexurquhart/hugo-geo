@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro");
-body {
-  background-color: #FFFBED; }
-
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
-  /* Set your content font stack here: */
   font-family: "Roboto", "Arial", sans-serif;
-  color: #534b3a;
+  color: #2B3A42;
   font-size: 1em; }
 
 .pure-g {
@@ -15,11 +11,22 @@ html, button, input, select, textarea,
 .pure-g > div {
   box-sizing: border-box; }
 
-.mobile-nav {
-  background: #9C8E71;
-  color: white;
-  padding: 1em;
-  border-bottom: #bbb29e; }
-  @media screen and (min-width: 768px) {
-    .mobile-nav {
-      display: none !important; } }
+.hg-sidebar {
+  background: #2B3A42;
+  border-top: 5px solid #FF530D;
+  color: white !important; }
+  .hg-sidebar .hg-sidebar-content {
+    align-items: center;
+    height: 100%; }
+
+body {
+  background-color: #FAFAFA; }
+
+html, body, .hg-container {
+  height: 100%; }
+
+.body {
+  height: 50px;
+  border-top: 5px solid #BDD4DE; }
+
+/*# sourceMappingURL=hugo-geo.css.map */
