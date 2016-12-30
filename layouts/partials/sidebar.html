@@ -1,6 +1,5 @@
 <div class="hg-sidebar-content">
-    <div class="hg-site-title">
-        {{ .Site }}
+    <div class="hg-site-title hg-sidebar-item">
         {{ if isset .Site.Params "title" }}
         <a href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a>
         {{ else }}
@@ -8,15 +7,15 @@
         {{ end }}
     </div>
     {{ if isset .Site.Params "subtitle" }}
-    <div class="hg-site-subtitle">
+    <div class="hg-site-subtitle hg-sidebar-item">
         {{ .Site.Params.subtitle }}
     </div>
     {{ end }}
 
     {{ if isset .Site.Params "profilepic" }}
-    <img class="hg-profile-pic" src="{{ .Site.BaseURL }}/{{ .Site.Params.profilepic }}" alt="My Picture" class="img-circle center-block">
+    <img class="pure-img hg-sidebar-item hg-profile-pic" src="{{ .Site.BaseURL }}/{{ .Site.Params.profilepic }}" alt="My Picture" class="img-circle center-block">
     {{ end }}
-    <div class="hg-social">
+    <div class="hg-social hg-sidebar-item">
         {{ if isset .Site.Params "twitter" }}
         <a href="{{.Site.Params.twitter}}">
             <i class="fa fa-twitter fa-2x"></i>
@@ -38,11 +37,11 @@
         </a>
         {{ end }}
 
-        <div class="hg-sidebar-links">
-            {{ $url := .Site.BaseURL }}
-            {{ range .Site.Params.navlinks }}
-                <a href="{{ $url }}{{ .url }}">{{ .name }}</a>
-            {{ end }}
-        </div>
+    </div>
+    <div class="hg-sidebar-links hg-sidebar-item">
+        {{ $url := .Site.BaseURL }}
+        {{ range .Site.Params.navlinks }}
+            <a href="{{ $url }}{{ .url }}">{{ .name }}</a>
+        {{ end }}
     </div>
 </div>

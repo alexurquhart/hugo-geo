@@ -1,13 +1,28 @@
-@import 'colours';
+$green: #96CA2D;
+$lt-green: #B5E655;
+$white: #FAFAFA;
+$lt-blue: #BDD4DE;
+$blue: #458DA3;
+$red: #FF530D;
+$black: #2B3A42;
+$grey: #3F5765;
 
 $mobile-break: 48em;
+$lg-break: 64em;
 
-$base-size: 1em;
-$font-sans: "Roboto", "Arial", sans-serif;
+$base-size: 16px;
+$half-base: 0.5 * $base-size;
+
+$font-sans: 'Roboto', 'Arial', sans-serif;
 $font-size: $base-size;
-
 $bg-colour: $white;
+
 $sidebar-colour: $black;
 $sidebar-top-border: $red;
+$sidebar-text-colour: $lt-blue;
+
 $body-border: $lt-blue;
 $text-colour: $black;
+
+$header-size: 2.6em;
+$header-font: 'Oswald', 'Arial', sans-serif;
