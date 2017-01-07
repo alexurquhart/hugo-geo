@@ -11,6 +11,8 @@ paginate = 5
 
 [params]
 	showglobe = true
+
+	favicon = "favicon.ico"
 	
 	analytics = "code-here"
 

@@ -28,7 +28,9 @@ paginate = 5
 
 [params]
 	showglobe = true
-	
+
+	favicon = "favicon.ico"
+
 	analytics = "code-here"
 
 	github = "https://github.com/alexurquhart"
@@ -59,6 +61,12 @@ paginate = 5
 `showglobe =  true`
 
 Set this to `false` and the spinning globe in the sidebar will not be rendered.
+
+##### Favicon
+
+`favicon = "favicon.ico"`
+
+Copy your site's icon file to the `static` folder of your site. Delete this parameter if you don't wish to display a favicon.
 
 ##### Analytics
 

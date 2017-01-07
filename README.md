@@ -45,6 +45,9 @@ paginate = 5
 [params]
 	# Render the rotating globe in the sidebar
 	showglobe = true
+
+	# Include favicon
+	favicon = "favicon.ico"
  	
 	# Google Analytics
 	analytics = "SHORT-CODE-HERE"
@@ -79,7 +82,7 @@ paginate = 5
 	url = "tutorial/"
 ```
 
-## My TODO List
+## My TODO List (currently working on v2.0)
 - Clean up and simplify the CSS
 - Make Disqus comments optional on a per-page basis
 - Previous/next post buttons on each page
