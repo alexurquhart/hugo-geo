@@ -6,33 +6,45 @@ disqusShortname = "shortcode-here"
 paginate = 5
 googleAnalytics = "code-here"
 
-
 [taxonomies]
     tag = "tags"
     tutorial = "tutorials"
 
 [params]
-    showglobe = true
-
-    github = "https://github.com/alexurquhart"
-    twitter = "https://twitter.com/alexanderurq"
-    linkedin = "https://www.linkedin.com/profile/view?id=339355941"
-    email = "alexurquhart@gmail.com"
-
     profilepic = "img/profile.png"
 
-    subtitle = "MY HUGO BLOG"
+    subtitle = "My Hugo Blog"
 
     tagline = "What I'm Thinking"
 
-    [[params.navlinks]]
-    name = "About"
-    url = "about"
-
-    [[params.navlinks]]
+[[menu.sidebar]]
     name = "Blog"
-    url = ""
-
-    [[params.navlinks]]
+    identifier = "blog"
+    url = "/"
+    weight = -1
+[[menu.sidebar]]
     name = "Tutorials"
-    url = "tutorial/"
+    identifier = "tutorials"
+    url = "/tutorials/"
+    weight = 1
+
+[[menu.social]]    
+    name = "GitHub"
+    url = "https://www.github.com/alexanderurq"
+    pre = '<i class="fa fa-2x fa-github" aria-hidden="true"></i>'
+    weight = 0
+[[menu.social]]
+    name = "Twitter"
+    url = "https://twitter.com/alexanderurq"
+    pre = '<i class="fa fa-2x fa-twitter" aria-hidden="true"></i>'
+    weight = 1
+[[menu.social]]    
+    name = "E-Mail"
+    url = "mailto:alexurquhart@gmail.com"
+    pre = '<i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i>'
+    weight = 2
+[[menu.social]]    
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/alex-urquhart-65979695"
+    pre = '<i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>'
+    weight = 3

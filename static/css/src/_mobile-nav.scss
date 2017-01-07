@@ -1,0 +1,44 @@
+.hg-mobile-nav {
+    @media screen and (min-width: $mobile-break) {
+        display: none;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: em(50px);
+
+    background: $sidebar-colour;
+    font-family: $header-font !important;
+    font-weight: 300;
+    color: $sidebar-text-colour !important;
+
+    border-bottom: em(5px) solid $sidebar-top-border;
+
+    a {
+        color: $sidebar-text-colour;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
+    }
+
+    .hg-site-title {
+        margin-left: 10px;
+        font-size: 0.7 * $header-size;
+    }
+
+    .hg-mobile-links {
+        margin-right: 10px;
+        text-align: center;
+
+
+        a {
+            margin-right: 0.5em;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

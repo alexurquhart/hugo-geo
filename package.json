@@ -2,10 +2,6 @@
   "name": "hugo-geo",
   "version": "2.0.0",
   "description": "Theme for my personal website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexurquhart/hugo-geo.git"

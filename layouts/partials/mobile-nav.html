@@ -1,0 +1,10 @@
+<div class="hg-mobile-nav pure-u-1">
+    <div class="hg-site-title">
+        {{ .Site.Title }}
+    </div>
+    <div class="hg-mobile-links">
+        {{ range .Site.Menus.sidebar }}
+            <a class="hg-sidebar-link" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+    </div>
+</div>

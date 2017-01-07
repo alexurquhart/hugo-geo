@@ -1,0 +1,71 @@
+.hg-sidebar {
+    display: none;
+
+    @media screen and (min-width: $mobile-break) {
+        display: flex;
+    }
+
+    background: $sidebar-colour;
+    position: fixed;
+    height: 100%;
+    align-items: center;
+
+    font-family: $header-font !important;
+    font-weight: 300;
+    text-align: center;
+    color: $sidebar-text-colour !important;
+
+    border-top: em(5px) solid $sidebar-top-border;
+
+    a {
+        color: $sidebar-text-colour;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
+    }
+
+    .hg-sidebar-content {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .hg-sidebar-item {
+        margin-bottom: 1em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .hg-site-title {
+        font-size: $header-size;
+        margin-bottom: 0.5em;
+    }
+
+    .hg-profile-pic {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hg-social {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hg-sidebar-links {
+        display: flex;
+        flex-direction: column;
+
+        .hg-sidebar-link {
+            margin-bottom: 0.5em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

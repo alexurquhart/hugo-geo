@@ -1,48 +1,25 @@
-<div class="hg-sidebar pure-u-1 pure-u-lg-1-5 pure-u-md-1-4">
+<div class="hg-sidebar pure-u-1 pure-u-md-1-5">
     <div class="hg-sidebar-content">
         <div class="hg-site-title hg-sidebar-item">
-            {{ if isset .Site.Params "title" }}
-            <a href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a>
-            {{ else }}
             <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-            {{ end }}
         </div>
         {{ if isset .Site.Params "subtitle" }}
         <div class="hg-site-subtitle hg-sidebar-item">
             {{ .Site.Params.subtitle }}
         </div>
-        {{ end }}
+        {{ end }} 
 
         {{ if isset .Site.Params "profilepic" }}
-        <img class="pure-img hg-sidebar-item hg-profile-pic" src="{{ .Site.BaseURL }}/{{ .Site.Params.profilepic }}" alt="My Picture" class="img-circle center-block">
+        <img class="hg-sidebar-item hg-profile-pic" src="{{ .Site.BaseURL }}{{ .Site.Params.profilepic }}" alt="My Picture">
         {{ end }}
         <div class="hg-social hg-sidebar-item">
-            {{ if isset .Site.Params "twitter" }}
-            <a href="{{.Site.Params.twitter}}">
-                <i class="fa fa-twitter fa-2x"></i>
-            </a>
+            {{ range .Site.Menus.social }}
+                <a href="{{ .URL }}">{{ .Pre}}</a>
             {{ end }}
-            {{ if isset .Site.Params "linkedin" }}
-            <a href="{{.Site.Params.linkedin}}">
-                <i class="fa fa-linkedin fa-2x"></i>
-            </a>
-            {{ end }}
-            {{ if isset .Site.Params "github" }}
-            <a href="{{.Site.Params.github}}">
-                <i class="fa fa-github fa-2x"></i>
-            </a>
-            {{ end }}
-            {{ if isset .Site.Params "email" }}
-            <a href="mailto:{{.Site.Params.email}}">
-                <i class="fa fa-envelope-o fa-2x"></i>
-            </a>
-            {{ end }}
-
         </div>
         <div class="hg-sidebar-links hg-sidebar-item">
-            {{ $url := .Site.BaseURL }}
-            {{ range .Site.Params.navlinks }}
-                <a href="{{ $url }}{{ .url }}">{{ .name }}</a>
+            {{ range .Site.Menus.sidebar }}
+                <a class="hg-sidebar-link" href="{{ .URL }}">{{ .Name }}</a>
             {{ end }}
         </div>
     </div>

@@ -15,6 +15,7 @@ $browser-context: 16;
 $base-size: em(16px);
 
 $font-sans: 'Roboto', 'Arial', sans-serif;
+$font-mono: 'Source Code Pro', monospace;
 $font-size: $base-size;
 $bg-colour: $white;
 
@@ -25,5 +26,5 @@ $sidebar-text-colour: $lt-blue;
 $body-border: $lt-blue;
 $text-colour: $black;
 
-$header-size: 2.6em;
+$header-size: 2em;
 $header-font: 'Oswald', 'Arial', sans-serif;

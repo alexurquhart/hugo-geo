@@ -1,5 +1,7 @@
 .hg-body-container {
-    margin-left: 25%;
+    @media screen and (min-width: $mobile-break) {
+        margin-left: 20%;
+    }
 
     .hg-body {
         padding-left: 5%;

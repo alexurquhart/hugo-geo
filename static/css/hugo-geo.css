@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro|Oswald:300,400");
-.hg-body-container {
-  margin-left: 25%; }
-  .hg-body-container .hg-body {
-    padding-left: 5%;
-    padding-right: 5%; }
+@media screen and (min-width: 48em) {
+  .hg-body-container {
+    margin-left: 20%; } }
+
+.hg-body-container .hg-body {
+  padding-left: 5%;
+  padding-right: 5%; }
 
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
@@ -16,6 +18,81 @@ html, button, input, select, textarea,
 
 .pure-g > div {
   box-sizing: border-box; }
+
+.hg-sidebar {
+  display: none;
+  background: #2B3A42;
+  position: fixed;
+  height: 100%;
+  align-items: center;
+  font-family: "Oswald", "Arial", sans-serif !important;
+  font-weight: 300;
+  text-align: center;
+  color: #BDD4DE !important;
+  border-top: 0.3125em solid #FF530D; }
+  @media screen and (min-width: 48em) {
+    .hg-sidebar {
+      display: flex; } }
+  .hg-sidebar a {
+    color: #BDD4DE;
+    text-decoration: none; }
+    .hg-sidebar a:hover {
+      color: white; }
+  .hg-sidebar .hg-sidebar-content {
+    margin: 0 auto;
+    width: 85%; }
+  .hg-sidebar .hg-sidebar-item {
+    margin-bottom: 1em; }
+    .hg-sidebar .hg-sidebar-item:last-child {
+      margin-bottom: 0; }
+  .hg-sidebar .hg-site-title {
+    font-size: 2em;
+    margin-bottom: 0.5em; }
+  .hg-sidebar .hg-profile-pic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .hg-sidebar .hg-social {
+    display: flex;
+    justify-content: space-around; }
+  .hg-sidebar .hg-sidebar-links {
+    display: flex;
+    flex-direction: column; }
+    .hg-sidebar .hg-sidebar-links .hg-sidebar-link {
+      margin-bottom: 0.5em; }
+      .hg-sidebar .hg-sidebar-links .hg-sidebar-link:last-child {
+        margin-bottom: 0; }
+
+.hg-mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125em;
+  background: #2B3A42;
+  font-family: "Oswald", "Arial", sans-serif !important;
+  font-weight: 300;
+  color: #BDD4DE !important;
+  border-bottom: 0.3125em solid #FF530D; }
+  @media screen and (min-width: 48em) {
+    .hg-mobile-nav {
+      display: none; } }
+  .hg-mobile-nav a {
+    color: #BDD4DE;
+    text-decoration: none; }
+    .hg-mobile-nav a:hover {
+      color: white; }
+  .hg-mobile-nav .hg-site-title {
+    margin-left: 10px;
+    font-size: 1.4em; }
+  .hg-mobile-nav .hg-mobile-links {
+    margin-right: 10px;
+    text-align: center; }
+    .hg-mobile-nav .hg-mobile-links a {
+      margin-right: 0.5em; }
+      .hg-mobile-nav .hg-mobile-links a:last-child {
+        margin-right: 0; }
 
 body {
   background-color: #FAFAFA; }
