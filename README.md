@@ -4,7 +4,7 @@ A responsive blog theme I've developed for use on my personal website. Suitable 
 
 ![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.png)
 
-#[Example Site Demo](http://alexurquhart.github.io/hugo-geo/)
+#[Example Site Demo](https://alexurquhart.github.io/hugo-geo/)
 
 I also use it on my [personal website](https://alexurquhart.com)
 
