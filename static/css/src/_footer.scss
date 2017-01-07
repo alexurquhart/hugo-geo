@@ -1,0 +1,41 @@
+.hg-footer {
+
+    color: $footer-colour;
+    font-size: 0.8em;
+    text-align: center;
+    background: $footer-background;
+    border-top: em(1px) solid $grey;
+
+    div {
+        margin-bottom: 0.5em;
+        &:first-child {
+            margin-top: 1em;
+        }
+        &:last-child {
+            margin-bottom: 0.2em;
+        }
+    }
+
+    a {
+        color: $footer-link-colour;
+        text-decoration: none;
+        &:visited {
+            color: $footer-link-colour;
+        }
+    }
+
+    .hg-footer-socials {
+        @media screen and (min-width: $mobile-break) {
+            display: none;
+        }
+
+        a {
+            margin-right: 2em;
+            color: $lt-blue;
+
+            &:hover {
+                color: $footer-link-colour;
+            }
+        }
+    }
+}

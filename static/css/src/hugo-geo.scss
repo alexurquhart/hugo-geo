@@ -2,11 +2,14 @@
 
 @import 'mixins';
 @import 'variables';
+@import 'typography';
 
 @import 'body';
 @import 'pure-overrides';
 @import 'sidebar';
 @import 'mobile-nav';
+@import 'footer';
+
 
 body {
     background-color: $bg-colour;

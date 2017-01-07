@@ -2,15 +2,13 @@
 <div class="hg-container pure-g">
     {{ partial "mobile-nav.html" . }}
     {{ partial "sidebar.html" . }}
-    <div class="hg-body-container pure-u-1 pure-u-lg-4-5 pure-u-md-3-4">
+    <div class="hg-body-container pure-u-1 pure-u-md-4-5">
         <div class="hg-body">
             {{ if isset .Site.Params "tagline" }}
             <h1>{{ .Site.Params.tagline }}</h1>
             {{ end }}
         </div>
-        <div class="hg-footer">
         {{ partial "footer.html" . }}
-        </div>
     </div>
 </div>
 {{ partial "tail.html" . }} 

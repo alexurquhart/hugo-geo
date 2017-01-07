@@ -1,7 +1,7 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 relativeURLs = false
 languageCode = "en-us"
-title = "Alex Urquhart"
+title = "Your Name"
 disqusShortname = "shortcode-here"
 paginate = 5
 googleAnalytics = "code-here"
@@ -16,6 +16,10 @@ googleAnalytics = "code-here"
     subtitle = "My Hugo Blog"
 
     tagline = "What I'm Thinking"
+
+    copyright = "Your Name 2001 - 2017"
+
+    attribution = true
 
 [[menu.sidebar]]
     name = "Blog"
