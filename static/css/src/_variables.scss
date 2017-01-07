@@ -8,10 +8,11 @@ $black: #2B3A42;
 $grey: #3F5765;
 
 $mobile-break: 48em;
-$lg-break: 64em;
+$tablet-break: 64em;
+$desktop-break: 80em;
 
-$base-size: 16px;
-$half-base: 0.5 * $base-size;
+$browser-context: 16;
+$base-size: em(16px);
 
 $font-sans: 'Roboto', 'Arial', sans-serif;
 $font-size: $base-size;

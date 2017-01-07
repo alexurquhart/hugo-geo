@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro|Oswald:300,400');
 
-@import 'variables';
 @import 'mixins';
+@import 'variables';
 
+@import 'body';
 @import 'pure-overrides';
 @import 'sidebar';
 
@@ -11,10 +12,7 @@ body {
 }
 
 html, body, .hg-container {
+    width: 100%;
     height: 100%;
-}
-
-.body {
-    height: 50px;
-    border-top: 5px solid $body-border;
+    margin: 0;
 }

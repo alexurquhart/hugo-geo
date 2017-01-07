@@ -1,13 +1,15 @@
 {{ partial "head.html" . }}
-
 <div class="hg-container pure-g">
-    <div class="hg-sidebar pure-u-1 pure-u-lg-1-5 pure-u-md-1-4">
-        {{ partial "sidebar.html" . }}
-    </div>
-    <div class="body pure-u-1 pure-u-lg-4-5 pure-u-md-3-4">
-        <h1>asdfgfdf</h1>
+    {{ partial "sidebar.html" . }}
+    <div class="hg-body-container pure-u-1 pure-u-lg-4-5 pure-u-md-3-4">
+        <div class="hg-body">
+            {{ if isset .Site.Params "tagline" }}
+            <h1>{{ .Site.Params.tagline }}</h1>
+            {{ end }}
+        </div>
+        <div class="hg-footer">
         {{ partial "footer.html" . }}
+        </div>
     </div>
 </div>
-
 {{ partial "tail.html" . }} 

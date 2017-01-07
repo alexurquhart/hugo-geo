@@ -1,12 +1,12 @@
-@mixin respond($media) {
-    @if $media == mobile {
-        @media only screen and (max-width: $mobile-break) { @content; }
+// from: https://css-tricks.com/snippets/sass/px-to-em-functions/
+@function em($pixels, $context: $browser-context) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
     }
-    @else if $media == medium {
-        @media only screen and (min-width: $mobile-break + 1) and (max-width: $lg-break - 1) { @content; }
-    }
-    @else if $media == large {
-        @media only screen and (min-width: $lg-break) { @content; }
-    }
-}
 
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1em;
+}

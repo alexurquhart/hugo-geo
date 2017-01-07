@@ -1,37 +1,38 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 relativeURLs = false
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Alex Urquhart"
 disqusShortname = "shortcode-here"
 paginate = 5
+googleAnalytics = "code-here"
+
 
 [taxonomies]
-	tag = "tags"
-	tutorial = "tutorials"
+    tag = "tags"
+    tutorial = "tutorials"
 
 [params]
-	showglobe = true
-	
-	analytics = "code-here"
+    showglobe = true
 
-	github = "https://github.com/alexurquhart"
-	twitter = "https://twitter.com/alexanderurq"
-	linkedin = "https://www.linkedin.com/profile/view?id=339355941"
-	email = "alexurquhart@gmail.com"
-	
-	profilepic = "img/profile.png"
-	
-	title = "MY NAME"
-	subtitle = "MY HUGO BLOG"
-	
-	[[params.navlinks]]
-	name = "About"
-	url = "about"
-	
-	[[params.navlinks]]
-	name = "Blog"
-	url = ""
-	
-	[[params.navlinks]]
-	name = "Tutorials"
-	url = "tutorial/"
+    github = "https://github.com/alexurquhart"
+    twitter = "https://twitter.com/alexanderurq"
+    linkedin = "https://www.linkedin.com/profile/view?id=339355941"
+    email = "alexurquhart@gmail.com"
+
+    profilepic = "img/profile.png"
+
+    subtitle = "MY HUGO BLOG"
+
+    tagline = "What I'm Thinking"
+
+    [[params.navlinks]]
+    name = "About"
+    url = "about"
+
+    [[params.navlinks]]
+    name = "Blog"
+    url = ""
+
+    [[params.navlinks]]
+    name = "Tutorials"
+    url = "tutorial/"
