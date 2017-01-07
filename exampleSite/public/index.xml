@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MY NAME</title>
+    <link>https://alexurquhart.github.io/hugo-geo/index.xml</link>
+    <description>Recent content on MY NAME</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://alexurquhart.github.io/hugo-geo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting Started With hugo-geo</title>
+      <link>https://alexurquhart.github.io/hugo-geo/tutorial/getting-started/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexurquhart.github.io/hugo-geo/tutorial/getting-started/</guid>
+      <description>&lt;p&gt;Setting up and configuring hugo-geo is as simple as changing a few values in your site &lt;code&gt;config.toml&lt;/code&gt;. Lets look at this example site&amp;rsquo;s config and go over what
+each of hugo-geo&amp;rsquo;s site &lt;code&gt;[params]&lt;/code&gt; do.&lt;/p&gt;
+
+&lt;p&gt;If this guide doesn&amp;rsquo;t answer your question it may be covered in the &lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;Hugo documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;baseurl = &amp;quot;http://replace-this-with-your-hugo-site.com/&amp;quot;
+relativeURLs = false
+languageCode = &amp;quot;en-us&amp;quot;
+title = &amp;quot;My New Hugo Site&amp;quot;
+disqusShortname = &amp;quot;shortcode-here&amp;quot;
+paginate = 5
+
+[taxonomies]
+	tag = &amp;quot;tags&amp;quot;
+	tutorial = &amp;quot;tutorials&amp;quot;
+
+[params]
+	showglobe = true
+
+	favicon = &amp;quot;favicon.ico&amp;quot;
+
+	analytics = &amp;quot;code-here&amp;quot;
+
+	github = &amp;quot;https://github.com/alexurquhart&amp;quot;
+	twitter = &amp;quot;https://twitter.com/alexanderurq&amp;quot;
+	linkedin = &amp;quot;https://www.linkedin.com/profile/view?id=339355941&amp;quot;
+	email = &amp;quot;alexurquhart@gmail.com&amp;quot;
+	
+	profilepic = &amp;quot;img/profile.png&amp;quot;
+	
+	title = &amp;quot;MY NAME&amp;quot;
+	subtitle = &amp;quot;MY HUGO BLOG&amp;quot;
+	
+	[[params.navlinks]]
+	name = &amp;quot;About&amp;quot;
+	url = &amp;quot;about&amp;quot;
+	
+	[[params.navlinks]]
+	name = &amp;quot;Blog&amp;quot;
+	url = &amp;quot;&amp;quot;
+	
+	[[params.navlinks]]
+	name = &amp;quot;Tutorials&amp;quot;
+	url = &amp;quot;tutorial/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;the-spinning-globe&#34;&gt;The Spinning Globe&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;showglobe =  true&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Set this to &lt;code&gt;false&lt;/code&gt; and the spinning globe in the sidebar will not be rendered.&lt;/p&gt;
+
+&lt;h5 id=&#34;favicon&#34;&gt;Favicon&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;favicon = &amp;quot;favicon.ico&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Copy your site&amp;rsquo;s icon file to the &lt;code&gt;static&lt;/code&gt; folder of your site. Delete this parameter if you don&amp;rsquo;t wish to display a favicon.&lt;/p&gt;
+
+&lt;h5 id=&#34;analytics&#34;&gt;Analytics&lt;/h5&gt;
+
+&lt;p&gt;In order to remain compatible with Hugo v0.14, the analytics shortcode is specified in the site params.&lt;/p&gt;
+
+&lt;h5 id=&#34;social-links&#34;&gt;Social Links&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;github = &amp;quot;https://github.com/alexurquhart&amp;quot;
+twitter = &amp;quot;https://twitter.com/alexanderurq&amp;quot;
+linkedin = &amp;quot;https://www.linkedin.com/profile/view?id=339355941&amp;quot;
+email = &amp;quot;alexurquhart@gmail.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These social settings set the icon links in the sidebar. If you don&amp;rsquo;t want to have a certain icon or link show up, simply remove it.&lt;/p&gt;
+
+&lt;h5 id=&#34;sidebar-profile-picture&#34;&gt;Sidebar Profile Picture&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;profilepic = &amp;quot;img/profile.png&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the path to the profile image shown in the sidebar, relative to the &lt;code&gt;baseurl&lt;/code&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;title-subtitle&#34;&gt;Title &amp;amp; Subtitle&lt;/h5&gt;
+
+&lt;p&gt;Either of these can be removed. If the &lt;code&gt;title&lt;/code&gt; param is removed, then the site &lt;code&gt;title&lt;/code&gt; will be used instead.&lt;/p&gt;
+
+&lt;h5 id=&#34;nav-links&#34;&gt;Nav Links&lt;/h5&gt;
+
+&lt;p&gt;A customizable array of links that will appear in the sidebar, or dropdown menu when viewed on mobile. The URL is relative to the &lt;code&gt;baseurl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;content-front-matter&#34;&gt;Content Front Matter&lt;/h2&gt;
+
+&lt;p&gt;There are few custom settings you can specify in your content front matter that will effect how hugo generates your site.&lt;/p&gt;
+
+&lt;h5 id=&#34;syntax-highlighting-with-hljs&#34;&gt;Syntax highlighting with hljs&lt;/h5&gt;
+
+&lt;p&gt;Set &lt;code&gt;highlight = true&lt;/code&gt; in your post front matter to include &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; javascript and css.&lt;/p&gt;
+
+&lt;h5 id=&#34;custom-js-css&#34;&gt;Custom JS/CSS&lt;/h5&gt;
+
+&lt;p&gt;Include custom CSS and Javascript on an individual piece of content like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;scripts = [
+&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/languages/go.min.js&amp;quot;,
+]
+
+css = [
+&amp;quot;//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css&amp;quot;
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;posting-tutorials&#34;&gt;Posting Tutorials&lt;/h5&gt;
+
+&lt;p&gt;In order for a &lt;code&gt;tutorial&lt;/code&gt; to show up on the &lt;code&gt;/tutorials/&lt;/code&gt; page list, it must have &lt;code&gt;index = true&lt;/code&gt; present in the front matter of the post.
+New &lt;code&gt;tutorial&lt;/code&gt;&amp;rsquo;s will not show up on the front page of the site, yet.&lt;/p&gt;
+
+&lt;p&gt;Multi-paged tutorial series can be accomplished by including links to each page of the tutorial on the page with &lt;code&gt;index = true&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://alexurquhart.github.io/hugo-geo/about/</link>
+      <pubDate>Tue, 28 Jul 2015 09:51:51 -0400</pubDate>
+      
+      <guid>https://alexurquhart.github.io/hugo-geo/about/</guid>
+      <description>&lt;p&gt;This placeholder page could be your &amp;ldquo;about me&amp;rdquo; page, where you detail your contact information,
+portfolio pieces, and describe yourself and your goals.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Hugo-Geo!</title>
+      <link>https://alexurquhart.github.io/hugo-geo/post/welcome/</link>
+      <pubDate>Tue, 28 Jul 2015 09:32:45 -0400</pubDate>
+      
+      <guid>https://alexurquhart.github.io/hugo-geo/post/welcome/</guid>
+      <description>&lt;p&gt;Welcome to hugo-geo, a resposive theme for the &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo static site generator.&lt;/a&gt; Hugo is designed for &lt;code&gt;post&lt;/code&gt; and &lt;code&gt;tutorial&lt;/code&gt; sections, and is perfect for personal
+portfolio or blog sites.&lt;/p&gt;
+
+&lt;p&gt;Why don&amp;rsquo;t you check out the &lt;a href=&#34;https://alexurquhart.github.io/hugo-geo/hugo-geo/tutorial/getting-started/&#34;&gt;Getting Started Tutorial&lt;/a&gt; and find out how you can use hugo-geo and customize it to your liking.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

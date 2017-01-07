@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on MY NAME</title>
+    <link>https://alexurquhart.github.io/hugo-geo/post/index.xml</link>
+    <description>Recent content in Posts on MY NAME</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jul 2015 09:32:45 -0400</lastBuildDate>
+    <atom:link href="https://alexurquhart.github.io/hugo-geo/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Welcome to Hugo-Geo!</title>
+      <link>https://alexurquhart.github.io/hugo-geo/post/welcome/</link>
+      <pubDate>Tue, 28 Jul 2015 09:32:45 -0400</pubDate>
+      
+      <guid>https://alexurquhart.github.io/hugo-geo/post/welcome/</guid>
+      <description>&lt;p&gt;Welcome to hugo-geo, a resposive theme for the &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo static site generator.&lt;/a&gt; Hugo is designed for &lt;code&gt;post&lt;/code&gt; and &lt;code&gt;tutorial&lt;/code&gt; sections, and is perfect for personal
+portfolio or blog sites.&lt;/p&gt;
+
+&lt;p&gt;Why don&amp;rsquo;t you check out the &lt;a href=&#34;https://alexurquhart.github.io/hugo-geo/hugo-geo/tutorial/getting-started/&#34;&gt;Getting Started Tutorial&lt;/a&gt; and find out how you can use hugo-geo and customize it to your liking.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

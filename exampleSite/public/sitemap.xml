@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/tutorial/getting-started/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/about/</loc>
+    <lastmod>2015-07-28T09:51:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/post/welcome/</loc>
+    <lastmod>2015-07-28T09:32:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/tags/blog/</loc>
+    <lastmod>2015-07-28T09:32:45-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/tags/hugo/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/post/</loc>
+    <lastmod>2015-07-28T09:32:45-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/tags/series/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/tags/tutorial/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexurquhart.github.io/hugo-geo/tutorial/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

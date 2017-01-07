@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="A tutorial on how to use and customize the Hugo-Geo theme">
+    <meta property="og:title" content="Getting Started With hugo-geo">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2016-03-04">
+    
+    <meta property="og:description" content="A tutorial on how to use and customize the Hugo-Geo theme">
+    <meta property="og:url" content="https://alexurquhart.github.io/hugo-geo/tutorial/getting-started/">
+    <meta property="og:site_name" content="MY NAME">
+    
+    <meta property="og:tags" content="tutorial">
+    
+    <meta property="og:tags" content="series">
+    
+    <meta property="og:tags" content="hugo">
+    
+    <meta name="generator" content="Hugo 0.18" />
+    <title>Getting Started With hugo-geo &middot; MY NAME</title>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+    
+    <link rel="stylesheet" href="https://alexurquhart.github.io/hugo-geo/css/style.css">
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="MY NAME" />
+    
+    
+    <link rel="icon" href="https://alexurquhart.github.io/hugo-geo/favicon.ico" />
+    
+
+    
+    
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://alexurquhart.github.io/hugo-geo/">MY NAME</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://alexurquhart.github.io/hugo-geo/about">About</a></li>
+				
+					<li><a href="https://alexurquhart.github.io/hugo-geo/">Blog</a></li>
+				
+					<li><a href="https://alexurquhart.github.io/hugo-geo/tutorial/">Tutorials</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+		
+			<h1 class="text-center"><a href="https://alexurquhart.github.io/hugo-geo/">MY NAME</a></h1>
+		
+		
+		
+			<small class="text-center center-block">MY HUGO BLOG</small>
+		
+		
+		
+			<img id="profile-pic" src="https://alexurquhart.github.io/hugo-geo//img/profile.png" alt="My Picture" class="img-circle center-block">
+		
+		<div id="social" class="text-center">
+			<a href="https://twitter.com/alexanderurq"><i class="fa fa-twitter fa-2x"></i></a>
+			<a href="https://www.linkedin.com/profile/view?id=339355941"><i class="fa fa-linkedin fa-2x"></i></a>
+			<a href="https://github.com/alexurquhart"><i class="fa fa-github fa-2x"></i></a>
+			<a href="mailto:alexurquhart@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+		</div>
+		<div id="links" class="text-center">
+			
+			
+				<a href="https://alexurquhart.github.io/hugo-geo/about">About</a>
+			
+				<a href="https://alexurquhart.github.io/hugo-geo/">Blog</a>
+			
+				<a href="https://alexurquhart.github.io/hugo-geo/tutorial/">Tutorials</a>
+			
+		</div>
+	</div>
+</div>
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+<main>
+	<header>
+		<h1>Getting Started With hugo-geo</h1>
+	</header>
+
+	<article>
+		<p>Setting up and configuring hugo-geo is as simple as changing a few values in your site <code>config.toml</code>. Lets look at this example site&rsquo;s config and go over what
+each of hugo-geo&rsquo;s site <code>[params]</code> do.</p>
+
+<p>If this guide doesn&rsquo;t answer your question it may be covered in the <a href="http://gohugo.io/overview/configuration/">Hugo documentation</a>.</p>
+
+<p></p>
+
+<pre><code class="language-toml">baseurl = &quot;http://replace-this-with-your-hugo-site.com/&quot;
+relativeURLs = false
+languageCode = &quot;en-us&quot;
+title = &quot;My New Hugo Site&quot;
+disqusShortname = &quot;shortcode-here&quot;
+paginate = 5
+
+[taxonomies]
+	tag = &quot;tags&quot;
+	tutorial = &quot;tutorials&quot;
+
+[params]
+	showglobe = true
+
+	favicon = &quot;favicon.ico&quot;
+
+	analytics = &quot;code-here&quot;
+
+	github = &quot;https://github.com/alexurquhart&quot;
+	twitter = &quot;https://twitter.com/alexanderurq&quot;
+	linkedin = &quot;https://www.linkedin.com/profile/view?id=339355941&quot;
+	email = &quot;alexurquhart@gmail.com&quot;
+	
+	profilepic = &quot;img/profile.png&quot;
+	
+	title = &quot;MY NAME&quot;
+	subtitle = &quot;MY HUGO BLOG&quot;
+	
+	[[params.navlinks]]
+	name = &quot;About&quot;
+	url = &quot;about&quot;
+	
+	[[params.navlinks]]
+	name = &quot;Blog&quot;
+	url = &quot;&quot;
+	
+	[[params.navlinks]]
+	name = &quot;Tutorials&quot;
+	url = &quot;tutorial/&quot;
+</code></pre>
+
+<h5 id="the-spinning-globe">The Spinning Globe</h5>
+
+<p><code>showglobe =  true</code></p>
+
+<p>Set this to <code>false</code> and the spinning globe in the sidebar will not be rendered.</p>
+
+<h5 id="favicon">Favicon</h5>
+
+<p><code>favicon = &quot;favicon.ico&quot;</code></p>
+
+<p>Copy your site&rsquo;s icon file to the <code>static</code> folder of your site. Delete this parameter if you don&rsquo;t wish to display a favicon.</p>
+
+<h5 id="analytics">Analytics</h5>
+
+<p>In order to remain compatible with Hugo v0.14, the analytics shortcode is specified in the site params.</p>
+
+<h5 id="social-links">Social Links</h5>
+
+<pre><code class="language-toml">github = &quot;https://github.com/alexurquhart&quot;
+twitter = &quot;https://twitter.com/alexanderurq&quot;
+linkedin = &quot;https://www.linkedin.com/profile/view?id=339355941&quot;
+email = &quot;alexurquhart@gmail.com&quot;
+</code></pre>
+
+<p>These social settings set the icon links in the sidebar. If you don&rsquo;t want to have a certain icon or link show up, simply remove it.</p>
+
+<h5 id="sidebar-profile-picture">Sidebar Profile Picture</h5>
+
+<p><code>profilepic = &quot;img/profile.png&quot;</code></p>
+
+<p>This is the path to the profile image shown in the sidebar, relative to the <code>baseurl</code></p>
+
+<h5 id="title-subtitle">Title &amp; Subtitle</h5>
+
+<p>Either of these can be removed. If the <code>title</code> param is removed, then the site <code>title</code> will be used instead.</p>
+
+<h5 id="nav-links">Nav Links</h5>
+
+<p>A customizable array of links that will appear in the sidebar, or dropdown menu when viewed on mobile. The URL is relative to the <code>baseurl</code>.</p>
+
+<h2 id="content-front-matter">Content Front Matter</h2>
+
+<p>There are few custom settings you can specify in your content front matter that will effect how hugo generates your site.</p>
+
+<h5 id="syntax-highlighting-with-hljs">Syntax highlighting with hljs</h5>
+
+<p>Set <code>highlight = true</code> in your post front matter to include <a href="https://highlightjs.org/">highlight.js</a> javascript and css.</p>
+
+<h5 id="custom-js-css">Custom JS/CSS</h5>
+
+<p>Include custom CSS and Javascript on an individual piece of content like so:</p>
+
+<pre><code class="language-toml">scripts = [
+&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/languages/go.min.js&quot;,
+]
+
+css = [
+&quot;//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css&quot;
+]
+</code></pre>
+
+<h5 id="posting-tutorials">Posting Tutorials</h5>
+
+<p>In order for a <code>tutorial</code> to show up on the <code>/tutorials/</code> page list, it must have <code>index = true</code> present in the front matter of the post.
+New <code>tutorial</code>&rsquo;s will not show up on the front page of the site, yet.</p>
+
+<p>Multi-paged tutorial series can be accomplished by including links to each page of the tutorial on the page with <code>index = true</code>.</p>
+	</article>
+</main>
+
+<div id="bottom-nav" class="text-center center-block">
+	<a href=" https://alexurquhart.github.io/hugo-geo/" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+</div>
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'shortcode-here';
+    var disqus_identifier = 'https:\/\/alexurquhart.github.io\/hugo-geo\/tutorial\/getting-started\/';
+    var disqus_title = 'Getting Started With hugo-geo';
+    var disqus_url = 'https:\/\/alexurquhart.github.io\/hugo-geo\/tutorial\/getting-started\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'code-here', 'auto');
+    ga('send', 'pageview');
+    window.baseURL = "https:\/\/alexurquhart.github.io\/hugo-geo\/";
+  </script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  
+  <script src="https://alexurquhart.github.io/hugo-geo//js/App.js"></script>
+  
+</body>
+</html>
