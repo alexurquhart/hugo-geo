@@ -6,5 +6,13 @@ menu = "sidebar"
 nodisqus = true
 +++
 
+```javascript
+var i = 'asdf';
+```
+
+This is `<a href="#">link</a>` inline code
+
+> This is a quote
+
 This placeholder page could be your "about me" page, where you detail your contact information,
 portfolio pieces, and describe yourself and your goals.

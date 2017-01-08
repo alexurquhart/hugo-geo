@@ -6,29 +6,42 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: "Oswald", "Arial", sans-serif; }
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 300; }
 
 h3 {
   font-size: 1.75rem;
-  font-family: "Oswald", "Arial", sans-serif; }
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 300; }
 
 h4 {
   font-size: 1.5rem;
-  font-family: "Oswald", "Arial", sans-serif; }
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 300; }
 
 h5 {
   font-size: 1.25rem;
-  font-family: "Oswald", "Arial", sans-serif; }
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 300; }
 
 h6 {
   font-size: 1rem;
-  font-family: "Oswald", "Arial", sans-serif; }
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 300; }
 
 a {
   color: #458DA3;
   text-decoration: none; }
   a:hover {
     color: #BDD4DE; }
+
+p code {
+  font-family: "Source Code Pro", monospace;
+  background: #ECECEC;
+  border-radius: 0.2rem;
+  color: #2d4054;
+  font-size: 0.7rem;
+  padding: 0.1rem; }
 
 .hg-body-container {
   min-height: 100%;

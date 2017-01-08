@@ -1,32 +1,36 @@
-h1 {
-    font-size: 2.5rem;
+@mixin header {
     font-family: $header-font;
     font-weight: 300;
 }
 
+h1 {
+    font-size: 2.5rem;
+    @include header;
+}
+
 h2 {
     font-size: 2rem;
-    font-family: $header-font;    
+    @include header;
 }
 
 h3 {
     font-size: 1.75rem;
-    font-family: $header-font;    
+    @include header;
 }
 
 h4 {
     font-size: 1.5rem;
-    font-family: $header-font;    
+    @include header;
 }
 
 h5 {
     font-size: 1.25rem;
-    font-family: $header-font;    
+    @include header;
 }
 
 h6 {
     font-size: 1rem;
-    font-family: $header-font;
+    @include header;
 }
 
 a {
@@ -37,3 +41,13 @@ a {
         color: $link-hover;
     }
 }
+
+p code {
+    font-family: $font-mono;
+    background: $lt-grey;
+    border-radius: 0.2rem;
+    color: $black;
+    font-size: 0.7rem;
+    padding: 0.1rem;
+}
+
