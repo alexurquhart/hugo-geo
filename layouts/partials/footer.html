@@ -15,4 +15,11 @@
         &copy; {{ . }}
     </div>
     {{ end }}
-</div>
+    {{ with .Site.Menus.footer }}
+    <div class="hg-footer-menu pure-u-1">
+        {{ range . }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</div> 

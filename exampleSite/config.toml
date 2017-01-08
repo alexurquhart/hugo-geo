@@ -52,3 +52,10 @@ googleAnalytics = "code-here"
     url = "https://www.linkedin.com/in/alex-urquhart-65979695"
     pre = '<i class="fa fa-linkedin" aria-hidden="true"></i>'
     weight = 3
+
+[[menu.footer]]
+    name = "Link 1"
+    url = "#"
+[[menu.footer]]
+    name = "Link 2"
+    url = "#"

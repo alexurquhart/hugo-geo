@@ -46,7 +46,7 @@ html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 1rem;
-  color: #2B3A42; }
+  color: #2d4054; }
 
 .pure-g {
   display: flex; }
@@ -56,7 +56,7 @@ html, button, input, select, textarea,
 
 .hg-sidebar {
   display: none;
-  background: #2B3A42;
+  background: #2d4054;
   position: fixed;
   height: 100%;
   align-items: center;
@@ -81,7 +81,7 @@ html, button, input, select, textarea,
     .hg-sidebar .hg-sidebar-item:last-child {
       margin-bottom: 0; }
   .hg-sidebar .hg-site-title {
-    font-size: 2.6rem; }
+    font-size: 2.75rem; }
   .hg-sidebar .hg-site-subtitle {
     font-size: 1.6rem; }
   .hg-sidebar .hg-profile-pic {
@@ -113,7 +113,7 @@ html, button, input, select, textarea,
   align-items: center;
   justify-content: space-between;
   height: 3.125rem;
-  background: #2B3A42;
+  background: #2d4054;
   font-family: "Oswald", "Arial", sans-serif !important;
   font-weight: 300;
   color: #BDD4DE !important;
@@ -128,7 +128,7 @@ html, button, input, select, textarea,
       color: white; }
   .hg-mobile-nav .hg-site-title {
     margin-left: 1rem;
-    font-size: 1.82rem; }
+    font-size: 2rem; }
   .hg-mobile-nav .hg-mobile-links {
     margin-right: 1rem;
     text-align: center;
@@ -139,10 +139,10 @@ html, button, input, select, textarea,
         margin-right: 0; }
 
 .hg-footer {
-  font-size: 0.5rem;
   text-align: center; }
   .hg-footer div {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem !important; }
     .hg-footer div:last-child {
       margin-bottom: 1rem; }
   @media screen and (min-width: 48em) {
@@ -151,6 +151,10 @@ html, button, input, select, textarea,
   .hg-footer .hg-footer-socials a, .hg-footer .hg-footer-socials span {
     margin-right: 1rem; }
     .hg-footer .hg-footer-socials a:last-child, .hg-footer .hg-footer-socials span:last-child {
+      margin-right: 0; }
+  .hg-footer .hg-footer-menu a {
+    margin-right: 1rem; }
+    .hg-footer .hg-footer-menu a:last-child {
       margin-right: 0; }
 
 body {

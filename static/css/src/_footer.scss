@@ -1,10 +1,9 @@
 .hg-footer {
-
-    font-size: 0.5rem;
     text-align: center;
 
     div {
         margin-bottom: 0.5rem;
+        font-size: 0.7rem !important;
 
         &:last-child {
             margin-bottom: 1rem;
@@ -17,6 +16,16 @@
         }
 
         a, span {
+            margin-right: 1rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .hg-footer-menu {
+        a {
             margin-right: 1rem;
 
             &:last-child {
