@@ -1,10 +1,12 @@
-{{ template "_internal/google_analytics_async.html" . }}
-{{ if .Params.highlight }}
+    {{ template "_internal/google_analytics_async.html" . }}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+    {{ if .Params.highlight }}
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-{{ end }}
+    {{ end }}
     <script src="{{ .Site.BaseURL }}js/hugo-geo.js"></script>
-{{ range .Params.scripts }}
+    {{ range .Params.scripts }}
     <script src="{{ . }}"></script>
-{{ end }}
+    {{ end }}
 </body>
 </html>

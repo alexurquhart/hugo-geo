@@ -1,7 +1,8 @@
 <div class="hg-footer pure-g">
     <div class="hg-footer-socials pure-u-1">
+        <span>Contact:</span>
         {{ range .Site.Menus.social }}
-        <a href="{{ .URL }}">{{ .Pre}}</a>
+        <a href="{{ .URL }}">{{ .Name}}</a>
         {{ end }}
     </div>
     {{ if eq .Site.Params.attribution true }}

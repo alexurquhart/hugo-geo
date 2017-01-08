@@ -1,5 +1,5 @@
 // from: https://css-tricks.com/snippets/sass/px-to-em-functions/
-@function em($pixels, $context: $browser-context) {
+@function rem($pixels, $context: $browser-context) {
     @if (unitless($pixels)) {
         $pixels: $pixels * 1px;
     }
@@ -8,5 +8,5 @@
         $context: $context * 1px;
     }
 
-    @return $pixels / $context * 1em;
+    @return $pixels / $context * 1rem;
 }

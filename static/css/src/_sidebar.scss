@@ -5,7 +5,7 @@
         display: flex;
     }
 
-    background: $sidebar-colour;
+    background: $sidebar-color;
     position: fixed;
     height: 100%;
     align-items: center;
@@ -13,12 +13,11 @@
     font-family: $header-font !important;
     font-weight: 300;
     text-align: center;
-    color: $sidebar-text-colour !important;
-
-    border-top: em(5px) solid $sidebar-top-border;
+    color: $sidebar-text-color !important;
+    border-top: rem(5px) solid $sidebar-top-border;
 
     a {
-        color: $sidebar-text-colour;
+        color: $sidebar-text-color;
         text-decoration: none;
         &:hover {
             color: white;
@@ -31,7 +30,7 @@
     }
 
     .hg-sidebar-item {
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
 
         &:last-child {
             margin-bottom: 0;
@@ -40,7 +39,10 @@
 
     .hg-site-title {
         font-size: $header-size;
-        margin-bottom: 0.5em;
+    }
+
+    .hg-site-subtitle {
+        font-size: 1.6rem;
     }
 
     .hg-profile-pic {
@@ -54,14 +56,22 @@
     .hg-social {
         display: flex;
         justify-content: space-around;
+        font-size: 2rem;
+
+        @media screen and (min-width: $desktop-break) {
+            max-width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     .hg-sidebar-links {
         display: flex;
         flex-direction: column;
+        font-size: 1.6rem;
 
         .hg-sidebar-link {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.5rem;
 
             &:last-child {
                 margin-bottom: 0;

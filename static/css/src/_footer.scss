@@ -1,26 +1,13 @@
 .hg-footer {
 
-    color: $footer-colour;
-    font-size: 0.8em;
+    font-size: 0.5rem;
     text-align: center;
-    background: $footer-background;
-    border-top: em(1px) solid $grey;
 
     div {
-        margin-bottom: 0.5em;
-        &:first-child {
-            margin-top: 1em;
-        }
-        &:last-child {
-            margin-bottom: 0.2em;
-        }
-    }
+        margin-bottom: 0.5rem;
 
-    a {
-        color: $footer-link-colour;
-        text-decoration: none;
-        &:visited {
-            color: $footer-link-colour;
+        &:last-child {
+            margin-bottom: 1rem;
         }
     }
 
@@ -29,12 +16,11 @@
             display: none;
         }
 
-        a {
-            margin-right: 2em;
-            color: $lt-blue;
+        a, span {
+            margin-right: 1rem;
 
-            &:hover {
-                color: $footer-link-colour;
+            &:last-child {
+                margin-right: 0;
             }
         }
     }

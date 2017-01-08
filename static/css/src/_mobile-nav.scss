@@ -6,17 +6,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: em(50px);
+    height: rem(50px);
 
-    background: $sidebar-colour;
+    background: $sidebar-color;
     font-family: $header-font !important;
     font-weight: 300;
-    color: $sidebar-text-colour !important;
+    color: $sidebar-text-color !important;
 
-    border-bottom: em(5px) solid $sidebar-top-border;
+    border-bottom: rem(5px) solid $sidebar-top-border;
 
     a {
-        color: $sidebar-text-colour;
+        color: $sidebar-text-color;
         text-decoration: none;
         &:hover {
             color: white;
@@ -24,14 +24,14 @@
     }
 
     .hg-site-title {
-        margin-left: 0.8em;
+        margin-left: 1rem;
         font-size: 0.7 * $header-size;
     }
 
     .hg-mobile-links {
-        margin-right: 1em;
+        margin-right: 1rem;
         text-align: center;
-
+        font-size: 1.5rem;
 
         a {
             margin-right: 0.5em;

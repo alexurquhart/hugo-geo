@@ -13,23 +13,24 @@ $tablet-break: 64em;
 $desktop-break: 80em;
 
 $browser-context: 16;
-$base-size: em(16px);
+$base-size: rem(16px);
 
 $font-sans: 'Roboto', 'Arial', sans-serif;
 $font-mono: 'Source Code Pro', monospace;
 $font-size: $base-size;
-$bg-colour: $white;
+$font-color: $black;
+$link-color: $blue;
+$link-hover: $lt-blue;
 
-$sidebar-colour: $black;
+$bg-color: $white;
+
+$sidebar-color: $black;
 $sidebar-top-border: $red;
-$sidebar-text-colour: $lt-blue;
+$sidebar-text-color: $lt-blue;
 
 $body-border: $lt-blue;
-$text-colour: $black;
+$text-color: $black;
 
-$header-size: 2em;
+$header-size: 2.6rem;
 $header-font: 'Oswald', 'Arial', sans-serif;
 
-$footer-colour: $black;
-$footer-link-colour: $blue;
-$footer-background: $lt-grey;
