@@ -14,6 +14,8 @@ $desktop-break: 80em;
 
 $browser-context: 16;
 $base-size: rem(16px);
+$bg-color: $white;
+$text-color: $black;
 
 $font-sans: 'Roboto', 'Arial', sans-serif;
 $font-mono: 'Source Code Pro', monospace;
@@ -22,14 +24,11 @@ $font-color: $black;
 $link-color: $blue;
 $link-hover: $lt-blue;
 
-$bg-color: $white;
-
 $sidebar-color: $black;
 $sidebar-top-border: $red;
 $sidebar-text-color: $lt-blue;
 
-$body-border: $lt-blue;
-$text-color: $black;
+$border-radius: 0.25rem;
 
 $header-font: 'Oswald', 'Arial', sans-serif;
 

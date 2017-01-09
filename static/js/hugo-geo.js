@@ -1,4 +1,1 @@
-"use strict";
-
-document.addEventListener("DOMContentLoaded", function () {});
-//# sourceMappingURL=hugo-geo.js.map
+"use strict";$(document).ready(function(){hljs&&$("pre code").each(function(c,e){hljs.highlightBlock(e)})});

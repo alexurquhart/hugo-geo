@@ -42,12 +42,30 @@ a {
     }
 }
 
-p code {
+code {
     font-family: $font-mono;
+}
+
+p code {
     background: $lt-grey;
-    border-radius: 0.2rem;
-    color: $black;
-    font-size: 0.7rem;
-    padding: 0.1rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+}
+
+pre {
+    padding: 1rem 2rem;
+    border-left: rem(5px) solid $grey;
+    background: $lt-grey;
+
+    code {
+        background: inherit !important;
+    }
+}
+
+blockquote {
+    margin-left: 0;
+    padding-left: 2rem;
+    border-left: rem(5px) solid $lt-grey;
 }
 

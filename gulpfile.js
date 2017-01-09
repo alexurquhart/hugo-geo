@@ -30,7 +30,9 @@ gulp.task("sass:debug", () => {
 // TODO - change
 gulp.task("sass:prod", () => {
     return gulp.src("static/css/src/hugo-geo.scss")
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
         .pipe(gulp.dest("static/css"))
 })
 
