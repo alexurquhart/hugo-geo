@@ -59,6 +59,7 @@ pre {
     background: $lt-grey;
 
     code {
+        font-size: 0.9rem   
         background: inherit !important;
     }
 }
@@ -68,4 +69,3 @@ blockquote {
     padding-left: 2rem;
     border-left: rem(5px) solid $lt-grey;
 }
-

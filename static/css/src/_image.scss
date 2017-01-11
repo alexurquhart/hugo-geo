@@ -1,0 +1,32 @@
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    padding-top: 1rem;
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: $border-radius;
+        border: 1px solid $well-border;
+        box-shadow: $box-shadow;
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        color: $light-text;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}

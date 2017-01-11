@@ -1,0 +1,19 @@
+<div class="
+    pure-u-{{ .Get "size" }}
+    {{ with .Get "sm-size" }}
+    pure-u-sm-{{.}}
+    {{ end }}
+    {{ with .Get "md-size" }}
+    pure-u-md-{{.}}
+    {{ end }}
+    {{ with .Get "lg-size" }}
+    pure-u-lg-{{.}}
+    {{ end }}
+    {{ with .Get "xl-size" }}
+    pure-u-xl-{{.}}
+    {{ end }}
+    {{ with .Get "class" }}
+    {{ . }}
+    {{ end }}">
+    {{ .Inner }}
+    </div>
