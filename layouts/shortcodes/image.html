@@ -1,12 +1,21 @@
 <figure>
     <a 
-    href="{{ .Get "src" }}"
-    {{ if not (.Get "nolightbox") }}
-    data-lightbox="{{ .Get "src" }}"
-    {{ end }}
-    {{ with .Get "caption" }}
-    data-title="{{ . }}"
-    {{ end }}
+        href="{{ .Get "src" }}"
+        {{ if not (.Get "nolightbox") }}
+            data-title="{{ .Get "caption" }}"
+
+            {{ if or (.Get "caption") (.Get "gallery") }}
+                {{ if not (.Get "gallery") }}
+                    {{ with .Get "caption" }}
+                        data-lightbox="{{ . }}"
+                    {{ end }}
+                {{ else }}
+                    {{ with .Get "gallery" }}
+                        data-lightbox="{{ . }}"
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
     >
         <img src="{{ .Get "src" }}" class="pure-img{{ with .Get "class" }} {{.}}{{ end }}">
     </a>

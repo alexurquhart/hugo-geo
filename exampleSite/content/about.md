@@ -42,13 +42,17 @@ This is `<a href="#">link</a>` inline code
 {{< image src="http://lorempixel.com/640/480/nightlife" caption="This is my caption">}}
 
 {{< row >}}
-    {{< col size="1" md-size="1-2 >}}
-    {{< image src="http://lorempixel.com/g/640/481/" caption="This is my caption" alt="test" >}}
-    ## Heading
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, blanditiis recusandae quisquam atque nobis aspernatur fuga, quas obcaecati necessitatibus laudantium voluptate tenetur illum consectetur illo sed quo explicabo earum asperiores?
+    {{< col size="1" md-size="1-2" lg-size="1-4" >}}
+        {{< image src="http://lorempixel.com/g/640/481/" gallery="1" caption="This is my caption" alt="test" >}}
     {{</ col >}}
-    {{< col size="1-2" >}}
-        {{< image src="http://lorempixel.com/640/480/" caption="This is my caption" alt="test" >}}
+    {{< col size="1" md-size="1-2" lg-size="1-4" >}}
+        {{< image src="http://lorempixel.com/640/480/" gallery="1" alt="test" >}}
+    {{</ col >}}
+    {{< col size="1" md-size="1-2" lg-size="1-4" >}}
+        {{< image src="http://lorempixel.com/640/480/" gallery="2" caption="This is my caption" alt="test" >}}
+    {{</ col >}}
+    {{< col size="1" md-size="1-2" lg-size="1-4" >}}
+        {{< image src="http://lorempixel.com/640/480/" gallery="2" caption="This is my caption" alt="test" >}}
     {{</ col >}}
 {{</ row >}}
 
