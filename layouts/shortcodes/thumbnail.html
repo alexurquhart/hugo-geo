@@ -1,10 +1,57 @@
 <!--
 Params
     - src=""
-    - Caption
+    - caption=""
     - Alt (default = caption)
-    - Width percentage (default 25%)
-    - Min width (default 300px)
-    - Float (left (default) | right)
+    - max-width percentage (default 25%)
+    - min width (default 250px)
+    - Float (left | right (default))
     - nolightbox
 -->
+<figure {{ with .Get "id" }}id="#{{.}}" {{ end }}>
+    style="
+    min-width: {{ with .Get "min-width" }}{{ . }}{{ else }}25%{{ end }};
+    max-width: {{ with .Get "max-width" }}{{ . }}{{ else }}250px{{ end }};
+    float: {{ with .Get "float" }}{{ . }}{{ else }}right{{ end }};
+    "
+>
+    <a 
+        href="{{ .Get "src" }}"
+        {{ if not (.Get "nolightbox") }}
+            data-title="{{ .Get "caption" }}"
+
+            {{ if or (.Get "caption") (.Get "gallery") }}
+                {{ if not (.Get "gallery") }}
+                    {{ with .Get "caption" }}
+                        data-lightbox="{{ . }}"
+                    {{ end }}
+                {{ else }}
+                    {{ with .Get "gallery" }}
+                        data-lightbox="{{ . }}"
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    >
+        <img 
+            src="{{ .Get "src" }}"
+            class="pure-img{{ with .Get "class" }} {{.}}{{ end }}"
+            {{ if or (.Get "caption") (.Get "alt") }}
+                {{ if not (.Get "alt") }}
+                    {{ with .Get "caption" }}
+                        alt="{{ . }}"
+                    {{ end }}
+                {{ else }}
+                    {{ with .Get "alt" }}
+                        alt="{{ . }}"
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        >
+    </a>
+    {{ with .Get "caption" }}
+    <figcaption>
+        {{ . }}
+    </figcaption>
+    {{ end }}
+</figure>

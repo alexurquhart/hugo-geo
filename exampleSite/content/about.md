@@ -38,15 +38,16 @@ This is `<a href="#">link</a>` inline code
 - list 2
     - list 3
 
-{{< image src="http://lorempixel.com/g/640/480/" caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex tempore, accusamus itaque voluptatem? Architecto iure modi animi impedit veniam nihil, voluptatum quae doloremque earum molestias, soluta. Labore atque quasi dolor.">}}
-{{< image src="http://lorempixel.com/640/480/nightlife" caption="This is my caption">}}
+{{< image src="http://lorempixel.com/g/640/480/" caption="This is an example of a thumbnail">}}
+
+{{< thumbnail src="http://lorempixel.com/g/640/480/" caption="This is an example of a thumbnail">}}
 
 {{< row >}}
     {{< col size="1" md-size="1-2" lg-size="1-4" >}}
-        {{< image src="http://lorempixel.com/g/640/481/" gallery="1" caption="This is my caption" alt="test" >}}
+        {{< image src="http://lorempixel.com/g/640/481/" gallery="1" caption="This is my caption" >}}
     {{</ col >}}
     {{< col size="1" md-size="1-2" lg-size="1-4" >}}
-        {{< image src="http://lorempixel.com/640/480/" gallery="1" alt="test" >}}
+        {{< image src="http://lorempixel.com/640/480/" gallery="1" >}}
     {{</ col >}}
     {{< col size="1" md-size="1-2" lg-size="1-4" >}}
         {{< image src="http://lorempixel.com/640/480/" gallery="2" caption="This is my caption" alt="test" >}}

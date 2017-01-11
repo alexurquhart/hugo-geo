@@ -1,4 +1,4 @@
-<figure>
+<figure {{ with .Get "id" }}id="#{{.}}" {{ end }}>
     <a 
         href="{{ .Get "src" }}"
         {{ if not (.Get "nolightbox") }}
@@ -17,7 +17,21 @@
             {{ end }}
         {{ end }}
     >
-        <img src="{{ .Get "src" }}" class="pure-img{{ with .Get "class" }} {{.}}{{ end }}">
+        <img 
+            src="{{ .Get "src" }}"
+            class="pure-img{{ with .Get "class" }} {{.}}{{ end }}"
+            {{ if or (.Get "caption") (.Get "alt") }}
+                {{ if not (.Get "alt") }}
+                    {{ with .Get "caption" }}
+                        alt="{{ . }}"
+                    {{ end }}
+                {{ else }}
+                    {{ with .Get "alt" }}
+                        alt="{{ . }}"
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        >
     </a>
     {{ with .Get "caption" }}
     <figcaption>

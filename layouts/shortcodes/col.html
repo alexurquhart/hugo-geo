@@ -1,4 +1,5 @@
-<div class="
+<div {{ with .Get "id" }}id="#{{.}}" {{ end }}
+    class="
     pure-u-{{ .Get "size" }}
     {{ with .Get "sm-size" }}
     pure-u-sm-{{.}}
@@ -16,4 +17,4 @@
     {{ . }}
     {{ end }}">
     {{ .Inner }}
-    </div>
+</div>
