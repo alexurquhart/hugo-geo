@@ -8,7 +8,7 @@ Params
     - Float (left | right (default))
     - nolightbox
 -->
-<figure {{ with .Get "id" }}id="#{{.}}" {{ end }}>
+<figure {{ with .Get "id" }}id="#{{.}}" {{ end }}
     style="
     min-width: {{ with .Get "min-width" }}{{ . }}{{ else }}25%{{ end }};
     max-width: {{ with .Get "max-width" }}{{ . }}{{ else }}250px{{ end }};

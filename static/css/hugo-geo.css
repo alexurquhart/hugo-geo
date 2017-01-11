@@ -216,4 +216,7 @@ html, body, .hg-container {
   height: 100%;
   margin: 0; }
 
+.clear {
+  clear: both; }
+
 /*# sourceMappingURL=hugo-geo.css.map */
