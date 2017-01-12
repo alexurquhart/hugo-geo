@@ -94,11 +94,37 @@ Here is how the default media shortcodes look on this theme
 
 # Custom Shortcodes
 
-## Image
+## Images
 
-By default all images will 
+By default all images have a lightbox using [Lightbox.js](http://lokeshdhakar.com/projects/lightbox2/).
 
-{{< image src="http://lorempixel.com/g/640/480/" >}}
+```text
+{{</*image src="path/to/your/image" */>}}
+
+Parameters
+    id - Applied to the <figure> tag. Can be used for custom CSS
+    *src - Image source
+    caption - Optional. Caption for <figcaption>, lightbox, and alt text
+    alt - Alt text for image. Uses caption text if not present
+    nolightbox - set to 1 to remove lightbox
+    gallery - Name many images with the same gallery attribute to be able to click "next" and "previous" in the lightbox
+    responsive - Set to 1 to make image width 100%
+
+* Mandatory parameter
+```
+
+### Examples
+
+
+```text
+{{</*image src="http://lorempixel.com/400/400/animals/5/" caption="This is a caption for an image" */>}}
+```
+{{< image src="http://lorempixel.com/400/400/animals/5/" caption="This is a caption for an image" >}}
+
+```text
+{{</*image src="http://lorempixel.com/g/1000/1000" caption="This is a caption for an image" responsive="1" nolightbox="1" */>}}
+```
+{{< image src="http://lorempixel.com/g/1000/1000" caption="This is a caption for a responsive image" responsive="1" nolightbox="1" >}}
 
 ## Grid
 
