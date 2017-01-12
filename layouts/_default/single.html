@@ -8,7 +8,13 @@
                 <header>
                     <h1>{{ .Title }}</h1>
                 </header>
-                
+                {{ if ne .Params.notoc true }}
+                <div class="hg-toc">
+                    <div class="hg-toc-label">Table of Contents</div>
+                    {{ .TableOfContents }}
+                </div>
+
+                {{ end }}
                 <article>
                     {{ .Content }}
                 </article>

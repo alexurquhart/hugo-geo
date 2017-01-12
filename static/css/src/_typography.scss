@@ -55,8 +55,8 @@ p code {
 
 pre {
     padding: 1rem 2rem;
-    border-left: rem(5px) solid $grey;
-    background: $lt-grey;
+    border-left: rem(5px) solid $well-border;
+    background: $well-background;
 
     code {
         font-size: 0.9rem;

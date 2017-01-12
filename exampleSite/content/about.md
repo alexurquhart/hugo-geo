@@ -7,13 +7,7 @@ nodisqus = true
 highlight = true
 +++
 
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
-
+{{< thumbnail src="http://lorempixel.com/g/640/480/" caption="This is an example of a thumbnail" float="left" >}}
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
@@ -38,9 +32,8 @@ This is `<a href="#">link</a>` inline code
 - list 2
     - list 3
 
-{{< image src="http://lorempixel.com/g/640/480/" caption="This is an example of a thumbnail">}}
+{{< image src="http://lorempixel.com/g/640/480/" >}}
 
-{{< thumbnail src="http://lorempixel.com/g/640/480/" caption="This is an example of a thumbnail">}}
 
 {{< row >}}
     {{< col size="1" md-size="1-2" lg-size="1-4" >}}
@@ -55,7 +48,7 @@ This is `<a href="#">link</a>` inline code
     {{< col size="1" md-size="1-2" lg-size="1-4" >}}
         {{< image src="http://lorempixel.com/640/480/" gallery="2" caption="This is my caption" alt="test" >}}
     {{</ col >}}
-{{</ row >}}
+{{< /row >}}
 
 This placeholder page could be your "about me" page, where you detail your contact information,
 portfolio pieces, and describe yourself and your goals.

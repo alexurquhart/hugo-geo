@@ -47,7 +47,7 @@ p code {
 pre {
   padding: 1rem 2rem;
   border-left: 0.3125rem solid #A5ADB2;
-  background: #ECECEC; }
+  background: #f6f6f6; }
   pre code {
     font-size: 0.9rem;
     background: inherit !important; }
@@ -207,6 +207,28 @@ figure figcaption {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem; }
+
+.twitter-tweet, .instagram-media {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 1rem !important; }
+
+.hg-toc {
+  float: left;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #A5ADB2;
+  background: #f6f6f6; }
+  .hg-toc #TableOfContents ul {
+    padding-left: 0.5rem; }
+    .hg-toc #TableOfContents ul li {
+      margin-top: 0.5rem; }
+  .hg-toc .hg-toc-label {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 120%; }
 
 body {
   background-color: #FAFAFA; }

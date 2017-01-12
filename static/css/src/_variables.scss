@@ -19,6 +19,7 @@ $text-color: $black;
 $light-text: lighten($black, 35%);
 
 $well-border: $grey;
+$well-background: lighten($lt-grey, 4%);
 
 $font-sans: 'Roboto', 'Arial', sans-serif;
 $font-mono: 'Source Code Pro', monospace;
