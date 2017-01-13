@@ -1,0 +1,26 @@
+<div class="hg-sidenav pure-u-1 pure-u-md-1-5">
+    <div class="hg-sidenav-content">
+        <div class="hg-site-title hg-sidenav-item">
+            <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
+        {{ if isset .Site.Params "subtitle" }}
+        <div class="hg-site-subtitle hg-sidenav-item">
+            {{ .Site.Params.subtitle }}
+        </div>
+        {{ end }} 
+
+        {{ if isset .Site.Params "profilepic" }}
+        <img class="hg-sidenav-item hg-profile-pic" src="{{ .Site.BaseURL }}{{ .Site.Params.profilepic }}" alt="My Picture">
+        {{ end }}
+        <div class="hg-social hg-sidenav-item">
+            {{ range .Site.Menus.social }}
+                <a href="{{ .URL }}">{{ .Pre}}</a>
+            {{ end }}
+        </div>
+        <div class="hg-sidenav-links hg-sidenav-item">
+            {{ range .Site.Menus.sidebar }}
+                <a class="hg-sidenav-link" href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+        </div>
+    </div>
+</div>

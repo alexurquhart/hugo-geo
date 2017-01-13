@@ -81,7 +81,7 @@ html, button, input, select, textarea,
 .pure-g > div {
   box-sizing: border-box; }
 
-.hg-sidebar {
+.hg-sidenav {
   display: none;
   background: #2d4054;
   position: fixed;
@@ -93,46 +93,46 @@ html, button, input, select, textarea,
   color: #BDD4DE !important;
   border-top: 0.3125rem solid #FF530D; }
   @media screen and (min-width: 48em) {
-    .hg-sidebar {
+    .hg-sidenav {
       display: flex; } }
-  .hg-sidebar a {
+  .hg-sidenav a {
     color: #BDD4DE;
     text-decoration: none; }
-    .hg-sidebar a:hover {
+    .hg-sidenav a:hover {
       color: white; }
-  .hg-sidebar .hg-sidebar-content {
+  .hg-sidenav .hg-sidenav-content {
     margin: 0 auto;
     width: 85%; }
-  .hg-sidebar .hg-sidebar-item {
+  .hg-sidenav .hg-sidenav-item {
     margin-bottom: 1rem; }
-    .hg-sidebar .hg-sidebar-item:last-child {
+    .hg-sidenav .hg-sidenav-item:last-child {
       margin-bottom: 0; }
-  .hg-sidebar .hg-site-title {
+  .hg-sidenav .hg-site-title {
     font-size: 2.75rem; }
-  .hg-sidebar .hg-site-subtitle {
+  .hg-sidenav .hg-site-subtitle {
     font-size: 1.6rem; }
-  .hg-sidebar .hg-profile-pic {
+  .hg-sidenav .hg-profile-pic {
     max-width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto; }
-  .hg-sidebar .hg-social {
+  .hg-sidenav .hg-social {
     display: flex;
     justify-content: space-around;
     font-size: 2rem; }
     @media screen and (min-width: 80em) {
-      .hg-sidebar .hg-social {
+      .hg-sidenav .hg-social {
         max-width: 75%;
         margin-left: auto;
         margin-right: auto; } }
-  .hg-sidebar .hg-sidebar-links {
+  .hg-sidenav .hg-sidenav-links {
     display: flex;
     flex-direction: column;
     font-size: 1.6rem; }
-    .hg-sidebar .hg-sidebar-links .hg-sidebar-link {
+    .hg-sidenav .hg-sidenav-links .hg-sidenav-link {
       margin-bottom: 0.5rem; }
-      .hg-sidebar .hg-sidebar-links .hg-sidebar-link:last-child {
+      .hg-sidenav .hg-sidenav-links .hg-sidenav-link:last-child {
         margin-bottom: 0; }
 
 .hg-mobile-nav {

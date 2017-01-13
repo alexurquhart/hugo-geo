@@ -1,26 +1,3 @@
-<div class="hg-sidebar pure-u-1 pure-u-md-1-5">
-    <div class="hg-sidebar-content">
-        <div class="hg-site-title hg-sidebar-item">
-            <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-        </div>
-        {{ if isset .Site.Params "subtitle" }}
-        <div class="hg-site-subtitle hg-sidebar-item">
-            {{ .Site.Params.subtitle }}
-        </div>
-        {{ end }} 
-
-        {{ if isset .Site.Params "profilepic" }}
-        <img class="hg-sidebar-item hg-profile-pic" src="{{ .Site.BaseURL }}{{ .Site.Params.profilepic }}" alt="My Picture">
-        {{ end }}
-        <div class="hg-social hg-sidebar-item">
-            {{ range .Site.Menus.social }}
-                <a href="{{ .URL }}">{{ .Pre}}</a>
-            {{ end }}
-        </div>
-        <div class="hg-sidebar-links hg-sidebar-item">
-            {{ range .Site.Menus.sidebar }}
-                <a class="hg-sidebar-link" href="{{ .URL }}">{{ .Name }}</a>
-            {{ end }}
-        </div>
-    </div>
-</div>
+{{ if ne .Params.notoc true }}
+{{ partial "toc.html" . }}
+{{ end }}
