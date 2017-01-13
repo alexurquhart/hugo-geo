@@ -13,7 +13,20 @@ if (!window.location.origin) {
 $(document).ready(function() {
 	
 	// Change all href links that go out of the origin to open in a new window
-	$("a").not("[href*='" + window.location.origin + "']").attr("target", "new");
+	// Relative links that start with / or . (ie /post/my-post or ../post/my-post)
+	// should be untouched
+	$("a").each(function(i, el) {
+		var href = $(el).attr("href");
+		
+		if (typeof href === "string" && href.indexOf(window.location.origin) === -1 && href[0] !== "/" && href[0] !== ".") {
+			$(el).attr("target", "_blank");
+		}
+	});
+	
+	// Wrap pygments tables in table-responsive classes
+	// Credit to GitHub user dazinator
+	// https://github.com/alexurquhart/hugo-geo/issues/17
+	$( ".highlighttable" ).wrap("<div class='table-responsive'></div>");
 	
 	// Highlight all on load if highlighting
 	if (typeof hljs !== "undefined") {
