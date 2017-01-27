@@ -148,6 +148,11 @@ html, button, input, select, textarea,
   @media screen and (min-width: 48em) {
     .hg-mobile-nav {
       display: none; } }
+  @media screen and (min-width: 23em) {
+    .hg-mobile-nav .hg-site-title {
+      font-size: 2rem !important; }
+    .hg-mobile-nav .hg-mobile-links {
+      font-size: 1.5rem !important; } }
   .hg-mobile-nav a {
     color: #BDD4DE;
     text-decoration: none; }
@@ -155,11 +160,11 @@ html, button, input, select, textarea,
       color: white; }
   .hg-mobile-nav .hg-site-title {
     margin-left: 1rem;
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .hg-mobile-nav .hg-mobile-links {
     margin-right: 1rem;
     text-align: center;
-    font-size: 1.5rem; }
+    font-size: 1rem; }
     .hg-mobile-nav .hg-mobile-links a {
       margin-right: 0.5em; }
       .hg-mobile-nav .hg-mobile-links a:last-child {

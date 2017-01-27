@@ -7,7 +7,7 @@ nodisqus = true
 highlight = true
 +++
 
-{{< thumbnail src="http://lorempixel.com/g/640/480/" caption="This is an example of a thumbnail" float="left" >}}
+{{< thumbnail src="http://lorempixel.com/g/640/480/" caption="This is an example of a thumbnail" float="right" >}}
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
