@@ -4,6 +4,9 @@
     {{ if .Params.highlight }}
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
     {{ end }}
+    {{ if .Params.social }}
+    <script src="//cdn.jsdelivr.net/rrssb/1.6.0/js/rrssb.min.js"></script>
+    {{ end }}
     <script src="{{ .Site.BaseURL }}js/hugo-geo.js"></script>
     {{ range .Params.scripts }}
     <script src="{{ . }}"></script>
