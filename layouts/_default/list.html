@@ -1,24 +1,11 @@
-{{ partial "head.html" . }}
-<div class="hg-container pure-g">
-    {{ partial "sidebar.html" . }}
-    <div class="hg-body-container pure-u-1 pure-u-lg-4-5 pure-u-md-3-4">
-        <div class="hg-body">
+{{ define "body" }}
+<header>
+	<h1>{{ .Title }}</a></h1>
+</header>
+<ul>
+	{{ range .Data.Pages }}
+	<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+	{{ end }}
+</ul>
+{{ end }}
 
-			<article>
-				<header>
-					<h1>{{ .Title }}</a></h1>
-				</header>
-			<ul>
-				{{ range .Data.Pages }}
-				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-				{{ end }}
-			</ul>
-			</article>
-			
-        </div>
-        <div class="hg-footer">
-        {{ partial "footer.html" . }}
-        </div>
-    </div>
-</div>
-{{ partial "tail.html" . }} 

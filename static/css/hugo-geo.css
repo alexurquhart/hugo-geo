@@ -148,7 +148,7 @@ html, button, input, select, textarea,
   @media screen and (min-width: 48em) {
     .hg-mobile-nav {
       display: none; } }
-  @media screen and (min-width: 23em) {
+  @media screen and (min-width: 24em) {
     .hg-mobile-nav .hg-site-title {
       font-size: 2rem !important; }
     .hg-mobile-nav .hg-mobile-links {
@@ -164,7 +164,7 @@ html, button, input, select, textarea,
   .hg-mobile-nav .hg-mobile-links {
     margin-right: 1rem;
     text-align: center;
-    font-size: 1rem; }
+    font-size: 1.1rem; }
     .hg-mobile-nav .hg-mobile-links a {
       margin-right: 0.5em; }
       .hg-mobile-nav .hg-mobile-links a:last-child {

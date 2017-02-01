@@ -1,19 +1,12 @@
-{{ partial "head.html" . }}
-<div class="hg-container pure-g">
-    {{ partial "mobile-nav.html" . }}
-    {{ partial "sidenav.html" . }}
-    <div class="hg-body-container pure-u-1 pure-u-md-4-5">
-        <div class="hg-body">
-            {{ if isset .Site.Params "tagline" }}
-            <h1>{{ .Site.Params.tagline }}</h1>
-            {{ end }}
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
-        </div>
-        {{ partial "footer.html" . }}
-    </div>
-</div>
-{{ partial "tail.html" . }} 
+{{ define "body" }}
+
+{{ if isset .Site.Params "tagline" }}
+<h1>{{ .Site.Params.tagline }}</h1>
+{{ end }}
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur autem, accusamus neque natus eos tempora! Culpa modi debitis laborum, illum quas, explicabo rem possimus excepturi temporibus doloribus, vel eaque ratione.</p>
+
+{{ end }}
