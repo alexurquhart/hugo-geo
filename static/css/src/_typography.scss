@@ -69,3 +69,21 @@ blockquote {
     padding-left: 2rem;
     border-left: rem(5px) solid $lt-grey;
 }
+
+.hg-muted {
+    color: darken($grey, 10%);
+    font-weight: lighter;
+}
+
+.hg-tag {
+    background: $red;
+    padding: .2rem .6rem .3rem;
+    margin-left: 0.7rem;
+    font-size: 0.75rem;
+    color: white;
+    border-radius: 0.25rem;
+
+    &:first-child {
+        margin-left: 0.5rem;
+    }
+}

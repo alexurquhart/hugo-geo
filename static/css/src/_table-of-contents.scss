@@ -3,8 +3,8 @@
     padding-left: 1.5rem;
     padding-right: 1rem;
     padding-top: 1rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid $well-border;
     background: $well-background;
 
@@ -22,4 +22,9 @@
         font-family: $header-font;
         font-size: 120%;
     }
+}
+
+.hg-sidebar .hg-toc {
+    margin: 0 auto;
+    float: none;
 }

@@ -54,10 +54,11 @@
     <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico" />
 </head>
 <body>
-
     <div class="hg-container pure-g">
         {{ partial "mobile-nav.html" . }}
         {{ partial "sidenav.html" . }}
+
+        {{ block "container" . }}
         <div class="hg-body-container pure-u-1 pure-u-md-4-5">
             <div class="hg-body">
                 {{ block "body" . }}
@@ -65,6 +66,8 @@
             </div>
             {{ partial "footer.html" . }}
         </div>
+        {{ end }}
+
     </div>
 
     {{ template "_internal/google_analytics_async.html" . }}

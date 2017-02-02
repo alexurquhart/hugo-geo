@@ -1,1 +1,10 @@
-"use strict";$(document).ready(function(){hljs&&$("pre code").each(function(c,e){hljs.highlightBlock(e)})});
+'use strict';
+
+$(document).ready(function () {
+    if (typeof hljs !== 'undefined') {
+        $('pre code').each(function (i, block) {
+            hljs.highlightBlock(block);
+        });
+    }
+});
+//# sourceMappingURL=hugo-geo.js.map

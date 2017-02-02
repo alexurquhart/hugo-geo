@@ -1,0 +1,35 @@
+{{ define "container" }}
+<div class="hg-body-container pure-u-1 pure-u-md-3-5">
+    <div class="hg-body">
+
+        <main>
+            <header>
+                <h1>{{ .Title }}</h1>
+                <p class="hg-post-date hg-muted">
+                    Published on: 18th January 2017
+                </p>
+                <p class="hg-tag-list hg-muted">
+                    Tags:
+                    <span class="hg-tag">test</span>
+                    <span class="hg-tag">test</span>
+                    <span class="hg-tag">test</span>
+                </p>
+                &nbsp;
+            </header>
+            <article>
+                {{ .Content }}
+            </article>
+        </main>
+
+        {{ partial "post-bottom-nav.html" . }}
+
+        {{ if and .Site.DisqusShortname (ne .Params.nodisqus true) }}
+            {{ template "_internal/disqus.html" . }}
+        {{ end }}
+    </div>
+
+    {{ partial "footer.html" . }}
+
+</div>
+{{ partial "sidebar.html" . }}
+{{ end }}
