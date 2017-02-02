@@ -12,21 +12,19 @@ googleAnalytics = "code-here"
 
 [params]
     profilepic = "img/profile.png"
-
     subtitle = "My Hugo Blog"
-
     tagline = "What I'm Thinking"
-
     copyright = "Your Name 2001 - 2017"
-
     attribution = true
 
-[[menu.sidebar]]
+    twitterwidgeturl = "https://twitter.com/alexanderurq"
+
+[[menu.sidenav]]
     name = "Blog"
     identifier = "blog"
     url = "/"
     weight = -1
-[[menu.sidebar]]
+[[menu.sidenav]]
     name = "Tutorials"
     identifier = "tutorials"
     url = "/tutorials/"
@@ -52,6 +50,8 @@ googleAnalytics = "code-here"
     url = "https://www.linkedin.com/in/alex-urquhart-65979695"
     pre = '<i class="fa fa-linkedin" aria-hidden="true"></i>'
     weight = 3
+
+[[menu.share-buttons]]
 
 [[menu.footer]]
     name = "Link 1"

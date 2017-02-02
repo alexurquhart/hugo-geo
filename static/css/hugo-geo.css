@@ -96,8 +96,10 @@ html, button, input, select, textarea,
   box-sizing: border-box; }
 
 .hg-sidebar {
-  padding-top: 2rem;
   padding-right: 1rem; }
+
+.hg-sidebar-item {
+  margin-top: 2rem; }
 
 .hg-sidenav {
   display: none;

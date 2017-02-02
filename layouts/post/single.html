@@ -6,10 +6,10 @@
             <header>
                 <h1>{{ .Title }}</h1>
                 <p class="hg-post-date hg-muted">
-                    Published on: 18th January 2017
+                    {{ .Site.Data.hugogeo.strings.date }}: 18th January 2017
                 </p>
                 <p class="hg-tag-list hg-muted">
-                    Tags:
+                    {{ .Site.Data.hugogeo.strings.tags }}:
                     <span class="hg-tag">test</span>
                     <span class="hg-tag">test</span>
                     <span class="hg-tag">test</span>

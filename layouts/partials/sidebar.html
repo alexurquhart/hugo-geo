@@ -1,5 +1,13 @@
 <div class="hg-sidebar pure-u-1 pure-u-md-1-5">
-{{ if ne .Params.notoc true }}
-{{ partial "toc.html" . }}
-{{ end }}
+    <div class="hg-sidebar-item">
+        {{ if ne .Params.notoc true }}
+        {{ partial "toc.html" . }}
+        {{ end }}
+    </div>
+
+    {{ with .Site.Params.twitterwidgeturl }}
+    <div class="hg-sidebar-item">
+        <a class="twitter-timeline" data-height="800" href="{{ . }}">Tweets by alexanderurq</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    {{ end }}
 </div>
