@@ -16,8 +16,18 @@ googleAnalytics = "code-here"
     tagline = "What I'm Thinking"
     copyright = "Your Name 2001 - 2017"
     attribution = true
-
     twitterwidgeturl = "https://twitter.com/alexanderurq"
+
+    sharebuttons = [
+        "email",
+        "print",
+        "facebook",
+        "linkedin",
+        "reddit",
+        "github",
+        "googleplus",
+        "twitter"
+    ]
 
 [[menu.sidenav]]
     name = "Blog"
@@ -50,8 +60,6 @@ googleAnalytics = "code-here"
     url = "https://www.linkedin.com/in/alex-urquhart-65979695"
     pre = '<i class="fa fa-linkedin" aria-hidden="true"></i>'
     weight = 3
-
-[[menu.share-buttons]]
 
 [[menu.footer]]
     name = "Link 1"

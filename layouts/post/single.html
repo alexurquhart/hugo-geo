@@ -14,7 +14,11 @@
                     <span class="hg-tag">test</span>
                     <span class="hg-tag">test</span>
                 </p>
-                &nbsp;
+                {{ if (eq .Params.socialbuttons true) }}
+                <div class="hg-social-share-buttons">
+                    {{ partial "sharebuttons.html" . }}
+                </div>
+                {{ end }}
             </header>
             <article>
                 {{ .Content }}
@@ -32,4 +36,4 @@
 
 </div>
 {{ partial "sidebar.html" . }}
-{{ end }}
+{{ end }} 
