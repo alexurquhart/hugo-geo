@@ -1,0 +1,52 @@
+{{ $root := . }}
+<div class="hg-share-buttons">
+    {{ range $btn := .Site.Params.sharebuttons }}
+
+    {{ if eq $btn "email" }}
+    <div class="hg-share-btn">
+        <div class="hg-custom-btn">
+            <i class="fa fa-envelope fa-1"></i> E-mail
+        </div>
+    </div>
+    {{ end }}
+
+    {{ if eq $btn "print" }}
+    <div class="hg-share-btn">
+        <div class="hg-custom-btn">
+            <i class="fa fa-print fa-1"></i> Print
+        </div>
+    </div>
+    {{ end }}
+
+    {{ if eq $btn "facebook" }}
+    <div class="hg-share-btn">
+        <div class="fb-share-button" data-href="{{ $root.Permalink }}" data-layout="button"></div>
+    </div>
+    {{ end }}
+
+    {{ if eq $btn "twitter" }}
+    <div class="hg-share-btn">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="tweet text" data-url="https://test.com" data-show-count="false">Tweet</a>
+    </div>
+    {{ end }}
+
+    {{ if eq $btn "linkedin" }}
+    <div class="hg-share-btn">
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+        <script type="IN/Share"></script>
+    </div>
+    {{ end }}
+
+    {{ if eq $btn "reddit" }}
+    <div class="hg-share-btn">
+        <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
+    </div>
+    {{ end }}
+
+    {{ if eq $btn "googleplus" }}
+    <div class="hg-share-btn">
+        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>

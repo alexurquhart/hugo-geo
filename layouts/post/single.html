@@ -14,10 +14,8 @@
                     <span class="hg-tag">test</span>
                     <span class="hg-tag">test</span>
                 </p>
-                {{ if (eq .Params.socialbuttons true) }}
-                <div class="hg-social-share-buttons">
+                {{ if (eq .Params.sharebuttons true) }}
                     {{ partial "sharebuttons.html" . }}
-                </div>
                 {{ end }}
             </header>
             <article>

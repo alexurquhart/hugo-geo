@@ -1,0 +1,21 @@
+.hg-share-buttons {
+
+    display: flex;
+
+    .hg-share-btn {
+        margin-left: 1rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        .hg-custom-btn {
+            font-size: 90%;
+            padding: 3px 8px 1px;
+            background: $blue;
+            color: $white;
+            border-radius: 3px;
+        }
+    }
+
+}

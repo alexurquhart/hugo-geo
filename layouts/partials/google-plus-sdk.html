@@ -1,0 +1,5 @@
+{{ range .Site.Params.sharebuttons }}
+    {{ if eq . "googleplus" }}
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    {{ end }}
+{{ end }}

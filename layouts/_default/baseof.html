@@ -54,6 +54,7 @@
     <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico" />
 </head>
 <body>
+    <div id="fb-root"></div>
     <div class="hg-container pure-g">
         {{ partial "mobile-nav.html" . }}
         {{ partial "sidenav.html" . }}
@@ -79,14 +80,14 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
     {{ end }}
 
-    {{ if .Params.socialbuttons }}
-    <script src="//cdn.jsdelivr.net/rrssb/1.6.0/js/rrssb.min.js"></script>
-    {{ end }}
-
     {{ range .Params.scripts }}
     <script src="{{ . }}"></script>
     {{ end }}
     
     <script src="{{ .Site.BaseURL }}js/hugo-geo.js"></script>
+
+    {{ partial "twitter-sdk.html" . }}
+    {{ partial "facebook-sdk.html" . }}
+    {{ partial "google-plus-sdk.html" . }}
 </body>
 </html>

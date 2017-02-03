@@ -4,7 +4,7 @@ title = "Theme Demonstration"
 draft = false
 tags = ["blog", "hugo", "hugo-atlas", "demonstration"]
 highlight = true
-socialbuttons = true
+sharebuttons = true
 +++
 
 On this page I'd like to showcase all of the themes features.

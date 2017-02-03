@@ -30,7 +30,7 @@ h6 {
   font-weight: 300; }
 
 a {
-  color: #458DA3;
+  color: #4b79ce;
   text-decoration: none; }
   a:hover {
     color: #BDD4DE; }
@@ -258,6 +258,19 @@ figure figcaption {
 .hg-sidebar .hg-toc {
   margin: 0 auto;
   float: none; }
+
+.hg-share-buttons {
+  display: flex; }
+  .hg-share-buttons .hg-share-btn {
+    margin-left: 1rem; }
+    .hg-share-buttons .hg-share-btn:first-child {
+      margin-left: 0; }
+    .hg-share-buttons .hg-share-btn .hg-custom-btn {
+      font-size: 90%;
+      padding: 3px 8px 1px;
+      background: #4b79ce;
+      color: #FAFAFA;
+      border-radius: 3px; }
 
 body {
   background-color: #FAFAFA; }

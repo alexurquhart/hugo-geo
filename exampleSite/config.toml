@@ -20,13 +20,12 @@ googleAnalytics = "code-here"
 
     sharebuttons = [
         "email",
-        "print",
         "facebook",
+        "twitter",
         "linkedin",
         "reddit",
-        "github",
         "googleplus",
-        "twitter"
+        "print" 
     ]
 
 [[menu.sidenav]]
