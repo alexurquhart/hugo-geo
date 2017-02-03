@@ -260,17 +260,24 @@ figure figcaption {
   float: none; }
 
 .hg-share-buttons {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
   .hg-share-buttons .hg-share-btn {
-    margin-left: 1rem; }
-    .hg-share-buttons .hg-share-btn:first-child {
-      margin-left: 0; }
+    margin-right: 1rem;
+    white-space: nowrap; }
     .hg-share-buttons .hg-share-btn .hg-custom-btn {
       font-size: 90%;
-      padding: 3px 8px 1px;
+      padding: 2px 6px 2px;
       background: #4b79ce;
       color: #FAFAFA;
       border-radius: 3px; }
+      .hg-share-buttons .hg-share-btn .hg-custom-btn.hg-rss {
+        background: #F90;
+        color: white; }
+    .hg-share-buttons .hg-share-btn .hg-rss {
+      background: #F90;
+      color: white; }
 
 body {
   background-color: #FAFAFA; }

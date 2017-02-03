@@ -25,7 +25,8 @@ googleAnalytics = "code-here"
         "linkedin",
         "reddit",
         "googleplus",
-        "print" 
+        "print",
+        "rss"
     ]
 
 [[menu.sidenav]]
@@ -44,16 +45,19 @@ googleAnalytics = "code-here"
     url = "https://www.github.com/alexanderurq"
     pre = '<i class="fa fa-github" aria-hidden="true"></i>'
     weight = 0
+
 [[menu.social]]
     name = "Twitter"
     url = "https://twitter.com/alexanderurq"
     pre = '<i class="fa fa-twitter" aria-hidden="true"></i>'
     weight = 1
+
 [[menu.social]]    
     name = "E-Mail"
     url = "mailto:alexurquhart@gmail.com"
     pre = '<i class="fa fa-envelope-o" aria-hidden="true"></i>'
     weight = 2
+
 [[menu.social]]    
     name = "LinkedIn"
     url = "https://www.linkedin.com/in/alex-urquhart-65979695"

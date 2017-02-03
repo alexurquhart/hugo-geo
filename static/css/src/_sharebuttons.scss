@@ -1,20 +1,29 @@
 .hg-share-buttons {
 
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     .hg-share-btn {
-        margin-left: 1rem;
-
-        &:first-child {
-            margin-left: 0;
-        }
+        margin-right: 1rem;
+        white-space: nowrap;
 
         .hg-custom-btn {
             font-size: 90%;
-            padding: 3px 8px 1px;
+            padding: 2px 6px 2px;
             background: $blue;
             color: $white;
             border-radius: 3px;
+
+            &.hg-rss {
+                background: $rss;
+                color: white;
+            }
+        }
+
+        .hg-rss {
+            background: $rss;
+            color: white;
         }
     }
 

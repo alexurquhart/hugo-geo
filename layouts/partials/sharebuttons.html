@@ -5,7 +5,7 @@
     {{ if eq $btn "email" }}
     <div class="hg-share-btn">
         <div class="hg-custom-btn">
-            <i class="fa fa-envelope fa-1"></i> E-mail
+            <i class="fa fa-envelope fa-1"></i>
         </div>
     </div>
     {{ end }}
@@ -13,7 +13,7 @@
     {{ if eq $btn "print" }}
     <div class="hg-share-btn">
         <div class="hg-custom-btn">
-            <i class="fa fa-print fa-1"></i> Print
+            <i class="fa fa-print fa-1"></i>
         </div>
     </div>
     {{ end }}
@@ -48,5 +48,14 @@
         <div class="g-plus" data-action="share" data-annotation="bubble"></div>
     </div>
     {{ end }}
+
+    {{ if eq $btn "rss" }}
+    <div class="hg-share-btn">
+        <div class="hg-custom-btn hg-rss">
+            <i class="fa fa-rss fa-1"></i>
+        </div>
+    </div>
+    {{ end }}
+
     {{ end }}
 </div>
