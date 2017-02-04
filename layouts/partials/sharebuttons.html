@@ -4,17 +4,21 @@
 
     {{ if eq $btn "email" }}
     <div class="hg-share-btn">
-        <div class="hg-custom-btn">
-            <i class="fa fa-envelope fa-1"></i>
-        </div>
+        <a href="mailto:?{{ (querify "body" $root.Permalink "subject" $root.Title) | safeURL }}">
+            <div class="hg-custom-btn">
+                <i class="fa fa-envelope fa-1"></i>
+            </div>
+        </a>
     </div>
     {{ end }}
 
     {{ if eq $btn "print" }}
     <div class="hg-share-btn">
-        <div class="hg-custom-btn">
-            <i class="fa fa-print fa-1"></i>
-        </div>
+        <a href="#" onclick="window.print()">
+            <div class="hg-custom-btn">
+                <i class="fa fa-print fa-1"></i>
+            </div>
+        </a>
     </div>
     {{ end }}
 
@@ -26,19 +30,24 @@
 
     {{ if eq $btn "twitter" }}
     <div class="hg-share-btn">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="tweet text" data-url="https://test.com" data-show-count="false">Tweet</a>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ $root.Permalink }}" data-show-count="false">Tweet</a>
     </div>
     {{ end }}
 
     {{ if eq $btn "linkedin" }}
     <div class="hg-share-btn">
         <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-        <script type="IN/Share"></script>
+        <script type="IN/Share" data-url="{{ $root.Permalink }}"></script>
     </div>
     {{ end }}
 
     {{ if eq $btn "reddit" }}
     <div class="hg-share-btn">
+        <script type="text/javascript">
+            reddit_url = '{{ $root.Permalink }}';
+            reddit_title = '{{ $root.Title }}';
+            reddit_newwindow='1';
+        </script>
         <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
     </div>
     {{ end }}
@@ -49,11 +58,13 @@
     </div>
     {{ end }}
 
-    {{ if eq $btn "rss" }}
+    {{ if and (eq $btn "rss") $root.Site.RSSLink }}
     <div class="hg-share-btn">
-        <div class="hg-custom-btn hg-rss">
-            <i class="fa fa-rss fa-1"></i>
-        </div>
+        <a href="{{ $root.Site.RSSLink }}" type="application/rss+xml" target="_blank">
+            <div class="hg-custom-btn hg-rss">
+                <i class="fa fa-rss fa-1"></i>
+            </div>
+        </a>
     </div>
     {{ end }}
 

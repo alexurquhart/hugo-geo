@@ -5,6 +5,10 @@ title = "Your Name"
 disqusShortname = "shortcode-here"
 paginate = 5
 googleAnalytics = "code-here"
+copyright = "2001 - 2017"
+
+[author]
+    name = "My Name Here"
 
 [taxonomies]
     tag = "tags"
@@ -14,10 +18,8 @@ googleAnalytics = "code-here"
     profilepic = "img/profile.png"
     subtitle = "My Hugo Blog"
     tagline = "What I'm Thinking"
-    copyright = "Your Name 2001 - 2017"
     attribution = true
     twitterwidgeturl = "https://twitter.com/alexanderurq"
-
     sharebuttons = [
         "email",
         "facebook",

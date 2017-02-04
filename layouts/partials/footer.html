@@ -10,9 +10,9 @@
         Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/alexurquhart/hugo-geo" target="_blank">hugo-geo</a> theme
     </div>
     {{ end }}
-    {{ with .Site.Params.copyright }}
+    {{ if and .Site.Copyright .Site.Author }}
     <div class="pure-u-1">
-        &copy; {{ . }}
+        &copy; {{ .Site.Author.name }} {{ .Site.Copyright }}
     </div>
     {{ end }}
     {{ with .Site.Menus.footer }}
