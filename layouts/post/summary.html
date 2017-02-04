@@ -1,27 +1,25 @@
-<div class="panel panel-default">
-	<div class="panel-header">
+<div class="hg-summary">
+	<div class="hg-summary-header">
 		<h3>
 			<a href="{{ .Permalink }}">{{ .Title }}</a>
-			<br>
-			<small>
-				{{ .Date.Format "2 January 2006" }}
-			</small>
 		</h3>
+		<div class="hg-summary-date hg-muted">
+			 {{ .Site.Data.hugogeo.strings.date }}: {{ .Date.Format "2 January 2006" }}
+		</div>
 	</div>
-	<div class="panel-body">
+	<div class="hg-summary-body">
 		{{.Summary}}
 		{{ if .Truncated }}
 			... <a href="{{ .Permalink }}">Read More</a>
 		{{ end }}
 	</div>
-	<div class="panel-footer">
+	<div class="hg-summary-footer hg-muted">
 		{{ if isset .Params "tags" }}
-		<small class="text-muted">
+			{{ .Site.Data.hugogeo.strings.tags }}:
 			{{ $base := .Site.BaseURL }}
 			{{ range $tag := .Params.tags }}
-				<a href="{{ $base }}tags/{{ $tag | urlize }}"><span class="label label-success">{{ . }}</span></a>
+				<a href="{{ $base }}tags/{{ $tag | urlize }}"><span class="hg-tag">{{ . }}</span></a>
 			{{ end }}
-		</small>
 		{{ end }}
 	</div>
 </div>

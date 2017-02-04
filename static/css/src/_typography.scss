@@ -94,12 +94,12 @@ blockquote {
 .hg-tag {
     background: $red;
     padding: .2rem .6rem .3rem;
-    margin-left: 0.7rem;
+    margin-right: 0.7rem;
     font-size: 0.75rem;
     color: white;
     border-radius: 0.25rem;
 
     &:first-child {
-        margin-left: 0.5rem;
+        margin-left: 0.3rem;
     }
 }

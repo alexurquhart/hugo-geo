@@ -95,12 +95,12 @@ blockquote {
 .hg-tag {
   background: #f3534e;
   padding: .2rem .6rem .3rem;
-  margin-left: 0.7rem;
+  margin-right: 0.7rem;
   font-size: 0.75rem;
   color: white;
   border-radius: 0.25rem; }
   .hg-tag:first-child {
-    margin-left: 0.5rem; }
+    margin-left: 0.2rem; }
 
 .hg-body-container {
   min-height: 100%;
@@ -326,6 +326,14 @@ figure figcaption {
         color: white; }
         .hg-share-buttons .hg-share-btn .hg-custom-btn.hg-rss:hover {
           background: #e68a00; }
+
+.hg-summary .hg-summary-header {
+  font-family: "Oswald", "Arial", sans-serif; }
+  .hg-summary .hg-summary-header .hg-summary-date {
+    margin-bottom: 1rem; }
+
+.hg-summary .hg-summary-body {
+  margin-bottom: 1rem; }
 
 body {
   background-color: #FAFAFA; }
