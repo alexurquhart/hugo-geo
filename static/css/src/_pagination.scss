@@ -1,0 +1,31 @@
+.hg-pagination {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid $lt-grey;
+    border-bottom: 1px solid $lt-grey;
+
+    ul {
+        display: flex;
+        width: 50%;
+        margin: 1rem auto;
+        padding: 0;
+        justify-content: space-around;
+
+        li {
+            display: inline;
+            font-size: 2rem;
+            font-family: $header-font;
+            font-weight: 200;
+            
+            a {
+                color: $grey;
+            }
+
+            &.active, &.disabled {
+                a {
+                    color: lighten($grey, 20%);
+                }
+            }
+        }
+    }
+}

@@ -4,11 +4,13 @@
 <h1>{{ .Site.Params.tagline }}</h1>
 {{ end }}
 
-{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Section" "post") }}
+{{ $paginator := .Paginate (where .Data.Pages "Section" "post") }}
 {{ range $paginator.Pages }}
-	{{ .Render "summary"}}
+   {{ .Render "summary" }}
 {{ end }}
 
+<div class="hg-pagination">
 {{ template "_internal/pagination.html" . }}
+</div>
 
 {{ end }}
