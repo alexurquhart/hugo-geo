@@ -4,87 +4,36 @@ A responsive blog theme I've developed for use on my personal website. Suitable 
 
 ![screenshot](https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/images/tn.png)
 
-#[Example Site Demo](http://alexurquhart.github.io/hugo-geo/)
+[Example Site Demo](http://alexurquhart.github.io/hugo-geo/)
 
 I also use it on my [personal website](https://alexurquhart.com)
 
-
 ## Dependencies
-- Hugo v0.14 or better
-- LESS if you wish to compile the custom CSS
+- Hugo v0.18 or better
 
-## Features
-- Use `highlight = true` in the front matter to include [highlight js](https://highlightjs.org/) javascript and css files.
-- In the front matter, use `index = true` on the first post in a tutorial series to make that content the "index" page for the rest of the series
-- Include custom scripts and css on individual pages in front matter like so:
-```toml
-scripts = [
-"//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/languages/go.min.js",
-]
+## Developing
+The CSS for hugo-geo is compiled using SASS, while the JS is transpiled using Babel (see `.babelrc` to 
+change browser presets)
 
-css = [
-"//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"
-]
+```bash
+# Install dependencies
+npm install
+
+# Develop
+gulp watch
+
+# Build
+gulp
 ```
 
-## Site Config
-These are my `config.toml` settings:
 
-```toml
-BaseURL = "https://base-url-here/"
-relativeURLs = false
-languageCode = "en-us"
-title = "SiteTitle.Com"
-disqusShortname = "*****"
-paginate = 5
+## Contributing
+I ask that everyone who wishes to contribute open a GitHub issue
+detailing the enhancement, feature, or bugfix that are working on. If you're submitting a pull request please ensure that:
 
-[taxonomies]
-	tag = "tags"
-	tutorial = "tutorials"
-
-[params]
-	# Render the rotating globe in the sidebar
-	showglobe = true
- 	
-	# Google Analytics
-	analytics = "SHORT-CODE-HERE"
-
-	# Social buttons for sidebar
-	github = "https://github.com/alexurquhart"
-	twitter = "https://twitter.com/alexanderurq"
-	linkedin = "https://linkedin.com"
-	email = "alexurquhart@gmail.com"
-	
-	# Sidebar profile picture
-	profilepic = "img/smugmug.jpg"
-	
-	# Title/subtitle for the sidebar
-	title = "ALEX URQUHART"
-	subtitle = "GEOMATICS PROFESSIONAL"
-	
-	# Nav links below the profile picture
-	[[params.navlinks]]
-	name = "About"
-	url = "about/"
-	
-	[[params.navlinks]]
-	name = "Blog"
-	url = "posts/"
-	
-	[[params.navlinks]]
-	name = "Tutorials"
-	url = "tutorial/"
-```
-
-## My TODO List
-- Clean up and simplify the CSS
-- Make Disqus comments optional on a per-page basis
-- Previous/next post buttons on each page
-- Improve list pages
-- Add a sidebar on large screens with links to related posts
-- Add next/previous links at the end of posts/tutorials
-- Add breadcrumbs to top of page
-
+- It references an open GitHub issue
+- Any new features or config changes are documented in the example site and README.md
+- Any text in the theme that isn't user specified is inserted to `data/hugogeo/strings.toml` to allow for i18n
 
 #### Credits
 World graphic in logo by <a href="http://www.greepit.com">Sarfraz Shoukat</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
