@@ -9,10 +9,7 @@
                     {{ .Site.Data.hugogeo.strings.date }}: 18th January 2017
                 </p>
                 <p class="hg-tag-list hg-muted">
-                    {{ .Site.Data.hugogeo.strings.tags }}:
-                    <span class="hg-tag">test</span>
-                    <span class="hg-tag">test</span>
-                    <span class="hg-tag">test</span>
+                    {{ partial "taglist.html" . }}
                 </p>
                 {{ if (eq .Params.sharebuttons true) }}
                     {{ partial "sharebuttons.html" . }}

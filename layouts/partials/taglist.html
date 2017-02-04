@@ -1,0 +1,7 @@
+{{ if isset .Params "tags" }}
+    {{ .Site.Data.hugogeo.strings.tags }}:
+    {{ $base := .Site.BaseURL }}
+    {{ range $tag := .Params.tags }}
+        <a href="{{ $base }}tags/{{ $tag | urlize }}"><span class="hg-tag">{{ . }}</span></a>
+    {{ end }}
+{{ end }}

@@ -282,9 +282,7 @@ figure figcaption {
   padding-right: 1rem;
   padding-top: 1rem;
   margin-right: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #c2ccd2;
-  background: #f6f6f6; }
+  margin-bottom: 1rem; }
   .hg-toc #TableOfContents ul {
     padding-left: 0.5rem; }
     .hg-toc #TableOfContents ul li {
@@ -344,10 +342,16 @@ figure figcaption {
   border-bottom: 1px solid #ECECEC; }
   .hg-pagination ul {
     display: flex;
-    width: 50%;
+    width: 100%;
     margin: 1rem auto;
     padding: 0;
     justify-content: space-around; }
+    @media screen and (min-width: 48em) {
+      .hg-pagination ul {
+        width: 70%; } }
+    @media screen and (min-width: 64em) {
+      .hg-pagination ul {
+        width: 50%; } }
     .hg-pagination ul li {
       display: inline;
       font-size: 2rem;

@@ -5,6 +5,7 @@ title = "About Me"
 menu = "sidenav"
 nodisqus = true
 highlight = true
+notoc = true
 +++
 
 {{< thumbnail src="http://lorempixel.com/g/640/480/" caption="This is an example of a thumbnail" float="right" >}}

@@ -6,7 +6,8 @@
     {{ if ne .Params.notoc true }}
     <div class="hg-toc">
         <div class="hg-toc-label">Table of Contents</div>
-        {{ .TableOfContents }}
+
+        {{ partial "toc.html" . }}
     </div>
     {{ end }}
     <article>

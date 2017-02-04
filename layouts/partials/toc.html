@@ -1,4 +1,6 @@
+{{ if ne .Params.notoc true }}
 <div class="hg-toc">
     <div class="hg-toc-label">{{ .Site.Data.hugogeo.strings.toc }}</div>
     {{ .TableOfContents }}
 </div>
+{{ end }}
