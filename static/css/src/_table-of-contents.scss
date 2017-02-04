@@ -25,12 +25,14 @@
 }
 
 .hg-sidebar .hg-toc {
-    display: none;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    float: none;
+}
 
+article .hg-toc {
     @media screen and (min-width: $mobile-break) {
-        float: none;
-        display: block;
-        margin: 0 auto;
-        float: none;
+        display: none;
     }
 }

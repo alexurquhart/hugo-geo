@@ -10,4 +10,16 @@
         <a class="twitter-timeline" data-height="800" href="{{ . }}">Tweets by alexanderurq</a>
     </div>
     {{ end }}
+
+    {{ with.Site.Menus.sidebar }}
+        {{ range . }}
+        <div class="hg-sidebar-item">
+            {{ if.URL }}
+            <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
+            {{ else }}
+            {{ .Pre }}
+            {{ end }}
+        </div>
+        {{ end }}
+    {{ end }}
 </div>

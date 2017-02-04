@@ -1,4 +1,9 @@
 .hg-sidebar {
+    display: none;
+    @media screen and (min-width: $mobile-break) {
+        display: block;
+    }
+
     padding-right: 1rem;
     
     .hg-sidebar-item {

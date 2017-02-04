@@ -42,6 +42,10 @@ copyright = "2001 - 2017"
     url = "/tutorials/"
     weight = 1
 
+[[menu.sidebar]]
+    pre = '<img src="/img/do.png" class="responsive pure-img>'
+    url = "https://m.do.co/c/78ae6b852549"
+
 [[menu.social]]    
     name = "GitHub"
     url = "https://www.github.com/alexanderurq"
