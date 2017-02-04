@@ -2,32 +2,63 @@
 h1 {
   font-size: 2.5rem;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 h2 {
   font-size: 2rem;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 h3 {
   font-size: 1.75rem;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 h4 {
   font-size: 1.5rem;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 h5 {
   font-size: 1.25rem;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 h6 {
   font-size: 1rem;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  header p {
+    font-size: 1.2rem; }
+
+p {
+  margin: 0;
+  margin-bottom: 1rem; }
 
 a {
   color: #4b79ce;
@@ -95,11 +126,13 @@ html, button, input, select, textarea,
 .pure-g > div {
   box-sizing: border-box; }
 
+article .pure-g {
+  margin-bottom: 1rem; }
+
 .hg-sidebar {
   padding-right: 1rem; }
-
-.hg-sidebar-item {
-  margin-top: 2rem; }
+  .hg-sidebar .hg-sidebar-item {
+    margin-top: 2rem; }
 
 .hg-sidenav {
   display: none;
@@ -256,22 +289,31 @@ figure figcaption {
     font-size: 120%; }
 
 .hg-sidebar .hg-toc {
-  margin: 0 auto;
-  float: none; }
+  display: none; }
+  @media screen and (min-width: 48em) {
+    .hg-sidebar .hg-toc {
+      float: none;
+      display: block;
+      margin: 0 auto;
+      float: none; } }
 
 .hg-share-buttons {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: center; }
   .hg-share-buttons .hg-share-btn {
     margin-right: 1rem;
     white-space: nowrap; }
+    .hg-share-buttons .hg-share-btn .fb-share-button {
+      padding-bottom: 8px; }
     .hg-share-buttons .hg-share-btn .hg-custom-btn {
-      font-size: 90%;
-      padding: 2px 6px 2px;
+      padding: 0px 6px 3px;
       background: #4b79ce;
       color: #FAFAFA;
       border-radius: 3px; }
+      .hg-share-buttons .hg-share-btn .hg-custom-btn .fa {
+        font-size: 0.9rem !important; }
       .hg-share-buttons .hg-share-btn .hg-custom-btn:hover {
         background: #376ac9; }
       .hg-share-buttons .hg-share-btn .hg-custom-btn.hg-rss {

@@ -36,6 +36,10 @@ Links to [different websites](https://gohugo.io)
 Links to [different websites](https://gohugo.io)
 ```
 
+Block quotes look like this
+
+> Block quotes look like this
+
 # Code
 
 You can use [highlight.js](https://highlightjs.org/) to highlight most languages.

@@ -12,3 +12,9 @@ html, button, input, select, textarea,
 .pure-g > div {
     box-sizing: border-box;
 }
+
+article {
+    .pure-g {
+        margin-bottom: 1rem;
+    }
+}

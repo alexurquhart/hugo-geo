@@ -1,6 +1,9 @@
 @mixin header {
     font-family: $header-font;
     font-weight: 300;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem
 }
 
 h1 {
@@ -31,6 +34,19 @@ h5 {
 h6 {
     font-size: 1rem;
     @include header;
+}
+
+header {
+    @include header;
+    
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 a {

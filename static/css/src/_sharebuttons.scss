@@ -3,17 +3,25 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 
     .hg-share-btn {
         margin-right: 1rem;
         white-space: nowrap;
 
+        .fb-share-button {
+            padding-bottom: 8px;
+        }
+
         .hg-custom-btn {
-            font-size: 90%;
-            padding: 2px 6px 2px;
+            padding: 0px 6px 3px;
             background: $blue;
             color: $white;
             border-radius: 3px;
+
+            .fa {
+                font-size: 0.9rem !important;
+            }
 
             &:hover {
                 background: darken($blue, 5%);

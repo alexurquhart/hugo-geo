@@ -25,6 +25,12 @@
 }
 
 .hg-sidebar .hg-toc {
-    margin: 0 auto;
-    float: none;
+    display: none;
+
+    @media screen and (min-width: $mobile-break) {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
 }
