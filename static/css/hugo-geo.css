@@ -272,12 +272,13 @@ figure figcaption {
       background: #4b79ce;
       color: #FAFAFA;
       border-radius: 3px; }
+      .hg-share-buttons .hg-share-btn .hg-custom-btn:hover {
+        background: #376ac9; }
       .hg-share-buttons .hg-share-btn .hg-custom-btn.hg-rss {
         background: #F90;
         color: white; }
-    .hg-share-buttons .hg-share-btn .hg-rss {
-      background: #F90;
-      color: white; }
+        .hg-share-buttons .hg-share-btn .hg-custom-btn.hg-rss:hover {
+          background: #e68a00; }
 
 body {
   background-color: #FAFAFA; }

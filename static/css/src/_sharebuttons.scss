@@ -15,15 +15,18 @@
             color: $white;
             border-radius: 3px;
 
+            &:hover {
+                background: darken($blue, 5%);
+            }
+
             &.hg-rss {
                 background: $rss;
                 color: white;
-            }
-        }
 
-        .hg-rss {
-            background: $rss;
-            color: white;
+                &:hover {
+                    background: darken($rss, 5%);
+                }
+            }
         }
     }
 

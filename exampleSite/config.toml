@@ -22,13 +22,13 @@ copyright = "2001 - 2017"
     twitterwidgeturl = "https://twitter.com/alexanderurq"
     sharebuttons = [
         "email",
+        "print",
+        "rss",
         "facebook",
         "twitter",
         "linkedin",
         "reddit",
-        "googleplus",
-        "print",
-        "rss"
+        "googleplus"
     ]
 
 [[menu.sidenav]]
