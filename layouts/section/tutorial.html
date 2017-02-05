@@ -7,18 +7,17 @@
 
 <h3>{{ .Key }}</h3>
 
-{{ with index .Pages 0 }}
-    {{ .Render "summary" }}
-{{ end }}
+    {{ with index .Pages.ByDate 0 }}
+        {{ .Render "summary" }}
+    {{ end }}
 
-
-{{ range $index, $el := .Pages }}
-    <h5>
-        <a href="{{ $el.Permalink }}">
-        {{ .Site.Data.hugogeo.strings.part }} {{ add $index 1 }}: {{ $el.Title }}
-        </a>
-    </h5>
-{{ end }}
+    {{ range $index, $el := .Pages.ByDate }}
+        <h5>
+            <a href="{{ $el.Permalink }}">
+            {{ .Site.Data.hugogeo.strings.part }} {{ add $index 1 }}: {{ $el.Title }}
+            </a>
+        </h5>
+    {{ end }}
 
 {{ end }}
 {{ end }}
