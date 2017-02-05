@@ -380,6 +380,12 @@ figure figcaption {
     .hg-bottom-nav div:last-child {
       float: right; }
 
+.hg-block-btn {
+  display: block;
+  width: 100%; }
+  .hg-block-btn:hover {
+    color: #000 !important; }
+
 body {
   background-color: #FAFAFA; }
 

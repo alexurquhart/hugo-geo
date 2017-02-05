@@ -1,9 +1,16 @@
 <div class="hg-sidebar pure-u-1 pure-u-md-1-5">
     <div class="hg-sidebar-item">
-        {{ if ne .Params.notoc true }}
-        {{ partial "toc.html" . }}
-        {{ end }}
+        <a class="pure-button hg-block-btn" href="{{ .Site.BaseURL }}">
+            <i class="fa fa-home"></i>
+            {{ .Site.Data.hugogeo.strings.home }}
+        </a>
     </div>
+
+    {{ if ne .Params.notoc true }}
+    <div class="hg-sidebar-item">
+        {{ partial "toc.html" . }}
+    </div>
+    {{ end }}
 
     {{ with .Site.Params.twitterwidgeturl }}
     <div class="hg-sidebar-item">
