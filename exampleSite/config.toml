@@ -44,7 +44,7 @@ theme = "hugo-geo"
     weight = 1
 
 [[menu.sidebar]]
-    pre = '<img src="/img/do.png" class="responsive pure-img>'
+    pre = '<img src="/img/do.png" class="responsive pure-img">'
     url = "https://m.do.co/c/78ae6b852549"
 
 [[menu.social]]    

@@ -1,11 +1,10 @@
 {{ define "body" }}
 <header>
-	<h1>{{ .Title }}</a></h1>
+    <h1>{{ .Title }}</a></h1>
 </header>
 <ul>
-	{{ range .Data.Pages }}
-	<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-	{{ end }}
+    {{ range .Data.Pages }}
+    {{ .Render "li" }}
+    {{ end }}
 </ul>
 {{ end }}
-
