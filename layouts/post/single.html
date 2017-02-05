@@ -21,7 +21,7 @@
             </article>
         </main>
 
-        {{ partial "post-bottom-nav.html" . }}
+        {{ partial "bottom-nav.html" . }}
 
         {{ if and .Site.DisqusShortname (ne .Params.nodisqus true) }}
             {{ template "_internal/disqus.html" . }}

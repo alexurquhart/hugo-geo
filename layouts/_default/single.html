@@ -15,9 +15,7 @@
     </article>
 </main>
 
-<div id="bottom-nav" class="text-center center-block">
-    <a href=" {{ .Site.BaseURL }}" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
-</div>
+{{ partial "bottom-nav.html" . }}
 
 {{ if and .Site.DisqusShortname (ne .Params.nodisqus true) }}
     {{ template "_internal/disqus.html" . }}

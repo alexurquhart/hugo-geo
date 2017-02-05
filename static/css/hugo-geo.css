@@ -362,6 +362,24 @@ figure figcaption {
       .hg-pagination ul li.active a, .hg-pagination ul li.disabled a {
         color: #dcdfe1; }
 
+.hg-bottom-nav {
+  border-top: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  margin: 2rem auto; }
+  .hg-bottom-nav div {
+    margin: 2rem auto;
+    display: inline-block;
+    font-weight: 200;
+    text-align: center; }
+    .hg-bottom-nav div a {
+      font-size: 1.2rem;
+      font-family: "Oswald", "Arial", sans-serif !important;
+      color: #A5ADB2; }
+    .hg-bottom-nav div:first-child {
+      float: left; }
+    .hg-bottom-nav div:last-child {
+      float: right; }
+
 body {
   background-color: #FAFAFA; }
 

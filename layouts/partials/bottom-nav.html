@@ -1,0 +1,22 @@
+{{ $strings := .Site.Data.hugogeo.strings }}
+<div class="pure-g hg-bottom-nav">
+    <div class="pure-u-9-24">
+        {{ if and .PrevInSection .Section }}
+        <a href="{{ .PrevInSection.Permalink }}">
+            {{ $strings.prev }}: {{.PrevInSection.Title}}
+        </a>
+        {{ end }}
+    </div>
+    <div class="pure-u-6-24">
+        <a href="{{ .Site.BaseURL }}">
+            {{ $strings.home }}
+        </a>
+    </div>
+    <div class="pure-u-9-24">
+        {{ if and .NextInSection .Section }}
+        <a href="{{ .NextInSection.Permalink }}">
+            {{ $strings.next }}: {{.NextInSection.Title}}
+        </a>
+        {{ end }}
+    </div>
+</div>

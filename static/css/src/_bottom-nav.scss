@@ -1,0 +1,26 @@
+.hg-bottom-nav {
+    border-top: 1px solid $lt-grey;
+    border-bottom: 1px solid $lt-grey;
+    margin: 2rem auto;
+
+    div {
+        margin: 2rem auto;
+        display: inline-block;
+        font-weight: 200;
+        text-align: center;
+        
+        a {
+            font-size: 1.2rem;
+            font-family: $header-font !important;
+            color: $grey;
+        }
+
+        &:first-child {
+            float: left;
+        }
+
+        &:last-child {
+            float: right;
+        }
+    }
+}
