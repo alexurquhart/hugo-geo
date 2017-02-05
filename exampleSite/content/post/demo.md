@@ -140,16 +140,24 @@ There are a few [shortcodes](http://gohugo.io/extras/shortcodes/) provided in or
 ```
 {{</* row */>}}
     {{</* col size="1" md-size="1-2" lg-size="1-4" */>}}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     {{</* /col */>}}
     {{</* col size="1" md-size="1-2" lg-size="1-4" */>}}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     {{</* /col */>}}
     {{</* col size="1" md-size="1-2" lg-size="1-4" */>}}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     {{</* /col */>}}
     {{</* col size="1" md-size="1-2" lg-size="1-4" */>}}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     {{</* /col */>}}
 {{</* /row */>}}
 ```
@@ -159,16 +167,24 @@ This renders as the following HTML:
 ```html
 <div class="pure-g clear">
     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     </div>
     <div class=" pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     </div>
     <div class=" pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     </div>
     <div class=" pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     </div>
 </div>
 ```
@@ -176,16 +192,24 @@ This will will be displayed same as below. Resize your browser window to see the
 
 {{< row >}}
     {{< col size="1" md-size="1-2" lg-size="1-4" >}}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     {{< /col >}}
     {{< col size="1" md-size="1-2" lg-size="1-4" >}}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     {{< /col >}}
     {{< col size="1" md-size="1-2" lg-size="1-4" >}}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     {{< /col >}}
     {{< col size="1" md-size="1-2" lg-size="1-4" >}}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
+        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
+        Unde, veniam, eos tempora sit ratione optio!
     {{< /col >}}
 {{< /row >}}
 

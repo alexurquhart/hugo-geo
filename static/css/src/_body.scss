@@ -13,3 +13,11 @@
         padding-right: 5%;
     }
 }
+
+.hidden-mobile {
+    display: initial;
+    
+    @media screen and (min-width: $mobile-break) {
+        display: none;
+    }
+}

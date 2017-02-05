@@ -10,8 +10,8 @@ Parameters
 -->
 <figure {{ with .Get "id" }}id="#{{.}}" {{ end }}>
     {{ if ne (.Get "nolightbox") "1" }}
-    <a 
-        href="#"
+    <a
+            href="{{ .Get "src" }}"
             data-title="{{ .Get "caption" }}"
 
             {{ if or (.Get "caption") (.Get "gallery") }}

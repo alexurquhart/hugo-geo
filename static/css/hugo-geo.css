@@ -115,6 +115,12 @@ blockquote {
     padding-left: 5%;
     padding-right: 5%; }
 
+.hidden-mobile {
+  display: initial; }
+  @media screen and (min-width: 48em) {
+    .hidden-mobile {
+      display: none; } }
+
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   font-family: "Roboto", "Arial", sans-serif;
@@ -127,7 +133,7 @@ html, button, input, select, textarea,
 .pure-g > div {
   box-sizing: border-box; }
 
-article .pure-g {
+article .pure-g div {
   margin-bottom: 1rem; }
 
 .hg-sidebar {
@@ -296,10 +302,6 @@ figure figcaption {
   display: block;
   margin: 0 auto;
   float: none; }
-
-@media screen and (min-width: 48em) {
-  article .hg-toc {
-    display: none; } }
 
 .hg-share-buttons {
   display: flex;
