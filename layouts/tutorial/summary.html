@@ -1,0 +1,19 @@
+<div class="hg-summary">
+    <div class="hg-summary-header">
+        <h3>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h3>
+        <div class="hg-summary-date hg-muted">
+             {{ .Site.Data.hugogeo.strings.date }}: {{ .Date.Format "2 January 2006" }}
+        </div>
+    </div>
+    <div class="hg-summary-body">
+        {{ .Summary }}
+        {{ if .Truncated }}
+            ... <a href="{{ .Permalink }}">Read More</a>
+        {{ end }}
+    </div>
+    <div class="hg-summary-footer hg-muted">
+        {{ partial "taglist.html" . }}
+    </div>
+</div>

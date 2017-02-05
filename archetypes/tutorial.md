@@ -1,10 +1,28 @@
 +++
-draft = true
+# Page tags
 tags = []
-description = ""
-title = "Page Title"
+
+# Include highlight.js for code highlighting (set to false or erase to not include)
 highlight = true
+
+# Array of CSS scripts to load
 css = []
+
+# Array of JS files to load for the page
 scripts = []
-index = false
+
+# Show social buttons specified in the site config
+socialbuttons = true
+
+# Set to true to disable table of contents on this page
+notoc = false
+
+# Set to true to disable Disqus comments on this page
+nodisqus = false
+
+# Tutorial name
+tutorial = ""
+
+# Tutorial page number - (1st part = 1, 2nd part = 2, etc)
+weight = 0
 +++

@@ -75,8 +75,6 @@
 
     </div>
 
-    {{ template "_internal/google_analytics_async.html" . }}
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
 
@@ -93,5 +91,6 @@
     {{ partial "twitter-sdk.html" . }}
     {{ partial "facebook-sdk.html" . }}
     {{ partial "google-plus-sdk.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
 </body>
 </html>

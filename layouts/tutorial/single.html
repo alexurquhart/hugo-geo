@@ -16,7 +16,9 @@
                 {{ end }}
             </header>
             <article>
-                {{ partial "toc.html" . }}
+                <div class="hidden-mobile">
+                    {{ partial "toc.html" . }}
+                </div>
                 {{ .Content }}
             </article>
         </main>

@@ -1,11 +1,11 @@
 name = "hugo-geo"
 license = "MIT"
 licenselink = "https://raw.githubusercontent.com/alexurquhart/hugo-geo/master/LICENSE"
-description = "A responsive blog theme made using Bootstrap 3, jQuery, and D3.js"
+description = "A responsive blog theme made designed for post and tutorial sections"
 homepage = "https://alexurquhart.com"
 tags = ["blog"]
-features = ["blog", "responsive", "bootstrap"]
-min_version= 0.14
+features = ["blog", "responsive", "sidebar", "social buttons"]
+min_version= 0.18
 
 [author]
     name = "Alex Urquhart"
