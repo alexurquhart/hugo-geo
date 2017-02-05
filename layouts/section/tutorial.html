@@ -1,24 +1,33 @@
 {{ define "body" }}
 <header>
-	<h1>{{ .Title }}</a></h1>
+    <h1>{{ .Title }}</a></h1>
 </header>
 {{ range .Data.Pages.GroupByParam "tutorial" }}
-<h3>{{ .Key }}</h3>
-{{ if gt (len .Pages) 1 }}
-	{{ with index .Pages 0}}
-		{{ .Render "summary" }}
-	{{ end }}
 
-	<ul>
-		{{ range after 1 .Pages }}
-			{{ .Render "li" }}
-		{{ end }}
-	</ul>
+<h3>{{ .Key }}</h3>
+
+{{ if gt (len .Pages) 1 }}
+
+    {{ with index .Pages 0 }}
+        {{ .Render "summary" }}
+    {{ end }}
+
+
+    {{ range $index, $el := .Pages }}
+        <h5>
+            <a href="{{ $el.Permalink }}">
+            Part {{ add $index 1 }}: {{ $el.Title }}
+            </a>
+        </h5>
+    {{ end }}
+
 
 {{ else }}
-	{{ with index .Pages 0 }}
-		{{ .Render "summary" }}
-	{{ end }}
+
+    {{ with index .Pages 0 }}
+        {{ .Render "summary" }}
+    {{ end }}
+
 {{ end }}
 
 {{ end }}

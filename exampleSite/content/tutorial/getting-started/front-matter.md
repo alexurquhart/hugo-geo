@@ -1,5 +1,5 @@
 +++
-title = "front matter"
+title = "Front Matter"
 highlight = true
 nodisqus = false
 notoc = false

@@ -1,9 +1,9 @@
 +++
 css = []
-tags = []
+tags = ["hugo", "golang", "blog", "tutorial"]
 nodisqus = false
 notoc = false
-title = "intro"
+title = "Introduction"
 scripts = []
 highlight = true
 weight = 0

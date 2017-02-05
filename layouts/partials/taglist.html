@@ -1,4 +1,4 @@
-{{ if isset .Params "tags" }}
+{{ if and (isset .Params "tags") (gt (len .Params.tags) 0) }}
     {{ .Site.Data.hugogeo.strings.tags }}:
     {{ $base := .Site.BaseURL }}
     {{ range $tag := .Params.tags }}

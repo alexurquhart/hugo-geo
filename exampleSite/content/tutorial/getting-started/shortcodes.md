@@ -2,7 +2,7 @@
 notoc = false
 scripts = []
 highlight = true
-title = "shortcodes"
+title = "Custom Shortcodes"
 tags = []
 weight = 3
 nodisqus = false

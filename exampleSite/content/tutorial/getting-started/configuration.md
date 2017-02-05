@@ -1,5 +1,5 @@
 +++
-title = "configuration"
+title = "Site Configuration"
 highlight = true
 nodisqus = false
 notoc = false
