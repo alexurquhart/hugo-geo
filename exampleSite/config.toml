@@ -6,6 +6,7 @@ disqusShortname = "shortcode-here"
 paginate = 5
 googleAnalytics = "code-here"
 copyright = "2001 - 2017"
+theme = "hugo-geo"
 
 [author]
     name = "My Name Here"
@@ -39,7 +40,7 @@ copyright = "2001 - 2017"
 [[menu.sidenav]]
     name = "Tutorials"
     identifier = "tutorials"
-    url = "/tutorials/"
+    url = "/tutorial/"
     weight = 1
 
 [[menu.sidebar]]
