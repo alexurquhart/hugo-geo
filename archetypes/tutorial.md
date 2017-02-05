@@ -22,7 +22,4 @@ nodisqus = false
 
 # Tutorial name
 tutorial = ""
-
-# Tutorial page number - (1st part = 1, 2nd part = 2, etc)
-weight = 0
 +++

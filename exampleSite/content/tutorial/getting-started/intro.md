@@ -6,7 +6,6 @@ notoc = false
 title = "Introduction"
 scripts = []
 highlight = true
-weight = 0
 socialbuttons = true
 date = "2017-02-05T11:17:40-05:00"
 tutorial = "Getting Started With Hugo-Geo"

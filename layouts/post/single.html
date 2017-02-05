@@ -23,7 +23,7 @@
             </article>
         </main>
 
-        {{ partial "bottom-nav.html" . }}
+        {{ partial "bottom-nav-post.html" . }}
 
         {{ if and .Site.DisqusShortname (ne .Params.nodisqus true) }}
             {{ template "_internal/disqus.html" . }}

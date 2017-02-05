@@ -1,0 +1,15 @@
+{{ $root := . }}
+<h5>{{ .Params.tutorial }}</h5>
+{{ range $index, $el := where .Site.Pages.ByDate ".Params.tutorial" .Params.tutorial }}
+    {{ if eq $root.Title $el.Title }}
+        <h6>
+            {{ .Site.Data.hugogeo.strings.part }} {{ add $index 1}}: {{ $el.Title }}
+        </h6>
+    {{ else }}
+        <a href="{{ $el.Permalink }}">
+        <h6>
+            Part {{ add $index 1}}: {{ $el.Title }}
+        </h6>
+        </a>
+    {{ end }}
+{{ end }}

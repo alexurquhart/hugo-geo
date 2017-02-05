@@ -1,25 +1,16 @@
 <div class="hg-sidebar pure-u-1 pure-u-md-1-5">
     {{ if eq .Section "tutorial" }}
     <div class="hg-sidebar-item">
-        {{ $root := . }}
-        <h5>
-            {{ .Params.tutorial }}
-        </h5>
-        {{ range $index, $el := where .Site.Pages.ByDate ".Params.tutorial" .Params.tutorial }}
-            {{ if eq $root.Title $el.Title }}
-                <h6>
-                    Part {{ add $index 1}}: {{ $el.Title }}
-                </h6>
-            {{ else }}
-                <a href="{{ $el.Permalink }}">
-                <h6>
-                    Part {{ add $index 1}}: {{ $el.Title }}
-                </h6>
-                </a>
-            {{ end }}
-        {{ end }}
+        {{ partial "tutorial-toc.html" . }}
     </div>
     {{ end }}
+
+    <div class="hg-sidebar-item">
+        <a class="pure-button hg-block-btn" href="{{ .Site.BaseURL }}">
+            <i class="fa fa-home"></i>
+            {{ .Site.Data.hugogeo.strings.home }}
+        </a>
+    </div>
 
     {{ if ne .Params.notoc true }}
     <div class="hg-sidebar-item">

@@ -15,7 +15,7 @@
 {{ range $index, $el := .Pages }}
     <h5>
         <a href="{{ $el.Permalink }}">
-        Part {{ add $index 1 }}: {{ $el.Title }}
+        {{ .Site.Data.hugogeo.strings.part }} {{ add $index 1 }}: {{ $el.Title }}
         </a>
     </h5>
 {{ end }}
