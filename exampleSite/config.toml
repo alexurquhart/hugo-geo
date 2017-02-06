@@ -32,6 +32,9 @@ theme = "hugo-geo"
         "googleplus"
     ]
 
+    css = []
+    scripts = []
+
 [[menu.sidenav]]
     name = "Blog"
     identifier = "blog"
@@ -49,7 +52,7 @@ theme = "hugo-geo"
 
 [[menu.social]]    
     name = "GitHub"
-    url = "https://www.github.com/alexanderurq"
+    url = "https://www.github.com/alexurquhart"
     pre = '<i class="fa fa-github" aria-hidden="true"></i>'
     weight = 0
 

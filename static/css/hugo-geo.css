@@ -69,7 +69,7 @@ a {
 code {
   font-family: "Source Code Pro", monospace; }
 
-p code {
+p code, li code {
   background: #ECECEC;
   border-radius: 0.25rem;
   font-size: 0.9rem;

@@ -35,9 +35,6 @@
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css">
-    {{ if .Params.socialbuttons }}
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/rrssb/1.6.0/css/rrssb.css">
-    {{ end }}
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.1/pure-min.css">
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.1/grids-responsive-old-ie-min.css">
@@ -46,6 +43,10 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.1/grids-responsive-min.css">
     <!--<![endif]-->
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/hugo-geo.css">
+
+    {{ range .Site.Params.css }}
+    <link rel="stylesheet" href="{{ . }}">
+    {{ end }}
 
     {{ range .Params.css }}
     <link rel="stylesheet" href="{{ . }}">
@@ -83,6 +84,10 @@
     {{ end }}
 
     {{ range .Params.scripts }}
+    <script src="{{ . }}"></script>
+    {{ end }}
+
+    {{ range .Site.Params.scripts }}
     <script src="{{ . }}"></script>
     {{ end }}
     

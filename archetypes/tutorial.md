@@ -1,4 +1,9 @@
 +++
+draft = true
+
+# Description for meta tags
+description = ""
+
 # Page tags
 tags = []
 

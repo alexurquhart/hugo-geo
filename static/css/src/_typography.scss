@@ -62,7 +62,7 @@ code {
     font-family: $font-mono;
 }
 
-p code {
+p code, li code {
     background: $lt-grey;
     border-radius: 0.25rem;
     font-size: 0.9rem;
