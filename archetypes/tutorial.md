@@ -12,7 +12,7 @@ css = []
 scripts = []
 
 # Show social buttons specified in the site config
-socialbuttons = true
+sharebuttons = true
 
 # Set to true to disable table of contents on this page
 notoc = false
