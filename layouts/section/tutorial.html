@@ -5,9 +5,11 @@
 
 {{ range .Data.Pages.GroupByParam "tutorial" }}
 
-<h3>{{ .Key }}</h3>
-
+    {{ $key := .Key }}
     {{ with index .Pages.ByDate 0 }}
+    <a href="{{ .Permalink }}">
+        <h3>{{ $key }}</h3>
+    </a>
         {{ .Render "summary" }}
     {{ end }}
 
