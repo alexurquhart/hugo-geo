@@ -1,6 +1,7 @@
 +++
 date = "2017-01-11T18:27:38-05:00"
 title = "Theme Demonstration"
+description = "A comprehensive example of the unique features available in the hugo-geo theme"
 draft = false
 tags = ["blog", "hugo", "hugo-atlas", "demonstration"]
 highlight = true
@@ -8,6 +9,8 @@ sharebuttons = true
 +++
 
 On this page I'd like to showcase all of the themes features.
+
+<!--more-->
 
 # Typography
 

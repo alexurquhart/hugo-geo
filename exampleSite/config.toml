@@ -31,9 +31,15 @@ theme = "hugo-geo"
         "reddit",
         "googleplus"
     ]
-
     css = []
     scripts = []
+
+    fblocale = "en_US"
+    fbappid = "App-Id-Here"
+    metaimage = "/path/to/image"
+    twittercreator = "@alexanderurq"
+    twittersite = "@alexanderurq"
+    themecolor = "#2d4054"
 
 [[menu.sidenav]]
     name = "Blog"

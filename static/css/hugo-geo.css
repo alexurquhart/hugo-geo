@@ -88,6 +88,9 @@ blockquote {
   padding-left: 2rem;
   border-left: 0.3125rem solid #ECECEC; }
 
+p, li, blockquote {
+  line-height: 1.5rem; }
+
 .hg-muted {
   color: #8a949a;
   font-weight: lighter; }

@@ -86,6 +86,10 @@ blockquote {
     border-left: rem(5px) solid $lt-grey;
 }
 
+p, li, blockquote {
+    line-height: 1.5rem;
+}
+
 .hg-muted {
     color: darken($grey, 10%);
     font-weight: lighter;

@@ -24,4 +24,8 @@ notoc = false
 
 # Set to true to disable Disqus comments on this page
 nodisqus = false
+
+# Image to include in the page metadata for social search sharing (twitter cards, facebook, etc)
+# Overrides the site default, if present
+meta-image = "/path/to/img.png"
 +++

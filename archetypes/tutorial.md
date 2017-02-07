@@ -27,4 +27,8 @@ nodisqus = false
 
 # Tutorial name
 tutorial = ""
+
+# Image to include in the page metadata for social search sharing (twitter cards, facebook, etc)
+# Overrides the site default, if present
+meta-image = "/path/to/img.png"
 +++

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    {{ .Hugo.Generator }}
 
-    {{ block "meta" . }}
-    <meta name="description" content="{{ .Description }}">
+    {{ with .Site.Params.themecolor }}
+    <meta name="theme-color" content="{{ . }}">
+    {{ end }}
+
     <meta property="og:title" content="{{ .Title }}">
 
     {{ if .IsPage }}
@@ -15,15 +19,32 @@
     <meta property="og:type" content="website">
     {{ end }}
 
-    <meta property="og:description" content="{{ .Description }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
 
+    {{ with .Description }}
+    <meta name="description" content="{{ . }}">
+    <meta property="og:description" content="{{ . }}">
+    {{ end }}
+    
     {{ range .Params.tags }}
     <meta property="og:tags" content="{{ . }}">
     {{ end }}
 
-    {{ .Hugo.Generator }}
+    {{ with .Site.Params.twittercreator }}
+    <meta name="twitter:creator" content="{{ . }}">
+    {{ end }}
+
+    {{ with .Site.Params.twittersite }}
+    <meta name="twitter:site" content="{{ . }}">
+    {{ end }}
+
+    {{ if or .Site.Params.metaimage .Params.metaimage }}
+        {{ if .Params.metaimage }}
+            <meta property="og:image" content="{{ .Params.metaimage }}">
+        {{ else }}
+            <meta property="og:image" content="{{ .Site.Params.metaimage }}">
+        {{ end }}
     {{ end }}
 
     <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
