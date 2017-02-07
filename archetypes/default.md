@@ -27,5 +27,8 @@ nodisqus = false
 
 # Image to include in the page metadata for social search sharing (twitter cards, facebook, etc)
 # Overrides the site default, if present
-meta-image = "/path/to/img.png"
+metaimage = "/path/to/img.png"
+
+# URL to a video file that complements your page - used for open graph metadata tags
+metavideo = "/path/to/video.mp4"
 +++

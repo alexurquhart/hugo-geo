@@ -372,7 +372,10 @@ figure figcaption {
   margin: 2rem auto; }
   .hg-bottom-nav div {
     margin: 2rem auto;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     font-weight: 200;
     text-align: center; }
     .hg-bottom-nav div a {

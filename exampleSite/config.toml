@@ -1,26 +1,41 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 relativeURLs = false
 languageCode = "en-us"
+
+# Shown in page title and left sidebar
 title = "Your Name"
-disqusShortname = "shortcode-here"
-paginate = 5
-googleAnalytics = "code-here"
+
+# Shown in the footer
 copyright = "2001 - 2017"
 theme = "hugo-geo"
+paginate = 5
+googleAnalytics = "code-here"
+disqusShortname = "shortcode-here"
 
+# Author appears in the footer
 [author]
     name = "My Name Here"
 
 [taxonomies]
     tag = "tags"
-    tutorial = "tutorials"
 
 [params]
+    # Appears in sidebar
     profilepic = "img/profile.png"
+
+    # Appears in sidebar - optional
     subtitle = "My Hugo Blog"
+
+    # Appears on index page - optional
     tagline = "What I'm Thinking"
+    
+    # Whether to show theme credits in the footer - Optional
     attribution = true
+
+    # URL for twitter feed widget in the sidebar for posts - optional
     twitterwidgeturl = "https://twitter.com/alexanderurq"
+
+    # Array of all available social share buttons - optional
     sharebuttons = [
         "email",
         "print",
@@ -31,16 +46,36 @@ theme = "hugo-geo"
         "reddit",
         "googleplus"
     ]
+
+    # Array of additional CSS files to be loaded on every page - optional
     css = []
+
+    # Array of additional Javascript files to be loaded on every page
     scripts = []
 
-    fblocale = "en_US"
+    # Locale information to be specified in Open Graph meta tags - optional
+    # See http://ogp.me/
+    oglocale = "en_US"
+
+    # For use with Facebook Developer Insights - optional
+    # See https://developers.facebook.com/docs/platforminsights/domains
     fbappid = "App-Id-Here"
+
+    # For use with Open Graph meta tags - optional
+    # Can be overridden by post front matter
     metaimage = "/path/to/image"
+
+    # Twitter account of the author, and website - optional
+    # See https://dev.twitter.com/cards/getting-started
     twittercreator = "@alexanderurq"
     twittersite = "@alexanderurq"
+
+    # Color of browser bar on mobile sites - optional
+    # Be sure to update if you tweak the site CSS
     themecolor = "#2d4054"
 
+# Left hand sidebar and mobile nav link menu
+# Add or remove links as you see fit
 [[menu.sidenav]]
     name = "Blog"
     identifier = "blog"
@@ -52,10 +87,9 @@ theme = "hugo-geo"
     url = "/tutorial/"
     weight = 1
 
-[[menu.sidebar]]
-    pre = '<img src="/img/do.png" class="responsive pure-img">'
-    url = "https://m.do.co/c/78ae6b852549"
-
+# Social sharing icons for left hand sidebar
+# Links here appear in the footer on mobile
+# Add or remove as you see fit
 [[menu.social]]    
     name = "GitHub"
     url = "https://www.github.com/alexurquhart"
@@ -79,6 +113,11 @@ theme = "hugo-geo"
     url = "https://www.linkedin.com/in/alex-urquhart-65979695"
     pre = '<i class="fa fa-linkedin" aria-hidden="true"></i>'
     weight = 3
+
+# Righthand sidebar menu appears on posts and tutorial pages
+[[menu.sidebar]]
+    pre = '<img src="/img/do.png" class="responsive pure-img">'
+    url = "https://m.do.co/c/78ae6b852549"
 
 [[menu.footer]]
     name = "Link 1"
