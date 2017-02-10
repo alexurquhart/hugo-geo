@@ -53,9 +53,11 @@ paginate = 5
 	analytics = "SHORT-CODE-HERE"
 
 	# Social buttons for sidebar
+	# Each of these are optional
 	github = "https://github.com/alexurquhart"
 	twitter = "https://twitter.com/alexanderurq"
 	linkedin = "https://linkedin.com"
+	googleplus = "https://plus.google.com/+YourID"
 	email = "alexurquhart@gmail.com"
 	
 	# Header Title for the main page
