@@ -15,6 +15,7 @@
 		{{ end }}
 		<div id="social" class="text-center">
 			{{ if isset .Site.Params "twitter" }}<a href="{{.Site.Params.twitter}}"><i class="fa fa-twitter fa-2x"></i></a>{{ end }}
+			{{ if isset .Site.Params "googleplus" }}<a href="{{.Site.Params.googleplus}}"><i class="fa fa-google-plus fa-2x"></i></a>{{ end }}
 			{{ if isset .Site.Params "linkedin" }}<a href="{{.Site.Params.linkedin}}"><i class="fa fa-linkedin fa-2x"></i></a>{{ end }}
 			{{ if isset .Site.Params "github" }}<a href="{{.Site.Params.github}}"><i class="fa fa-github fa-2x"></i></a>{{ end }}
 			{{ if isset .Site.Params "email" }}<a href="mailto:{{.Site.Params.email}}"><i class="fa fa-envelope-o fa-2x"></i></a>{{ end }}
