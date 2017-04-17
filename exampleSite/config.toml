@@ -1,4 +1,6 @@
 baseurl = "http://example.com/"
+theme = "hugo-geo"
+themesdir = "../.."
 relativeURLs = false
 languageCode = "en-us"
 title = "My New Hugo Site"
