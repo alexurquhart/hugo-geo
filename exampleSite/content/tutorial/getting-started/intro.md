@@ -9,7 +9,7 @@ highlight = true
 sharebuttons = true
 date = "2017-02-05T11:17:40-05:00"
 tutorial = "Getting Started With Hugo-Geo"
-description = "A gentle introduction into using the hugo-geo theme"
+description = "A gentle introduction to using the hugo-geo theme"
 +++
 
 This simple introductory tutorial to the hugo-geo theme will teach you how to configure your site,

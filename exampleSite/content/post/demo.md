@@ -168,27 +168,23 @@ There are a few [shortcodes](http://gohugo.io/extras/shortcodes/) provided in or
 This renders as the following HTML:
 
 ```html
-<div class="pure-g clear">
-    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
-        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
-        Unde, veniam, eos tempora sit ratione optio!
-    </div>
-    <div class=" pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
-        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
-        Unde, veniam, eos tempora sit ratione optio!
-    </div>
-    <div class=" pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
-        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
-        Unde, veniam, eos tempora sit ratione optio!
-    </div>
-    <div class=" pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum,
-        cupiditate id voluptatem, velit error necessitatibus soluta quidem debitis, ducimus labore.
-        Unde, veniam, eos tempora sit ratione optio!
-    </div>
+<div class="hg-row pure-g clear">
+  <div class="hg-col pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit
+    error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+  </div>
+  <div class="hg-col pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit
+    error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+  </div>
+  <div class="hg-col pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit
+    error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+  </div>
+  <div class="hg-col pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptate vero rerum, cupiditate id voluptatem, velit
+    error necessitatibus soluta quidem debitis, ducimus labore. Unde, veniam, eos tempora sit ratione optio!
+  </div>
 </div>
 ```
 This will will be displayed same as below. Resize your browser window to see the responsive grid in action.
@@ -220,6 +216,46 @@ Try resizing your browser window to see the responsive grid in action.
 
 ### Row
 
-The `{{</* row */>}}` shortcode
+The `{{</* row */>}}` shortcode, as you might expect, creates a new row. There are two optional parameters:
+
+- `id` applies an ID to the row div
+- `class` applies a class to the row div. Multiple classes can be separated by a space. The default classs `hg-row` is applied to all rows, to make it easier to customize the CSS.
+
+#### Example
+```
+{{</* row id="first-row" class="class1 class2" */>}}
+    ...cols...
+{{</* /row */>}}
+```
 
 ### Column
+
+The column shortcode should be nested inside of a row shortcode. It has parameters that correspond
+with the various CSS breakpoints set by the [Pure.css](https://purecss.io/grids/) grid system.
+
+- `id` applies an ID to the column div
+- `size` corresponds to anyone of the 5<sup>ths</sup> or 24<sup>ths</sup> based grid units. **\* mandatory**
+- `sm-size` grid size applied at the small screen breakpoint (≥ 568px)
+- `md-size` grid size applied at the medium screen breakpoint (≥ 768px)
+- `lg-size` grid size applied at the large screen breakpoint (≥ 1024px)
+- `xl-size` grid size applied at the XL screen breakpoint (≥ 1280px)
+- `class` applies a class to the column div. Multiple classes can be separated by a space. The default classs `hg-col` is applied to all columns, to make it easier to customize the CSS.
+
+#### Examples
+
+A grid with 3 columns
+
+```
+{{</* row id="first-row" class="class1 class2" */>}}
+    {{</* col size="1-3" */>}}
+        ...content...
+    {{</* /col */>}}
+    {{</* col id="middle-col" size="1-3" */>}}
+        ...content...
+    {{</* /col */>}}
+    {{</* col size="1-3" */>}}
+        ...content...
+    {{</* /col */>}}
+{{</* /row */>}}
+
+```

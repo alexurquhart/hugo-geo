@@ -5,7 +5,7 @@ description = "A responsive blog theme made designed for post and tutorial secti
 homepage = "https://alexurquhart.com"
 tags = ["blog"]
 features = ["blog", "responsive", "sidebar", "social buttons"]
-min_version= 0.18
+min_version= 0.20
 
 [author]
     name = "Alex Urquhart"

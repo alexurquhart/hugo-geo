@@ -10,13 +10,13 @@ tags = []
 # Include highlight.js for code highlighting (set to false or erase to not include)
 highlight = true
 
-# Array of CSS scripts to load
+# Array of CSS scripts to load on this page
 css = []
 
-# Array of JS files to load for the page
+# Array of JS files to load on this page
 scripts = []
 
-# Show social buttons specified in the site config
+# Show social buttons (specified in the site config)
 sharebuttons = true
 
 # Set to true to disable table of contents on this page
