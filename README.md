@@ -52,12 +52,7 @@ paginate = 5
 	# Google Analytics
 	analytics = "SHORT-CODE-HERE"
 
-	# Social buttons for sidebar
-	# Each of these are optional
-	github = "https://github.com/alexurquhart"
-	twitter = "https://twitter.com/alexanderurq"
-	linkedin = "https://linkedin.com"
-	googleplus = "https://plus.google.com/+YourID"
+	# Email (optional)
 	email = "alexurquhart@gmail.com"
 	
 	# Header Title for the main page
@@ -70,6 +65,21 @@ paginate = 5
 	title = "ALEX URQUHART"
 	subtitle = "GEOMATICS PROFESSIONAL"
 	
+	# Social buttons for sidebar
+	# Each of these are optional
+	[[params.socialbuttons]]
+	faicon = "github"
+	url = "https://github.com/alexurquhart"
+	[[params.socialbuttons]]
+	faicon = "twitter"
+	url = "https://twitter.com/alexanderurq"
+	[[params.socialbuttons]]
+	faicon = "linkedin"
+	url = "https://linkedin.com"
+	[[params.socialbuttons]]
+	faicon = "google-plus"
+	url = "https://plus.google.com/+YourID"
+
 	# Nav links below the profile picture
 	[[params.navlinks]]
 	name = "About"

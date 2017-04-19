@@ -18,17 +18,28 @@ paginate = 5
 	
 	analytics = "code-here"
 
-	github = "https://github.com/alexurquhart"
-	twitter = "https://twitter.com/alexanderurq"
-	linkedin = "https://www.linkedin.com/profile/view?id=339355941"
 	email = "alexurquhart@gmail.com"
-	googleplus = "https://plus.google.com/+YourID"
-	
+
 	profilepic = "img/profile.png"
 	
 	title = "MY NAME"
 	subtitle = "MY HUGO BLOG"
-	
+
+	# Social buttons for sidebar
+	# Each of these are optional
+	[[params.socialbuttons]]
+	faicon = "github"
+	url = "https://github.com/alexurquhart"
+	[[params.socialbuttons]]
+	faicon = "twitter"
+	url = "https://twitter.com/alexanderurq"
+	[[params.socialbuttons]]
+	faicon = "linkedin"
+	url = "https://linkedin.com"
+	[[params.socialbuttons]]
+	faicon = "google-plus"
+	url = "https://plus.google.com/+YourID"
+
 	[[params.navlinks]]
 	name = "About"
 	url = "about"
