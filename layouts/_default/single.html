@@ -11,8 +11,37 @@
 	</article>
 </main>
 
-<div id="bottom-nav" class="text-center center-block">
-	<a href=" {{ .Site.BaseURL }}" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+<div id="bottom-nav" class="container-fluid">
+	<div class="row">
+		<div class="col-xs-4 text-left">
+			{{ with .PrevInSection }}
+			<strong>
+				<a href="{{ .Permalink }}">
+					<i class="fa fa-arrow-left" aria-hidden="true"></i>
+					<span class="hidden-xs">Previous</span>
+				</a>
+			</strong>
+			{{ end }}
+		</div>
+		<div class="col-xs-4 text-center">
+			<strong>
+				<a href="{{ .Site.BaseURL }}">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<span class="hidden-xs">Home</span>
+				</a>
+			</strong>
+		</div>
+		<div class="col-xs-4 text-right">
+			{{ with .NextInSection }}
+			<strong>
+				<a href="{{ .Permalink }}">
+					<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					<span class="hidden-xs">Next</span>
+				</a>
+			</strong>
+			{{ end }}
+		</div>
+	</div>
 </div>
 
 {{ if .Site.DisqusShortname }}
