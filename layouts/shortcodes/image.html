@@ -24,6 +24,10 @@ Parameters
                         data-lightbox="{{ . }}"
                     {{ end }}
                 {{ end }}
+            {{ else }}
+                {{ with .Get "src" }}
+                    data-lightbox="{{ . }}"
+                {{ end }}
             {{ end }}
     >
     {{ end }}
