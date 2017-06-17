@@ -1,4 +1,4 @@
-<div {{ with .Get "id" }}id="#{{.}}" {{ end }}
+<div {{ with .Get "id" }}id="{{.}}" {{ end }}
     class="
     hg-col
     pure-u-{{ .Get "size" }}
@@ -16,6 +16,9 @@
     {{ end }}
     {{ with .Get "class" }}
     {{ . }}
-    {{ end }}">
+    {{ end }}"
+    {{ with .Get "style" }}
+    style="{{ . }}"
+    {{ end }}>
     {{ .Inner }}
 </div>

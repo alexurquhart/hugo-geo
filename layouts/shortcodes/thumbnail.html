@@ -15,9 +15,9 @@ Params
     float: {{ with .Get "float" }}{{ . }}{{ else }}right{{ end }};
     "
 >
+    {{ if not (.Get "nolightbox") }}
     <a 
         href="{{ .Get "src" }}"
-        {{ if not (.Get "nolightbox") }}
             data-title="{{ .Get "caption" }}"
 
             {{ if or (.Get "caption") (.Get "gallery") }}
@@ -31,8 +31,8 @@ Params
                     {{ end }}
                 {{ end }}
             {{ end }}
-        {{ end }}
     >
+    {{ end }}
         <img 
             src="{{ .Get "src" }}"
             class="pure-img hg-thumbnail {{ with .Get "class" }}{{.}}{{ end }}"
@@ -48,7 +48,9 @@ Params
                 {{ end }}
             {{ end }}
         >
+    {{ if not (.Get "nolightbox") }}
     </a>
+    {{ end }}
     {{ with .Get "caption" }}
     <figcaption>
         {{ . }}
