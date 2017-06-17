@@ -14,20 +14,10 @@ Parameters
             href="{{ .Get "src" }}"
             data-title="{{ .Get "caption" }}"
 
-            {{ if or (.Get "caption") (.Get "gallery") }}
-                {{ if not (.Get "gallery") }}
-                    {{ with .Get "caption" }}
-                        data-lightbox="{{ . }}"
-                    {{ end }}
-                {{ else }}
-                    {{ with .Get "gallery" }}
-                        data-lightbox="{{ . }}"
-                    {{ end }}
-                {{ end }}
+            {{ if .Get "gallery" }}
+                data-lightbox="{{ .Get "gallery" }}"
             {{ else }}
-                {{ with .Get "src" }}
-                    data-lightbox="{{ . }}"
-                {{ end }}
+                data-lightbox="{{ .Get "src"  }}"
             {{ end }}
     >
     {{ end }}
