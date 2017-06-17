@@ -21,6 +21,12 @@ figure {
         box-shadow: $box-shadow;
     }
 
+    .hg-thumbnail {
+        box-shadow: none !important;
+        border: none;
+        border-radius: none;
+    }
+
     figcaption {
         font-size: 0.9rem;
         color: $light-text;

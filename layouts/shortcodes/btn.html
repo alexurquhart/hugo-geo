@@ -1,0 +1,36 @@
+<!--
+Params (all are optional)
+    - href=""
+    - type="(primary | success | error | warn | secondary)"
+    - size="(xsmall | small | large | xlarge)"
+    - icon=""
+    - class=""
+    - id=""
+-->
+<a 
+    class="
+        pure-button
+        hg-btn
+        {{ with .Get "class" }}{{ . }}{{ end }}
+        {{ with .Get "type" }}hg-btn-{{ . }}{{ end }}
+        {{ with .Get "size" }}hg-btn-{{ . }}{{ end }}
+    "
+
+    {{ with .Get "id" }}
+        id="{{.}}"
+    {{ end }}
+
+    {{ if not (.Get "href") }}
+        href="#"
+    {{ else }}
+        href="{{ .Get "href" }}"
+    {{ end }}
+
+    role="button">
+
+    {{ with .Get "icon" }}
+        <i class="{{ . }}" aria-hidden="true"></i>
+    {{ end }}
+
+    {{ .Inner }}
+</a>

@@ -35,7 +35,7 @@ Params
     >
         <img 
             src="{{ .Get "src" }}"
-            class="pure-img{{ with .Get "class" }} {{.}}{{ end }}"
+            class="pure-img hg-thumbnail {{ with .Get "class" }}{{.}}{{ end }}"
             {{ if or (.Get "caption") (.Get "alt") }}
                 {{ if not (.Get "alt") }}
                     {{ with .Get "caption" }}

@@ -6,3 +6,57 @@
         color: #000 !important;
     }
 }
+
+a.pure-button.hg-btn {
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: $black;
+
+
+    &.hg-btn-xsmall {
+        font-size: 70%;
+    }
+
+    &.hg-btn-small {
+        font-size: 85%;
+    }
+
+    &.hg-btn-large {
+        font-size: 110%;
+    }
+
+    &.hg-btn-xlarge {
+        font-size: 125%;
+    }
+
+    &.hg-btn-primary {
+        background: $blue !important;
+    }
+
+    &.hg-btn-success {
+        background: $green !important;
+    }
+
+    &.hg-btn-error {
+        background: $red !important;
+    }
+
+    &.hg-btn-warn {
+        background: $rss !important;
+    }
+
+    &.hg-btn-primary,
+    &.hg-btn-success,
+    &.hg-btn-error,
+    &.hg-btn-warn {
+        color: $white;
+
+        &:hover {
+            color: $white !important;
+        }
+    }
+
+    &.hg-btn-secondary {
+        background: $lt-blue;
+    }
+}
