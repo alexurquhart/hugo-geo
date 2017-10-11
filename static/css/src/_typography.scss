@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin header {
     font-family: $header-font;
     font-weight: 300;
@@ -63,19 +65,22 @@ code {
 }
 
 p code, li code {
-    background: $lt-grey;
+    background: white;
+    border: 0.5px solid $lt-blue;
     border-radius: 0.25rem;
-    font-size: 0.9rem;
-    padding: 0.2rem 0.4rem;
+    font-size: 0.85rem;
+    padding: 0.15rem 0.4rem;
 }
 
 pre {
-    padding: 1rem 2rem;
+    padding: 0.5rem;
+    border: rem(0.5px) solid $well-border;
     border-left: rem(5px) solid $well-border;
     background: $well-background;
+    border-radius: $border-radius;
 
     code {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         background: inherit !important;
     }
 }
