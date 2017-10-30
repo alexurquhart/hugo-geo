@@ -46,14 +46,14 @@
 
     {{ if or .Site.Params.metaimage .Params.metaimage }}
         {{ if .Params.metaimage }}
-            <meta property="og:image" content="{{ .Params.metaimage }}">
+            <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.metaimage }}">
         {{ else }}
-            <meta property="og:image" content="{{ .Site.Params.metaimage }}">
+            <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.metaimage }}">
         {{ end }}
     {{ end }}
 
     {{ with .Params.metavideo }}
-    <meta property="og:video" content="{{ . }}" />
+    <meta property="og:video" content="{{ .Site.BaseURL }}{{ . }}" />
     {{ end }}
 
     <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
