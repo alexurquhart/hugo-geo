@@ -52,8 +52,8 @@
         {{ end }}
     {{ end }}
 
-    {{ with .Params.metavideo }}
-    <meta property="og:video" content="{{ .Site.BaseURL }}{{ . }}" />
+    {{ if .Params.metavideo }}
+    <meta property="og:video" content="{{ .Site.BaseURL }}{{ .Params.metavideo }}" />
     {{ end }}
 
     <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
