@@ -6,6 +6,7 @@ Params (all are optional)
     - icon=""
     - class=""
     - id=""
+    - title=""
 -->
 <a 
     class="
@@ -16,14 +17,16 @@ Params (all are optional)
         {{ with .Get "size" }}hg-btn-{{ . }}{{ end }}
     "
 
+    {{ with .Get "title" }}
+        title="{{.}}"
+    {{ end }}
+
     {{ with .Get "id" }}
         id="{{.}}"
     {{ end }}
-
-    {{ if not (.Get "href") }}
-        href="#"
-    {{ else }}
-        href="{{ .Get "href" }}"
+    
+    {{ with .Get "href" }}
+        id="{{.}}"
     {{ end }}
 
     role="button">
